@@ -4,7 +4,7 @@
 
 [backlog](https://github.com/brutdethe/shop/projects/1?fullscreen=true)
 
-## Signification du fini (DoD defintion of done)
+## Signification du fini (DoD definition of done)
 
 - il faut que l'affichage pour les personnes utilisatrices soit possible dans deux langues : en-fr
 - il ne faut gérer qu'un seul stock
@@ -20,5 +20,5 @@
 
 ## Équipe
 
-Stéphane Langlois @pntbr
+Stéphane Langlois @pntbr  
 Jé le Potier
