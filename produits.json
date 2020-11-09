@@ -1,0 +1,20 @@
+[
+    {
+        "titre": "Gaiwan 10cl",
+        "catégorie": "gaiwan",
+        "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "prix": 48.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": []
+    },
+    {
+        "titre": "Gaiwan 10cl",
+        "catégorie": "gaiwan",
+        "description": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
+        "prix": 48.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": []
+    }
+]
