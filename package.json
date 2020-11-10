@@ -1,12 +1,14 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "Shop",
+  "description": "eShop Brut de Thé",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
+    "clean": "rm -rf ./__sapper__",
     "export": "sapper export --legacy",
-    "start": "node __sapper__/build"
+    "start": "node __sapper__/build",
+    "deploy": "npm run clean && npm run export && node ./scripts/deploy.js"
   },
   "dependencies": {
     "compression": "^1.7.1",
