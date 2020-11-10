@@ -16,5 +16,14 @@
         "poids": 0.3,
         "stock": 1,
         "photos": []
+    },
+    {
+        "titre": "Théière 100 cl",
+        "catégorie": "théière",
+        "description": "Cette théière est recouverte d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
+        "prix": 148.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": []
     }
 ]
