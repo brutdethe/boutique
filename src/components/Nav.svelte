@@ -51,8 +51,8 @@
 <nav>
   <ul>
     <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        home
+      <a aria-current={segment === undefined ? 'page' : undefined} href="./produits.json">
+        produits.json
       </a>
     </li>
     <!--
