@@ -3,7 +3,7 @@ const ghpages = require('gh-pages');
 ghpages.publish(
     '__sapper__/export',
     {
-        branch: 'master',
+        branch: 'main',
         repo: 'git@github.com-pntbr:brutdethe/shop.git',
         user: {
             name: 'pntbr',
