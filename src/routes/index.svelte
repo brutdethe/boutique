@@ -13,6 +13,11 @@
 
 <script>
   export let items;
+
+  const itemsInStock = items.filter(item => item.stock);
+  const itemsInStockByDate = itemsInStock.sort(
+    (a, b) => new Date(b.création) - new Date(a.création)
+  );
 </script>
 
 <style>
@@ -53,7 +58,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each items as item}
+      {#each itemsInStockByDate as item}
         <tr>
           <td>{item.catégorie}</td>
           <td>{item.titre}</td>
