@@ -104,7 +104,7 @@
           <td>{item.poids} g</td>
           <td>{item.prix} €</td>
           <td>
-            <a href="">acheter</a>
+            <a href=".">acheter</a>
           </td>
         </tr>
       {/each}
