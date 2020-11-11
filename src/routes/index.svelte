@@ -16,10 +16,23 @@
 
   let category = "Gaiwan";
 
-  const itemsInStock = items.filter(item => item.stock);
-  const itemsInStockByDate = itemsInStock.sort(
-    (a, b) => new Date(b.création) - new Date(a.création)
-  );
+  items.find = function(query) {
+    const properties = Object.getOwnPropertyNames(query);
+
+    function checkQuery(item, query) {
+      const result = false;
+      if (query.hasOwnProperty("$gt")) {
+        return item > query.$gt;
+      }
+      return item === query;
+    }
+
+    return this.filter(item =>
+      properties.reduce((acc, prop) => {
+        return acc && checkQuery(item[prop], query[prop]);
+      }, {})
+    ).sort((a, b) => new Date(b.création) - new Date(a.création));
+  };
 </script>
 
 <style>
@@ -72,20 +85,17 @@
   <table>
     <thead>
       <tr>
-        <th>Catégorie</th>
         <th>Titre</th>
         <th>Poids</th>
         <th>Prix</th>
-        <th>Stock</th>
       </tr>
     </thead>
     <tbody>
-      {#each itemsInStockByDate as item}
+      {#each items.find({ catégorie: category, stock: { $gt: 0 } }) as item}
         <tr>
           <td>{item.titre}</td>
-          <td>{item.poids}</td>
-          <td>{item.prix}</td>
-          <td>{item.stock}</td>
+          <td>{item.poids} g</td>
+          <td>{item.prix} €</td>
         </tr>
       {/each}
     </tbody>

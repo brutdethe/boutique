@@ -1,7 +1,7 @@
 [
     {
         "titre": "Gaiwan 10cl",
-        "création": "2020-11-13",
+        "création": "2020-11-15",
         "catégorie": "Gaiwan",
         "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
         "prix": 48.00,
@@ -14,7 +14,7 @@
         "création": "2020-11-14",
         "catégorie": "Gaiwan",
         "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
-        "prix": 48.00,
+        "prix": 58.00,
         "poids": 0.3,
         "stock": 2,
         "photos": []
@@ -37,6 +37,56 @@
         "prix": 148.00,
         "poids": 0.4,
         "stock": 1,
+        "photos": []
+    },
+    {
+        "titre": "Théière 10 cl",
+        "création": "2020-11-10",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une théière en terre de Moutiers de 10 cl.",
+        "prix": 132.00,
+        "poids": 0.4,
+        "stock": 2,
+        "photos": []
+    },
+    {
+        "titre": "Théière 9 cl",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": []
+    },
+    {
+        "titre": "Set bol gong fu 4 cl",
+        "création": "2020-11-09",
+        "catégorie": "Tasse",
+        "description": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl.",
+        "prix": 25.00,
+        "poids": 0.2,
+        "stock": 3,
+        "photos": []
+    },
+    {
+        "titre": "Verseuse ou pichet",
+        "création": "2020-11-08",
+        "catégorie": "Pichet",
+        "description": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl.",
+        "prix": 25.00,
+        "poids": 0.2,
+        "stock": 0,
+        "photos": []
+    },
+    {
+        "titre": "Chawan, bol à thé",
+        "création": "2020-11-08",
+        "catégorie": "Pichet",
+        "description": "Bol à thé destiné au thé battu. Pièce unique, émaillée. Ce bol à thé est accompagné d'une housse de rangement en tissus rembourré et cousue à la main.",
+        "prix": 25.00,
+        "poids": 0.2,
+        "stock": 0,
         "photos": []
     }
 ]
