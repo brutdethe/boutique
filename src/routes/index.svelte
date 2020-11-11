@@ -16,6 +16,13 @@
 
   let category = "Gaiwan";
 
+  const categoriesText = {
+    Gaiwan: "Le gaiwan ou zhong, est l'ustensile idéal",
+    Théière:
+      "Chaque théière que je fabrique, représente une pièce unique dans laquelle je m'implique et je m'applique.",
+    Tasse: "Sans tasse on ne pourrait pas boire le thé."
+  };
+
   items.find = function(query) {
     const properties = Object.getOwnPropertyNames(query);
 
@@ -69,19 +76,19 @@
     <input type="radio" bind:group={category} value="Tasse" />
     Tasse
   </label>
-
   <label>
     <input type="radio" bind:group={category} value="Gaiwan" />
     Gaiwan
   </label>
-
   <label>
     <input type="radio" bind:group={category} value="Théière" />
     Théière
   </label>
-
   <hr />
-  <h2>Liste des produits</h2>
+  <h3>{category}</h3>
+  {categoriesText[category]}
+  <hr />
+  <h3>Liste des produits</h3>
   <table>
     <thead>
       <tr>
@@ -96,6 +103,9 @@
           <td>{item.titre}</td>
           <td>{item.poids} g</td>
           <td>{item.prix} €</td>
+          <td>
+            <a href="">acheter</a>
+          </td>
         </tr>
       {/each}
     </tbody>
