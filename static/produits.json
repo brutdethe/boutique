@@ -2,7 +2,7 @@
     {
         "titre": "Gaiwan 10cl",
         "création": "2020-11-13",
-        "catégorie": "gaiwan",
+        "catégorie": "Gaiwan",
         "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
         "prix": 48.00,
         "poids": 0.3,
@@ -12,7 +12,7 @@
     {
         "titre": "Gaiwan 15cl",
         "création": "2020-11-14",
-        "catégorie": "gaiwan",
+        "catégorie": "Gaiwan",
         "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
         "prix": 48.00,
         "poids": 0.3,
@@ -22,7 +22,7 @@
     {
         "titre": "Gaiwan 20cl",
         "création": "2020-11-12",
-        "catégorie": "gaiwan",
+        "catégorie": "Gaiwan",
         "description": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
         "prix": 48.00,
         "poids": 0.3,
@@ -32,7 +32,7 @@
     {
         "titre": "Théière 100 cl",
         "création": "2020-11-18",
-        "catégorie": "théière",
+        "catégorie": "Théière",
         "description": "Cette théière est recouverte d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
         "prix": 148.00,
         "poids": 0.4,
