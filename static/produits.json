@@ -7,7 +7,7 @@
         "prix": 48.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": []
+        "photos": "1603013464.jpg"
     },
     {
         "titre": "Gaiwan 15cl",
@@ -17,7 +17,7 @@
         "prix": 58.00,
         "poids": 0.3,
         "stock": 2,
-        "photos": []
+        "photos": "1603013563.jpg"
     },
     {
         "titre": "Gaiwan 20cl",
@@ -27,17 +27,37 @@
         "prix": 48.00,
         "poids": 0.3,
         "stock": 0,
-        "photos": []
+        "photos": "1604586887.jpg"
+    },
+    {
+        "titre": "Gaiwan 25cl",
+        "création": "2020-10-14",
+        "catégorie": "Gaiwan",
+        "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "prix": 88.00,
+        "poids": 0.3,
+        "stock": 2,
+        "photos": "1604586943.jpg"
     },
     {
         "titre": "Théière 100 cl",
-        "création": "2020-11-18",
+        "création": "2020-09-18",
         "catégorie": "Théière",
         "description": "Cette théière est recouverte d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
         "prix": 148.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": []
+        "photos": "1576232229.jpg"
+    },
+    {
+        "titre": "Théière 100 cl",
+        "création": "2020-10-10",
+        "catégorie": "Théière",
+        "description": "Cette théière est recouverte d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
+        "prix": 148.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": "1603013987.jpg"
     },
     {
         "titre": "Théière 10 cl",
@@ -46,8 +66,8 @@
         "description": "Il s'agit d'une théière en terre de Moutiers de 10 cl.",
         "prix": 132.00,
         "poids": 0.4,
-        "stock": 2,
-        "photos": []
+        "stock": 0,
+        "photos": "1589286021.jpg"
     },
     {
         "titre": "Théière 9 cl",
@@ -57,7 +77,27 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": []
+        "photos": "1576232039.jpg"
+    },
+    {
+        "titre": "Théière 12 cl",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 12cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": "1589286454.jpg"
+    },
+    {
+        "titre": "bol gong fu 10 cl",
+        "création": "2020-11-09",
+        "catégorie": "Tasse",
+        "description": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl.",
+        "prix": 25.00,
+        "poids": 0.2,
+        "stock": 3,
+        "photos": "1603024758.jpg"
     },
     {
         "titre": "Set bol gong fu 4 cl",
@@ -67,7 +107,7 @@
         "prix": 25.00,
         "poids": 0.2,
         "stock": 3,
-        "photos": []
+        "photos": "1603025225.jpg"
     },
     {
         "titre": "Verseuse ou pichet",
@@ -77,7 +117,7 @@
         "prix": 25.00,
         "poids": 0.2,
         "stock": 0,
-        "photos": []
+        "photos": ""
     },
     {
         "titre": "Chawan, bol à thé",
@@ -87,6 +127,6 @@
         "prix": 25.00,
         "poids": 0.2,
         "stock": 0,
-        "photos": []
+        "photos": ""
     }
 ]

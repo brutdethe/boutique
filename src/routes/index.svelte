@@ -46,12 +46,9 @@
   h1 {
     text-align: center;
     margin: 0 auto;
-  }
-
-  h1 {
     text-transform: uppercase;
     font-weight: 700;
-    margin: 0 0 0.5em 0;
+    color: #666;
   }
 
   @media (min-width: 480px) {
@@ -59,8 +56,18 @@
       font-size: 2em;
     }
   }
+
   hr {
-    color: #ccc;
+    color: #ddd;
+  }
+
+  .card {
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-body {
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 </style>
 
@@ -91,26 +98,31 @@
       <p>{categoriesText[category]}</p>
     </div>
   </div>
-  <h3>Liste des produits</h3>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Titre</th>
-        <th>Poids</th>
-        <th>Prix</th>
-      </tr>
-    </thead>
-    <tbody>
-      {#each items.find({ catégorie: category, stock: { $gt: 0 } }) as item}
-        <tr>
-          <td>{item.titre}</td>
-          <td>{item.poids} g</td>
-          <td>{item.prix} €</td>
-          <td>
-            <a href=".">acheter</a>
-          </td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
+  <div class="docs-demo columns">
+    {#each items.find({ catégorie: category, stock: { $gt: 0 } }) as item}
+      <div class="column col-6 col-xs-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title h5">{item.titre}</div>
+            <div class="card-subtitle text-gray">{category}</div>
+          </div>
+          <div class="card-image">
+            <img
+              class="img-responsive"
+              src="/produits/{item.photos}"
+              alt={item.titre} />
+          </div>
+          <div class="card-body">
+            {item.description} - {item.poids} g -
+            <h3>{item.prix} €</h3>
+          </div>
+          <div class="card-footer">
+            <div class="btn-group btn-group-block">
+              <button class="btn btn-primary">Acheter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {/each}
+  </div>
 </section>
