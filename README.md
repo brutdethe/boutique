@@ -150,3 +150,8 @@ npm install -D @sveltejs/svelte-virtual-list
 ## Bugs and feedback
 
 Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/sveltejs/sapper/issues).
+
+
+## Spectre CSS
+https://dev.to/gevera/befriending-sapper-and-spectre-css-198o
+https://picturepan2.github.io/spectre/layout/hero.html

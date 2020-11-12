@@ -85,11 +85,14 @@
     Théière
   </label>
   <hr />
-  <h3>{category}</h3>
-  {categoriesText[category]}
-  <hr />
+  <div class="hero-sm bg-gray">
+    <div class="hero-body">
+      <h3>{category}</h3>
+      <p>{categoriesText[category]}</p>
+    </div>
+  </div>
   <h3>Liste des produits</h3>
-  <table>
+  <table class="table">
     <thead>
       <tr>
         <th>Titre</th>
