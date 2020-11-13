@@ -7,37 +7,37 @@
         "prix": 48.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl-#17-a.JPG"
+        "photos": "gaiwan-10cl_17-a.jpg"
     },
     {
-        "titre": "Gaiwan 10 cl #18,
+        "titre": "Gaiwan 10 cl #18",
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
         "prix": 52.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl-#18-a.JPG"
+        "photos": "gaiwan-10cl_18-a.jpg"
     },
     {
-        "titre": "Gaiwan 10 cl #21,
+        "titre": "Gaiwan 10 cl #21",
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
         "prix": 54.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl-#21-a.JPG"
+        "photos": "gaiwan-10cl_21-a.jpg"
     },
     {
-        "titre": "Gaiwan 10 cl #22,
+        "titre": "Gaiwan 10 cl #22",
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
         "prix": 54.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl-#22-a.JPG"
+        "photos": "gaiwan-10cl_22-a.jpg"
     },
     {
         "titre": "Petite théière 10cl #42",
@@ -67,7 +67,7 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-9cl-#65-a.JPG"
+        "photos": "theiere-9cl_65-a.jpg"
     },
     {
         "titre": "Petite théière émaillée 9 cl #67",
@@ -77,7 +77,7 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-9cl-#67-a.JPG"
+        "photos": "theiere-9cl_67-a.jpg"
     },
     {
         "titre": "Petite théière émaillée 10 cl #68",
@@ -87,7 +87,7 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-10cl-#68-a.JPG"
+        "photos": "theiere-10cl_68-a.jpg"
     },
     {
         "titre": "Petite théière émaillée 9 cl #70",
@@ -97,7 +97,7 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-9cl-#70-a.JPG"
+        "photos": "theiere-9cl_70-a.jpg"
     },
     {
         "titre": "Petite théière émaillée 14 cl #71",
@@ -107,7 +107,7 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-14cl-#71-a.JPG"
+        "photos": "theiere-14cl_71-a.jpg"
     },
     {
         "titre": "Petite théière 9cl #72",
@@ -117,7 +117,7 @@
         "prix": 132.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-9cl-#72-a.JPG"
+        "photos": "theiere-9cl_72-a.jpg"
     },
     {
         "titre": "Petite théière émaillée 7,5 cl #73",
@@ -127,7 +127,7 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-75ml-#73-a.JPG"
+        "photos": "theiere-75ml_73-a.jpg"
     },
     {
         "titre": "Petite théière émaillée 14 cl #74",
@@ -137,7 +137,7 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-14cl-#74-a.JPG"
+        "photos": "theiere-14cl_74-a.jpg"
     },
     {
         "titre": "bol gong fu 10 cl",
