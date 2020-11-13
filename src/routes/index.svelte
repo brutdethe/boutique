@@ -12,9 +12,9 @@
 </script>
 
 <script>
-  const lang = "fr";
   export let items;
 
+  let lang = "fr";
   let category = "Gaiwan";
 
   const categoriesText = {
@@ -79,6 +79,15 @@
 <h1>La petite boutique de Jé</h1>
 
 <section class="container">
+  <hr />
+  <label>
+    <input type="radio" bind:group={lang} value="en" />
+    English
+  </label>
+  <label>
+    <input type="radio" bind:group={lang} value="fr" />
+    Français
+  </label>
   <hr />
   <label>
     <input type="radio" bind:group={category} value="Tasse" />

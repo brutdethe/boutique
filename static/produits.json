@@ -1,11 +1,13 @@
 [
     {
         "titre": {
+            "en": "Gaiwan 10cl #17",
             "fr": "Gaiwan 10cl #17"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
+            "en": "Artisanal stoneware gaiwan 10cl. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
             "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
         },
         "prix": 48.00,
@@ -15,11 +17,13 @@
     },
     {
         "titre": {
+            "en": "Gaiwan 10 cl #18",
             "fr": "Gaiwan 10 cl #18"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
+            "en": "Artisanal stoneware gaiwan 10cl. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
             "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
         },
         "prix": 52.00,
@@ -29,11 +33,13 @@
     },
     {
         "titre": {
+            "en": "Gaiwan 10 cl #21",
             "fr": "Gaiwan 10 cl #21"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
+            "en": "This gaiwan is covered with an ash-based enamel, which gives it this rather lively aspect.",
             "fr": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
         },
         "prix": 54.00,
@@ -43,11 +49,13 @@
     },
     {
         "titre": {
+            "en": "Gaiwan 10 cl #22",
             "fr": "Gaiwan 10 cl #22"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
+            "en": "Artisanal stoneware gaiwan 10cl. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
             "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
         },
         "prix": 54.00,
@@ -57,11 +65,13 @@
     },
     {
         "titre": {
+            "en": "Small teapot 10cl #42",
             "fr": "Petite théière 10cl #42"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "This is a Treigny earthenware teapot of 10 cl.",
             "fr": "Il s'agit d'une théière en terre de Treigny de 10 cl."
         },
         "prix": 132.00,
@@ -71,11 +81,13 @@
     },
     {
         "titre": {
+            "en": "Small teapot 10cl #44",
             "fr": "Petite théière 10cl #44"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a teapot in Moutiers clay of 10 cl.",
             "fr": "Il s'agit d'une théière en terre de Moutiers de 10 cl."
         },
         "prix": 132.00,
@@ -85,11 +97,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 9 cl #65",
             "fr": "Petite théière émaillée 9 cl #65"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 9cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -99,11 +113,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 9 cl #67",
             "fr": "Petite théière émaillée 9 cl #67"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 9 cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 9 cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -113,11 +129,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 10 cl #68",
             "fr": "Petite théière émaillée 10 cl #68"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 10cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -127,11 +145,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 9 cl #70",
             "fr": "Petite théière émaillée 9 cl #70"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 9cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -141,11 +161,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 14 cl #71",
             "fr": "Petite théière émaillée 14 cl #71"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 14cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -155,11 +177,13 @@
     },
     {
         "titre": {
+            "en": "Small teapot 9cl #72",
             "fr": "Petite théière 9cl #72"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "This is a St Amand earthenware teapot of 9 cl.",
             "fr": "Il s'agit d'une théière en terre de St Amand de 9 cl."
         },
         "prix": 132.00,
@@ -169,11 +193,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 7,5 cl #73",
             "fr": "Petite théière émaillée 7,5 cl #73"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 7.5cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 7,5cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -183,11 +209,13 @@
     },
     {
         "titre": {
+            "en": "Small enamelled teapot 14 cl #74",
             "fr": "Petite théière émaillée 14 cl #74"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
+            "en": "It is a small teapot of 14cl enamelled inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
@@ -197,11 +225,13 @@
     },
     {
         "titre": {
+            "en": "bowl gong fu 10 cl",
             "fr": "bol gong fu 10 cl"
         },
         "création": "2020-11-09",
         "catégorie": "Tasse",
         "description": {
+            "en": "Set consisting of a smell bowl and a drinking bowl of 4 cl.",
             "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
         },
         "prix": 25.00,
@@ -211,11 +241,13 @@
     },
     {
         "titre": {
+            "en": "Set bowl gong fu 4 cl",
             "fr": "Set bol gong fu 4 cl"
         },
         "création": "2020-11-09",
         "catégorie": "Tasse",
         "description": {
+            "en": "Set consisting of a smell bowl and a drinking bowl of 4 cl.",
             "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
         },
         "prix": 25.00,
@@ -225,11 +257,13 @@
     },
     {
         "titre": {
+            "en": "Pourer or pitcher",
             "fr": "Verseuse ou pichet"
         },
         "création": "2020-11-08",
         "catégorie": "Pichet",
         "description": {
+            "en": "",
             "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
         },
         "prix": 25.00,
@@ -239,11 +273,13 @@
     },
     {
         "titre": {
+            "en": "Chawan, tea bowl",
             "fr": "Chawan, bol à thé"
         },
         "création": "2020-11-08",
         "catégorie": "Pichet",
         "description": {
+            "en": "Tea bowl for beaten tea. Unique piece, enamelled. This tea bowl comes with a hand-stitched padded fabric storage cover.",
             "fr": "Bol à thé destiné au thé battu. Pièce unique, émaillée. Ce bol à thé est accompagné d'une housse de rangement en tissus rembourré et cousue à la main."
         },
         "prix": 25.00,
