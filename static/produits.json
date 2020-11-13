@@ -40,52 +40,102 @@
         "photos": "1604586943.jpg"
     },
     {
-        "titre": "Théière 100 cl",
-        "création": "2020-09-18",
+        "titre": "Petite théière 10cl #42",
+        "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Cette théière est recouverte d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
-        "prix": 148.00,
+        "description": "Il s'agit d'une théière en terre de Treigny de 10 cl ",
+        "prix": 132.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "1576232229.jpg"
     },
     {
-        "titre": "Théière 100 cl",
-        "création": "2020-10-10",
+        "titre": "Petite théière 10cl #44",
+        "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Cette théière est recouverte d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
-        "prix": 148.00,
+        "description": "Il s'agit d'une théière en terre de Moutiers de 10 cl ",
+        "prix": 132.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "1603013987.jpg"
     },
     {
-        "titre": "Théière 10 cl",
-        "création": "2020-11-10",
-        "catégorie": "Théière",
-        "description": "Il s'agit d'une théière en terre de Moutiers de 10 cl.",
-        "prix": 132.00,
-        "poids": 0.4,
-        "stock": 0,
-        "photos": "1589286021.jpg"
-    },
-    {
-        "titre": "Théière 9 cl",
+        "titre": "Petite théière émaillée 9 cl #65",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": "1589286021.jpg"
+    },
+    {
+        "titre": "Petite théière émaillée 9 cl #67",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 9 cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "1576232039.jpg"
     },
     {
-        "titre": "Théière 12 cl",
+        "titre": "Petite théière émaillée 10 cl #68",
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 12cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": "Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
         "prix": 142.00,
         "poids": 0.3,
+        "stock": 1,
+        "photos": "1589286454.jpg"
+    },
+    {
+        "titre": "Petite théière émaillée 9 cl #70",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": "1589286454.jpg"
+    },
+    {
+        "titre": "Petite théière émaillée 14 cl #71",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": "1589286454.jpg"
+    },
+    {
+        "titre": "Petite théière 9cl #72",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une théière en terre de St Amand de 9 cl ",
+        "prix": 132.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": "1603013987.jpg"
+    },
+    {
+        "titre": "Petite théière émaillée 7,5 cl #73",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 7,5cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": "1589286454.jpg"
+    },
+    {
+        "titre": "Petite théière émaillée 14 cl #74",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "prix": 142.00,
+        "poids": 0.4,
         "stock": 1,
         "photos": "1589286454.jpg"
     },
