@@ -1,43 +1,43 @@
 [
     {
-        "titre": "Gaiwan 10cl",
-        "création": "2020-11-15",
+        "titre": "Gaiwan 10cl #17",
+        "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
         "prix": 48.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "1603013464.jpg"
+        "photos": ""
     },
     {
-        "titre": "Gaiwan 15cl",
-        "création": "2020-11-14",
+        "titre": "Gaiwan 10 cl #18,
+        "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
-        "prix": 58.00,
+        "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "prix": 52.00,
         "poids": 0.3,
-        "stock": 2,
-        "photos": "1603013563.jpg"
+        "stock": 1,
+        "photos": ""
     },
     {
-        "titre": "Gaiwan 20cl",
-        "création": "2020-11-12",
+        "titre": "Gaiwan 10 cl #21,
+        "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
-        "prix": 48.00,
+        "prix": 54.00,
         "poids": 0.3,
-        "stock": 0,
-        "photos": "1604586887.jpg"
+        "stock": 1,
+        "photos": ""
     },
     {
-        "titre": "Gaiwan 25cl",
-        "création": "2020-10-14",
+        "titre": "Gaiwan 10 cl #22,
+        "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
-        "prix": 88.00,
+        "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "prix": 54.00,
         "poids": 0.3,
-        "stock": 2,
-        "photos": "1604586943.jpg"
+        "stock": 1,
+        "photos": ""
     },
     {
         "titre": "Petite théière 10cl #42",
