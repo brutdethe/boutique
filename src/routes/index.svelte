@@ -12,6 +12,7 @@
 </script>
 
 <script>
+  const lang = "fr";
   export let items;
 
   let category = "Gaiwan";
@@ -103,17 +104,17 @@
       <div class="column col-6 col-xs-12">
         <div class="card">
           <div class="card-header">
-            <div class="card-title h5">{item.titre}</div>
+            <div class="card-title h5">{item.titre[lang]}</div>
             <div class="card-subtitle text-gray">{category}</div>
           </div>
           <div class="card-image">
             <img
               class="img-responsive"
               src="/produits/{item.photos}"
-              alt={item.titre} />
+              alt={item.titre[lang]} />
           </div>
           <div class="card-body">
-            {item.description} - {item.poids} g -
+            {item.description[lang]} - {item.poids} g -
             <h3>{item.prix} €</h3>
           </div>
           <div class="card-footer">

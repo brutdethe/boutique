@@ -1,179 +1,251 @@
 [
     {
-        "titre": "Gaiwan 10cl #17",
+        "titre": {
+            "fr": "Gaiwan 10cl #17"
+        },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "description": {
+            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+        },
         "prix": 48.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "gaiwan-10cl_17-a.jpg"
     },
     {
-        "titre": "Gaiwan 10 cl #18",
+        "titre": {
+            "fr": "Gaiwan 10 cl #18"
+        },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "description": {
+            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+        },
         "prix": 52.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "gaiwan-10cl_18-a.jpg"
     },
     {
-        "titre": "Gaiwan 10 cl #21",
+        "titre": {
+            "fr": "Gaiwan 10 cl #21"
+        },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant.",
+        "description": {
+            "fr": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
+        },
         "prix": 54.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "gaiwan-10cl_21-a.jpg"
     },
     {
-        "titre": "Gaiwan 10 cl #22",
+        "titre": {
+            "fr": "Gaiwan 10 cl #22"
+        },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
-        "description": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé.",
+        "description": {
+            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+        },
         "prix": 54.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "gaiwan-10cl_22-a.jpg"
     },
     {
-        "titre": "Petite théière 10cl #42",
+        "titre": {
+            "fr": "Petite théière 10cl #42"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une théière en terre de Treigny de 10 cl ",
+        "description": {
+            "fr": "Il s'agit d'une théière en terre de Treigny de 10 cl."
+        },
         "prix": 132.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "1576232229.jpg"
     },
     {
-        "titre": "Petite théière 10cl #44",
+        "titre": {
+            "fr": "Petite théière 10cl #44"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une théière en terre de Moutiers de 10 cl ",
+        "description": {
+            "fr": "Il s'agit d'une théière en terre de Moutiers de 10 cl."
+        },
         "prix": 132.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "1603013987.jpg"
     },
     {
-        "titre": "Petite théière émaillée 9 cl #65",
+        "titre": {
+            "fr": "Petite théière émaillée 9 cl #65"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "theiere-9cl_65-a.jpg"
     },
     {
-        "titre": "Petite théière émaillée 9 cl #67",
+        "titre": {
+            "fr": "Petite théière émaillée 9 cl #67"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 9 cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 9 cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "theiere-9cl_67-a.jpg"
     },
     {
-        "titre": "Petite théière émaillée 10 cl #68",
+        "titre": {
+            "fr": "Petite théière émaillée 10 cl #68"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "theiere-10cl_68-a.jpg"
     },
     {
-        "titre": "Petite théière émaillée 9 cl #70",
+        "titre": {
+            "fr": "Petite théière émaillée 9 cl #70"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "theiere-9cl_70-a.jpg"
     },
     {
-        "titre": "Petite théière émaillée 14 cl #71",
+        "titre": {
+            "fr": "Petite théière émaillée 14 cl #71"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "theiere-14cl_71-a.jpg"
     },
     {
-        "titre": "Petite théière 9cl #72",
+        "titre": {
+            "fr": "Petite théière 9cl #72"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une théière en terre de St Amand de 9 cl ",
+        "description": {
+            "fr": "Il s'agit d'une théière en terre de St Amand de 9 cl."
+        },
         "prix": 132.00,
         "poids": 0.3,
         "stock": 1,
         "photos": "theiere-9cl_72-a.jpg"
     },
     {
-        "titre": "Petite théière émaillée 7,5 cl #73",
+        "titre": {
+            "fr": "Petite théière émaillée 7,5 cl #73"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 7,5cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 7,5cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "theiere-75ml_73-a.jpg"
     },
     {
-        "titre": "Petite théière émaillée 14 cl #74",
+        "titre": {
+            "fr": "Petite théière émaillée 14 cl #74"
+        },
         "création": "2020-11-13",
         "catégorie": "Théière",
-        "description": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente.",
+        "description": {
+            "fr": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+        },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": "theiere-14cl_74-a.jpg"
     },
     {
-        "titre": "bol gong fu 10 cl",
+        "titre": {
+            "fr": "bol gong fu 10 cl"
+        },
         "création": "2020-11-09",
         "catégorie": "Tasse",
-        "description": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl.",
+        "description": {
+            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
+        },
         "prix": 25.00,
         "poids": 0.2,
         "stock": 3,
         "photos": "1603024758.jpg"
     },
     {
-        "titre": "Set bol gong fu 4 cl",
+        "titre": {
+            "fr": "Set bol gong fu 4 cl"
+        },
         "création": "2020-11-09",
         "catégorie": "Tasse",
-        "description": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl.",
+        "description": {
+            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
+        },
         "prix": 25.00,
         "poids": 0.2,
         "stock": 3,
         "photos": "1603025225.jpg"
     },
     {
-        "titre": "Verseuse ou pichet",
+        "titre": {
+            "fr": "Verseuse ou pichet"
+        },
         "création": "2020-11-08",
         "catégorie": "Pichet",
-        "description": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl.",
+        "description": {
+            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
+        },
         "prix": 25.00,
         "poids": 0.2,
         "stock": 0,
         "photos": ""
     },
     {
-        "titre": "Chawan, bol à thé",
+        "titre": {
+            "fr": "Chawan, bol à thé"
+        },
         "création": "2020-11-08",
         "catégorie": "Pichet",
-        "description": "Bol à thé destiné au thé battu. Pièce unique, émaillée. Ce bol à thé est accompagné d'une housse de rangement en tissus rembourré et cousue à la main.",
+        "description": {
+            "fr": "Bol à thé destiné au thé battu. Pièce unique, émaillée. Ce bol à thé est accompagné d'une housse de rangement en tissus rembourré et cousue à la main."
+        },
         "prix": 25.00,
         "poids": 0.2,
         "stock": 0,
