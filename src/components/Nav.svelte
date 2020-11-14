@@ -1,5 +1,6 @@
 <script>
-  import { lang } from "../stores.js";
+  import { language } from "../stores.js";
+  import Language from "../components/Language.svelte";
 
   export let segment;
 
@@ -13,6 +14,13 @@
     font-size: 2.3rem;
     font-weight: 700;
     color: #777;
+    line-height: 4rem;
+  }
+
+  .language {
+    font-size: 1.5rem;
+    color: #777;
+    font-weight: 700;
     line-height: 4rem;
   }
 
@@ -71,5 +79,8 @@
       </a>
     </li>
   </ul>
-  <h1 class="title column col-6">{dict.title[$lang]}</h1>
+  <h1 class="title column col-6">{dict.title[$language]}</h1>
+  <div class="language">
+    <Language />
+  </div>
 </nav>
