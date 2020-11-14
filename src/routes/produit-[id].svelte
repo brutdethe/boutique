@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-  <title>{item.category - item.titre}</title>
+  <title>{item.titre[$language]}</title>
 </svelte:head>
 
 <h1>{item.titre[$language]} #{item.id}</h1>
