@@ -41,6 +41,18 @@
       Tasse: {
         en: "Without a cup we couldn't drink tea.",
         fr: "Sans tasse on ne pourrait pas boire le thé."
+      },
+      Shiboridashi: {
+        en:
+          'Shiboridashi are Japanese infusers, mainly intended for the infusion of "gyokuro" (green tea particularly rich in taste).',
+        fr:
+          "Les shiboridashi sont des infuseurs japonais, principalement destinés à l'infusion des « gyokuro » (thé vert particulièrement riche en goût.)"
+      },
+      Kyusu: {
+        en:
+          "If I stop at the shape of this teapot, there are no apparent difficulties in its realization. That said, there are many subtleties that make this teapot a particularly demanding piece.",
+        fr:
+          "Si je m’arrête à la forme de cette théière, il n'y a pas de difficultés apparentes dans sa réalisation. Ceci dit, cette pièce renferme de multiples subtilités, qui font de cette théière une pièce particulièrement exigeante."
       }
     }
   };
@@ -91,6 +103,15 @@
     padding: 0.8rem;
     margin-bottom: 0.8rem;
   }
+
+  .description {
+    height: 10rem;
+  }
+
+  .price {
+    padding-top: 0.8rem;
+    text-align: right;
+  }
 </style>
 
 <svelte:head>
@@ -122,6 +143,14 @@
     <input type="radio" bind:group={category} value="Théière" />
     Théière
   </label>
+  <label>
+    <input type="radio" bind:group={category} value="Shiboridashi" />
+    Shiboridashi
+  </label>
+  <label>
+    <input type="radio" bind:group={category} value="Kyusu" />
+    Kyusu
+  </label>
   <hr />
   <div class="hero-sm bg-gray">
     <div class="hero-body">
@@ -129,10 +158,10 @@
       <p>{dict.categoriesText[category][lang]}</p>
     </div>
   </div>
-  <div class="docs-demo columns">
+  <div class="columns">
     {#each items.find({ catégorie: category, stock: { $gt: 0 } }) as item}
       <div class="column col-6 col-xs-12">
-        <div class="card">
+        <article class="card">
           <div class="card-header">
             <div class="card-title h5">{item.titre[lang]}</div>
             <div class="card-subtitle text-gray">{category}</div>
@@ -144,15 +173,17 @@
               alt={item.titre[lang]} />
           </div>
           <div class="card-body">
-            {item.description[lang]} - {item.poids} g -
-            <h3>{item.prix} {dict.currency[lang]}</h3>
+            <p class="description">
+              {item.description[lang]} - {item.poids} g -
+            </p>
+            <h3 class="price">{item.prix} {dict.currency[lang]}</h3>
           </div>
           <div class="card-footer">
             <div class="btn-group btn-group-block">
               <button class="btn btn-primary">{dict.buy[lang]}</button>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     {/each}
   </div>
