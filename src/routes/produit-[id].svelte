@@ -17,6 +17,13 @@
   import { language, category } from "../stores.js";
 
   export let item;
+
+  const dict = {
+    buy: {
+      en: "buy",
+      fr: "acheter"
+    }
+  };
 </script>
 
 <svelte:head>
@@ -28,10 +35,15 @@
   <li>description: {item.description[$language]}</li>
   <li>prix: {item.prix}</li>
   <li>poids: {item.poids}</li>
+  <li>stock: {item.stock}</li>
+  {#if item.stock}
+    <li>
+      <button class="buy btn btn-primary">{dict.buy[$language]}</button>
+    </li>
+  {/if}
   {#each item.photos as photo}
     <li>
       <img src="/produits/{photo}" alt={item.titre[$language]} />
     </li>
   {/each}
-
 </ul>
