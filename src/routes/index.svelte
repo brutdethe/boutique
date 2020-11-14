@@ -85,9 +85,19 @@
     color: #666;
   }
 
+  .description {
+    height: 10rem;
+  }
+
   @media (min-width: 480px) {
     h1 {
       font-size: 2em;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .description {
+      height: 6rem;
     }
   }
 
@@ -96,16 +106,12 @@
   }
 
   .card {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   .hero-body {
     padding: 0.8rem;
     margin-bottom: 0.8rem;
-  }
-
-  .description {
-    height: 10rem;
   }
 
   .price {
@@ -118,9 +124,8 @@
   <title>La petite boutique de Jé</title>
 </svelte:head>
 
-<h1>{dict.title[lang]}</h1>
-
-<section class="container">
+<header>
+  <h1>{dict.title[lang]}</h1>
   <hr />
   <label>
     <input type="radio" bind:group={lang} value="en" />
@@ -152,7 +157,9 @@
     Kyusu
   </label>
   <hr />
-  <div class="hero-sm bg-gray">
+</header>
+<section>
+  <div class="hero-sm bg-dark">
     <div class="hero-body">
       <h3>{category}</h3>
       <p>{dict.categoriesText[category][lang]}</p>
@@ -160,7 +167,7 @@
   </div>
   <div class="columns">
     {#each items.find({ catégorie: category, stock: { $gt: 0 } }) as item}
-      <div class="column col-6 col-xs-12">
+      <div class="column col-4 col-xs-12">
         <article class="card">
           <div class="card-header">
             <div class="card-title h5">{item.titre[lang]}</div>
