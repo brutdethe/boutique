@@ -28,5 +28,10 @@
   <li>description: {item.description[$language]}</li>
   <li>prix: {item.prix}</li>
   <li>poids: {item.poids}</li>
-  <li>photos: {item.photos}</li>
+  {#each item.photos as photo}
+    <li>
+      <img src="/produits/{photo}" alt={item.titre[$language]} />
+    </li>
+  {/each}
+
 </ul>

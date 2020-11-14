@@ -98,7 +98,7 @@
           <div class="card-image">
             <img
               class="img-responsive"
-              src="/produits/{item.photos}"
+              src="/produits/{item.photos[0]}"
               alt="{item.titre[$language]} #{item.id}" />
           </div>
           <div class="card-body">

@@ -14,7 +14,11 @@
         "prix": 48.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl_17-a.jpg"
+        "photos": [
+            "gaiwan-10cl_17-a.jpg",
+            "gaiwan-10cl_17-b.jpg",
+            "gaiwan-10cl_17-c.jpg"
+        ]
     },
     {
         "id": "18",
@@ -31,7 +35,11 @@
         "prix": 52.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl_18-a.jpg"
+        "photos": [
+            "gaiwan-10cl_18-a.jpg",
+            "gaiwan-10cl_18-b.jpg",
+            "gaiwan-10cl_18-c.jpg"
+        ]
     },
     {
         "id": "21",
@@ -48,7 +56,12 @@
         "prix": 54.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl_21-a.jpg"
+        "photos": [
+            "gaiwan-10cl_21-a.jpg",
+            "gaiwan-10cl_21-b.jpg",
+            "gaiwan-10cl_21-c.jpg",
+            "gaiwan-10cl_21-c.jpg"
+        ]
     },
     {
         "id": "22",
@@ -65,7 +78,11 @@
         "prix": 54.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "gaiwan-10cl_22-a.jpg"
+        "photos": [
+            "gaiwan-10cl_22-a.jpg",
+            "gaiwan-10cl_22-b.jpg",
+            "gaiwan-10cl_22-c.jpg"
+        ]
     },
     {
         "id": "42",
@@ -82,7 +99,9 @@
         "prix": 132.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "1576232229.jpg"
+        "photos": [
+            "1576232229.jpg"
+        ]
     },
     {
         "id": "44",
@@ -99,7 +118,9 @@
         "prix": 132.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "1603013987.jpg"
+        "photos": [
+            "1603013987.jpg"
+        ]
     },
     {
         "id": "65",
@@ -116,7 +137,12 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-9cl_65-a.jpg"
+        "photos": [
+            "theiere-9cl_65-a.jpg",
+            "theiere-9cl_65-b.jpg",
+            "theiere-9cl_65-c.jpg",
+            "theiere-9cl_65-d.jpg"
+        ]
     },
     {
         "id": "67",
@@ -133,7 +159,12 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-9cl_67-a.jpg"
+        "photos": [
+            "theiere-9cl_67-a.jpg",
+            "theiere-9cl_67-b.jpg",
+            "theiere-9cl_67-c.jpg",
+            "theiere-9cl_67-d.jpg"
+        ]
     },
     {
         "id": "68",
@@ -150,7 +181,12 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-10cl_68-a.jpg"
+        "photos": [
+            "theiere-10cl_68-a.jpg",
+            "theiere-10cl_68-b.jpg",
+            "theiere-10cl_68-c.jpg",
+            "theiere-10cl_68-d.jpg"
+        ]
     },
     {
         "id": "70",
@@ -167,7 +203,11 @@
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-9cl_70-a.jpg"
+        "photos": [
+            "theiere-9cl_70-a.jpg",
+            "theiere-9cl_70-b.jpg",
+            "theiere-9cl_70-c.jpg"
+        ]
     },
     {
         "id": "71",
@@ -184,7 +224,12 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-14cl_71-a.jpg"
+        "photos": [
+            "theiere-14cl_71-a.jpg",
+            "theiere-14cl_71-b.jpg",
+            "theiere-14cl_71-c.jpg",
+            "theiere-14cl_71-d.jpg"
+        ]
     },
     {
         "id": "72",
@@ -201,7 +246,12 @@
         "prix": 132.00,
         "poids": 0.3,
         "stock": 1,
-        "photos": "theiere-9cl_72-a.jpg"
+        "photos": [
+            "theiere-9cl_72-a.jpg",
+            "theiere-9cl_72-b.jpg",
+            "theiere-9cl_72-c.jpg",
+            "theiere-9cl_72-d.jpg"
+        ]
     },
     {
         "id": "73",
@@ -218,7 +268,12 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-75ml_73-a.jpg"
+        "photos": [
+            "theiere-14cl_73-a.jpg",
+            "theiere-14cl_73-b.jpg",
+            "theiere-14cl_73-c.jpg",
+            "theiere-14cl_73-d.jpg"
+        ]
     },
     {
         "id": "74",
@@ -235,7 +290,12 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": "theiere-14cl_74-a.jpg"
+        "photos": [
+            "theiere-14cl_74-a.jpg",
+            "theiere-14cl_74-b.jpg",
+            "theiere-14cl_74-c.jpg",
+            "theiere-14cl_74-d.jpg"
+        ]
     },
     {
         "id": "9",
@@ -252,7 +312,9 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "11",
@@ -269,7 +331,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "15",
@@ -286,7 +350,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "16",
@@ -303,7 +369,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 0,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "17",
@@ -320,7 +388,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "18",
@@ -337,7 +407,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "19",
@@ -354,7 +426,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "20",
@@ -371,7 +445,9 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "21",
@@ -388,7 +464,9 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "18",
@@ -405,7 +483,9 @@
         "prix": 76.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "19",
@@ -422,7 +502,9 @@
         "prix": 76.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "21",
@@ -439,7 +521,9 @@
         "prix": 76.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "22",
@@ -456,7 +540,9 @@
         "prix": 76.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "28",
@@ -473,7 +559,9 @@
         "prix": 56.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     },
     {
         "id": "29",
@@ -490,6 +578,8 @@
         "prix": 56.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
+        "photos": [
+            ""
+        ]
     }
 ]
