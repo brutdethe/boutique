@@ -12,48 +12,22 @@
 </script>
 
 <script>
-  import { lang } from "../stores.js";
-  import Language from "../components/Language.svelte";
+  import { language, category } from "../stores.js";
+  import Categories from "../components/Categories.svelte";
   export let items;
-
-  let category = "Gaiwan";
 
   const dict = {
     buy: {
       en: "buy",
       fr: "acheter"
     },
+    detail: {
+      en: "detail",
+      fr: "détail"
+    },
     currency: {
       en: "$",
       fr: "€"
-    },
-    categoriesText: {
-      Gaiwan: {
-        en: "The gaiwan or zhong is the ideal utensil.",
-        fr: "Le gaiwan ou zhong, est l'ustensile idéal"
-      },
-      Théière: {
-        en:
-          "Each teapot I make represents a unique piece in which I am involved and apply myself.",
-        fr:
-          "Chaque théière que je fabrique, représente une pièce unique dans laquelle je m'implique et je m'applique."
-      },
-      Tasse: {
-        en: "Without a cup we couldn't drink tea.",
-        fr: "Sans tasse on ne pourrait pas boire le thé."
-      },
-      Shiboridashi: {
-        en:
-          'Shiboridashi are Japanese infusers, mainly intended for the infusion of "gyokuro" (green tea particularly rich in taste).',
-        fr:
-          "Les shiboridashi sont des infuseurs japonais, principalement destinés à l'infusion des « gyokuro » (thé vert particulièrement riche en goût.)"
-      },
-      Kyusu: {
-        en:
-          "If I stop at the shape of this teapot, there are no apparent difficulties in its realization. That said, there are many subtleties that make this teapot a particularly demanding piece.",
-        fr:
-          "Si je m’arrête à la forme de cette théière, il n'y a pas de difficultés apparentes dans sa réalisation. Ceci dit, cette pièce renferme de multiples subtilités, qui font de cette théière une pièce particulièrement exigeante."
-      }
     }
   };
 
@@ -74,6 +48,10 @@
       }, {})
     ).sort((a, b) => new Date(b.création) - new Date(a.création));
   };
+
+  function detailClick() {
+    alert("no more alerts");
+  }
 </script>
 
 <style>
@@ -87,23 +65,15 @@
     }
   }
 
-  hr {
-    color: #ddd;
-  }
-
   .card {
     margin-bottom: 1rem;
     box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   }
 
-  .hero-body {
-    padding: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-
   .price {
     padding-top: 0.8rem;
     text-align: right;
+    font-weight: 700;
   }
 </style>
 
@@ -112,59 +82,37 @@
 </svelte:head>
 
 <header>
-  <Language />
-  <label>
-    <input type="radio" bind:group={category} value="Tasse" />
-    Tasse
-  </label>
-  <label>
-    <input type="radio" bind:group={category} value="Gaiwan" />
-    Gaiwan
-  </label>
-  <label>
-    <input type="radio" bind:group={category} value="Théière" />
-    Théière
-  </label>
-  <label>
-    <input type="radio" bind:group={category} value="Shiboridashi" />
-    Shiboridashi
-  </label>
-  <label>
-    <input type="radio" bind:group={category} value="Kyusu" />
-    Kyusu
-  </label>
-  <hr />
+  <Categories />
 </header>
 <section>
-  <div class="hero-sm bg-dark">
-    <div class="hero-body">
-      <h3>{category}</h3>
-      <p>{dict.categoriesText[category][$lang]}</p>
-    </div>
-  </div>
   <div class="columns">
-    {#each items.find({ catégorie: category, stock: { $gt: 0 } }) as item}
+    {#each items.find({ catégorie: $category, stock: { $gt: 0 } }) as item}
       <div class="column col-4 col-xs-12">
         <article class="card">
           <div class="card-header">
-            <div class="card-title h5">{item.titre[$lang]}</div>
-            <div class="card-subtitle text-gray">{category}</div>
+            <div class="card-title h5">{item.titre[$language]}</div>
+            <div class="card-subtitle text-gray">{$category}</div>
           </div>
           <div class="card-image">
             <img
               class="img-responsive"
               src="/produits/{item.photos}"
-              alt={item.titre[$lang]} />
+              alt={item.titre[$language]} />
           </div>
           <div class="card-body">
             <p class="description">
-              {item.description[$lang]} - {item.poids} g -
+              {item.description[$language]} - {item.poids} g -
             </p>
-            <h3 class="price">{item.prix} {dict.currency[$lang]}</h3>
+            <h3 class="price">{item.prix} {dict.currency[$language]}</h3>
           </div>
           <div class="card-footer">
             <div class="btn-group btn-group-block">
-              <button class="btn btn-primary">{dict.buy[$lang]}</button>
+              <button
+                class="detail btn btn-secondary"
+                on:click|once={detailClick}>
+                {dict.detail[$language]}
+              </button>
+              <button class="buy btn btn-primary">{dict.buy[$language]}</button>
             </div>
           </div>
         </article>
