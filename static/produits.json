@@ -1,8 +1,9 @@
 [
     {
+        "id": "17",
         "titre": {
-            "en": "Gaiwan 10cl #17",
-            "fr": "Gaiwan 10cl #17"
+            "en": "Gaiwan 10cl",
+            "fr": "Gaiwan 10cl"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
@@ -16,9 +17,10 @@
         "photos": "gaiwan-10cl_17-a.jpg"
     },
     {
+        "id": "18",
         "titre": {
-            "en": "Gaiwan 10 cl #18",
-            "fr": "Gaiwan 10 cl #18"
+            "en": "Gaiwan 10 cl",
+            "fr": "Gaiwan 10 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
@@ -32,9 +34,10 @@
         "photos": "gaiwan-10cl_18-a.jpg"
     },
     {
+        "id": "21",
         "titre": {
-            "en": "Gaiwan 10 cl #21",
-            "fr": "Gaiwan 10 cl #21"
+            "en": "Gaiwan 10 cl",
+            "fr": "Gaiwan 10 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
@@ -48,9 +51,10 @@
         "photos": "gaiwan-10cl_21-a.jpg"
     },
     {
+        "id": "22",
         "titre": {
-            "en": "Gaiwan 10 cl #22",
-            "fr": "Gaiwan 10 cl #22"
+            "en": "Gaiwan 10 cl",
+            "fr": "Gaiwan 10 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
@@ -64,9 +68,10 @@
         "photos": "gaiwan-10cl_22-a.jpg"
     },
     {
+        "id": "42",
         "titre": {
-            "en": "Small teapot 10cl #42",
-            "fr": "Petite théière 10cl #42"
+            "en": "Small teapot 10cl",
+            "fr": "Petite théière 10cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -80,9 +85,10 @@
         "photos": "1576232229.jpg"
     },
     {
+        "id": "44",
         "titre": {
-            "en": "Small teapot 10cl #44",
-            "fr": "Petite théière 10cl #44"
+            "en": "Small teapot 10cl",
+            "fr": "Petite théière 10cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -96,9 +102,10 @@
         "photos": "1603013987.jpg"
     },
     {
+        "id": "65",
         "titre": {
-            "en": "Small enamelled teapot 9 cl #65",
-            "fr": "Petite théière émaillée 9 cl #65"
+            "en": "Small enamelled teapot 9 cl",
+            "fr": "Petite théière émaillée 9 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -112,9 +119,10 @@
         "photos": "theiere-9cl_65-a.jpg"
     },
     {
+        "id": "67",
         "titre": {
-            "en": "Small enamelled teapot 9 cl #67",
-            "fr": "Petite théière émaillée 9 cl #67"
+            "en": "Small enamelled teapot 9 cl",
+            "fr": "Petite théière émaillée 9 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -128,9 +136,10 @@
         "photos": "theiere-9cl_67-a.jpg"
     },
     {
+        "id": "68",
         "titre": {
-            "en": "Small enamelled teapot 10 cl #68",
-            "fr": "Petite théière émaillée 10 cl #68"
+            "en": "Small enamelled teapot 10 cl",
+            "fr": "Petite théière émaillée 10 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -144,9 +153,10 @@
         "photos": "theiere-10cl_68-a.jpg"
     },
     {
+        "id": "70",
         "titre": {
-            "en": "Small enamelled teapot 9 cl #70",
-            "fr": "Petite théière émaillée 9 cl #70"
+            "en": "Small enamelled teapot 9 cl",
+            "fr": "Petite théière émaillée 9 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -160,9 +170,10 @@
         "photos": "theiere-9cl_70-a.jpg"
     },
     {
+        "id": "71",
         "titre": {
-            "en": "Small enamelled teapot 14 cl #71",
-            "fr": "Petite théière émaillée 14 cl #71"
+            "en": "Small enamelled teapot 14 cl",
+            "fr": "Petite théière émaillée 14 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -176,9 +187,10 @@
         "photos": "theiere-14cl_71-a.jpg"
     },
     {
+        "id": "72",
         "titre": {
-            "en": "Small teapot 9cl #72",
-            "fr": "Petite théière 9cl #72"
+            "en": "Small teapot 9cl",
+            "fr": "Petite théière 9cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -192,9 +204,10 @@
         "photos": "theiere-9cl_72-a.jpg"
     },
     {
+        "id": "73",
         "titre": {
-            "en": "Small enamelled teapot 7,5 cl #73",
-            "fr": "Petite théière émaillée 7,5 cl #73"
+            "en": "Small enamelled teapot 7,5 cl",
+            "fr": "Petite théière émaillée 7,5 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -208,9 +221,10 @@
         "photos": "theiere-75ml_73-a.jpg"
     },
     {
+        "id": "74",
         "titre": {
-            "en": "Small enamelled teapot 14 cl #74",
-            "fr": "Petite théière émaillée 14 cl #74"
+            "en": "Small enamelled teapot 14 cl",
+            "fr": "Petite théière émaillée 14 cl"
         },
         "création": "2020-11-13",
         "catégorie": "Théière",
@@ -224,9 +238,10 @@
         "photos": "theiere-14cl_74-a.jpg"
     },
     {
+        "id": "9",
         "titre": {
-            "en": "Kyusu 20cl #9",
-            "fr": "Kyusu 20cl #9"
+            "en": "Kyusu 20cl",
+            "fr": "Kyusu 20cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -240,9 +255,10 @@
         "photos": ""
     },
     {
+        "id": "11",
         "titre": {
-            "en": "Kyusu 12cl #11",
-            "fr": "Kyusu 12cl #11"
+            "en": "Kyusu 12cl",
+            "fr": "Kyusu 12cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -256,9 +272,10 @@
         "photos": ""
     },
     {
+        "id": "15",
         "titre": {
-            "en": "Kyusu 12cl #15",
-            "fr": "Kyusu 12cl #15"
+            "en": "Kyusu 12cl",
+            "fr": "Kyusu 12cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -272,9 +289,10 @@
         "photos": ""
     },
     {
+        "id": "16",
         "titre": {
-            "en": "Kyusu 13cl #16",
-            "fr": "Kyusu 13cl #16"
+            "en": "Kyusu 13cl",
+            "fr": "Kyusu 13cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -288,9 +306,10 @@
         "photos": ""
     },
     {
+        "id": "17",
         "titre": {
-            "en": "Kyusu 22cl #17",
-            "fr": "Kyusu 22cl #17"
+            "en": "Kyusu 22cl",
+            "fr": "Kyusu 22cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -304,9 +323,10 @@
         "photos": ""
     },
     {
+        "id": "18",
         "titre": {
-            "en": "Kyusu 13cl #18",
-            "fr": "Kyusu 13cl #18"
+            "en": "Kyusu 13cl",
+            "fr": "Kyusu 13cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -320,9 +340,10 @@
         "photos": ""
     },
     {
+        "id": "19",
         "titre": {
-            "en": "Kyusu 13cl #19",
-            "fr": "Kyusu 13cl #19"
+            "en": "Kyusu 13cl",
+            "fr": "Kyusu 13cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -336,9 +357,10 @@
         "photos": ""
     },
     {
+        "id": "20",
         "titre": {
-            "en": "Kyusu 12cl #20",
-            "fr": "Kyusu 13cl #20"
+            "en": "Kyusu 12cl",
+            "fr": "Kyusu 13cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -352,9 +374,10 @@
         "photos": ""
     },
     {
+        "id": "21",
         "titre": {
-            "en": "Kyusu 20cl #21",
-            "fr": "Kyusu 20cl #21"
+            "en": "Kyusu 20cl",
+            "fr": "Kyusu 20cl"
         },
         "création": "2020-11-14",
         "catégorie": "Kyusu",
@@ -368,9 +391,10 @@
         "photos": ""
     },
     {
+        "id": "18",
         "titre": {
-            "en": "Shiboridashi 9cl #18",
-            "fr": "Shiboridashi 9cl #18"
+            "en": "Shiboridashi 9cl",
+            "fr": "Shiboridashi 9cl"
         },
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
@@ -384,9 +408,10 @@
         "photos": ""
     },
     {
+        "id": "19",
         "titre": {
-            "en": "Shiboridashi 9cl #19",
-            "fr": "Shiboridashi 9cl #19"
+            "en": "Shiboridashi 9cl",
+            "fr": "Shiboridashi 9cl"
         },
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
@@ -400,9 +425,10 @@
         "photos": ""
     },
     {
+        "id": "21",
         "titre": {
-            "en": "Shiboridashi 8,5cl #21",
-            "fr": "Shiboridashi 8,5cl #21"
+            "en": "Shiboridashi 8,5cl",
+            "fr": "Shiboridashi 8,5cl"
         },
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
@@ -416,9 +442,10 @@
         "photos": ""
     },
     {
+        "id": "22",
         "titre": {
-            "en": "Shiboridashi 8,5cl #22",
-            "fr": "Shiboridashi 8,5cl #22"
+            "en": "Shiboridashi 8,5cl",
+            "fr": "Shiboridashi 8,5cl"
         },
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
@@ -432,9 +459,10 @@
         "photos": ""
     },
     {
+        "id": "28",
         "titre": {
-            "en": "Shiboridashi 8cl #28",
-            "fr": "Shiboridashi 8cl #28"
+            "en": "Shiboridashi 8cl",
+            "fr": "Shiboridashi 8cl"
         },
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
@@ -448,9 +476,10 @@
         "photos": ""
     },
     {
+        "id": "29",
         "titre": {
-            "en": "Shiboridashi 3,5cl #29",
-            "fr": "Shiboridashi 3,5cl #29"
+            "en": "Shiboridashi 3,5cl",
+            "fr": "Shiboridashi 3,5cl"
         },
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
@@ -461,70 +490,6 @@
         "prix": 56.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": ""
-    },
-    {
-        "titre": {
-            "en": "bowl gong fu 10 cl",
-            "fr": "bol gong fu 10 cl"
-        },
-        "création": "2020-11-09",
-        "catégorie": "Tasse",
-        "description": {
-            "en": "Set consisting of a smell bowl and a drinking bowl of 4 cl.",
-            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
-        },
-        "prix": 25.00,
-        "poids": 0.2,
-        "stock": 3,
-        "photos": "1603024758.jpg"
-    },
-    {
-        "titre": {
-            "en": "Set bowl gong fu 4 cl",
-            "fr": "Set bol gong fu 4 cl"
-        },
-        "création": "2020-11-09",
-        "catégorie": "Tasse",
-        "description": {
-            "en": "Set consisting of a smell bowl and a drinking bowl of 4 cl.",
-            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
-        },
-        "prix": 25.00,
-        "poids": 0.2,
-        "stock": 3,
-        "photos": "1603025225.jpg"
-    },
-    {
-        "titre": {
-            "en": "Pourer or pitcher",
-            "fr": "Verseuse ou pichet"
-        },
-        "création": "2020-11-08",
-        "catégorie": "Pichet",
-        "description": {
-            "en": "",
-            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl."
-        },
-        "prix": 25.00,
-        "poids": 0.2,
-        "stock": 0,
-        "photos": ""
-    },
-    {
-        "titre": {
-            "en": "Chawan, tea bowl",
-            "fr": "Chawan, bol à thé"
-        },
-        "création": "2020-11-08",
-        "catégorie": "Pichet",
-        "description": {
-            "en": "Tea bowl for beaten tea. Unique piece, enamelled. This tea bowl comes with a hand-stitched padded fabric storage cover.",
-            "fr": "Bol à thé destiné au thé battu. Pièce unique, émaillée. Ce bol à thé est accompagné d'une housse de rangement en tissus rembourré et cousue à la main."
-        },
-        "prix": 25.00,
-        "poids": 0.2,
-        "stock": 0,
         "photos": ""
     }
 ]

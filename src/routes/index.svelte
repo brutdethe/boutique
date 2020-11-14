@@ -12,6 +12,7 @@
 </script>
 
 <script>
+  import { goto } from "@sapper/app";
   import { language, category } from "../stores.js";
   import Categories from "../components/Categories.svelte";
   export let items;
@@ -49,8 +50,9 @@
     ).sort((a, b) => new Date(b.création) - new Date(a.création));
   };
 
-  function detailClick() {
-    alert("no more alerts");
+  function detailClick(evt) {
+    const id = evt.currentTarget.getAttribute("data-product");
+    goto(`/produit-${id}`);
   }
 </script>
 
@@ -90,14 +92,14 @@
       <div class="column col-4 col-xs-12">
         <article class="card">
           <div class="card-header">
-            <div class="card-title h5">{item.titre[$language]}</div>
+            <div class="card-title h5">{item.titre[$language]} #{item.id}</div>
             <div class="card-subtitle text-gray">{$category}</div>
           </div>
           <div class="card-image">
             <img
               class="img-responsive"
               src="/produits/{item.photos}"
-              alt={item.titre[$language]} />
+              alt="{item.titre[$language]} #{item.id}" />
           </div>
           <div class="card-body">
             <p class="description">
@@ -109,7 +111,8 @@
             <div class="btn-group btn-group-block">
               <button
                 class="detail btn btn-secondary"
-                on:click|once={detailClick}>
+                on:click|once={detailClick}
+                data-product={item.id}>
                 {dict.detail[$language]}
               </button>
               <button class="buy btn btn-primary">{dict.buy[$language]}</button>
