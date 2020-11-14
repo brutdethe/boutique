@@ -12,13 +12,13 @@
 </script>
 
 <script>
+  import { lang } from "../stores.js";
+  import Language from "../components/Language.svelte";
   export let items;
 
-  let lang = "fr";
   let category = "Gaiwan";
 
   const dict = {
-    title: { en: "Jé's little store", fr: "La petite boutique de Jé" },
     buy: {
       en: "buy",
       fr: "acheter"
@@ -77,22 +77,8 @@
 </script>
 
 <style>
-  h1 {
-    text-align: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #666;
-  }
-
   .description {
     height: 10rem;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 2em;
-    }
   }
 
   @media (min-width: 1400px) {
@@ -126,17 +112,7 @@
 </svelte:head>
 
 <header>
-  <h1>{dict.title[lang]}</h1>
-  <hr />
-  <label>
-    <input type="radio" bind:group={lang} value="en" />
-    English
-  </label>
-  <label>
-    <input type="radio" bind:group={lang} value="fr" />
-    Français
-  </label>
-  <hr />
+  <Language />
   <label>
     <input type="radio" bind:group={category} value="Tasse" />
     Tasse
@@ -163,7 +139,7 @@
   <div class="hero-sm bg-dark">
     <div class="hero-body">
       <h3>{category}</h3>
-      <p>{dict.categoriesText[category][lang]}</p>
+      <p>{dict.categoriesText[category][$lang]}</p>
     </div>
   </div>
   <div class="columns">
@@ -171,24 +147,24 @@
       <div class="column col-4 col-xs-12">
         <article class="card">
           <div class="card-header">
-            <div class="card-title h5">{item.titre[lang]}</div>
+            <div class="card-title h5">{item.titre[$lang]}</div>
             <div class="card-subtitle text-gray">{category}</div>
           </div>
           <div class="card-image">
             <img
               class="img-responsive"
               src="/produits/{item.photos}"
-              alt={item.titre[lang]} />
+              alt={item.titre[$lang]} />
           </div>
           <div class="card-body">
             <p class="description">
-              {item.description[lang]} - {item.poids} g -
+              {item.description[$lang]} - {item.poids} g -
             </p>
-            <h3 class="price">{item.prix} {dict.currency[lang]}</h3>
+            <h3 class="price">{item.prix} {dict.currency[$lang]}</h3>
           </div>
           <div class="card-footer">
             <div class="btn-group btn-group-block">
-              <button class="btn btn-primary">{dict.buy[lang]}</button>
+              <button class="btn btn-primary">{dict.buy[$lang]}</button>
             </div>
           </div>
         </article>

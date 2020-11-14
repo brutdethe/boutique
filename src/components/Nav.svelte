@@ -1,8 +1,21 @@
 <script>
+  import { lang } from "../stores.js";
+
   export let segment;
+
+  const dict = {
+    title: { en: "Jé's little store", fr: "La petite boutique de Jé" }
+  };
 </script>
 
 <style>
+  .title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #777;
+    line-height: 4rem;
+  }
+
   nav {
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
@@ -48,8 +61,8 @@
   }
 </style>
 
-<nav>
-  <ul>
+<nav class="columns">
+  <ul class="column col-4">
     <li>
       <a
         aria-current={segment === undefined ? 'page' : undefined}
@@ -58,4 +71,5 @@
       </a>
     </li>
   </ul>
+  <h1 class="title column col-6">{dict.title[$lang]}</h1>
 </nav>
