@@ -79,7 +79,9 @@
       </a>
     </li>
   </ul>
-  <h1 class="title column col-6">{dict.title[$language]}</h1>
+  <h1 class="title column col-6">
+    <a href="/">{dict.title[$language]}</a>
+  </h1>
   <div class="language">
     <Language />
   </div>
