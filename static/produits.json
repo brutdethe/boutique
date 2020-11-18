@@ -1,6 +1,6 @@
 [
     {
-        "id": "17",
+        "id": "ga17",
         "titre": {
             "en": "Gaiwan 10cl",
             "fr": "Gaiwan 10cl"
@@ -21,7 +21,7 @@
         ]
     },
     {
-        "id": "18",
+        "id": "ga18",
         "titre": {
             "en": "Gaiwan 10 cl",
             "fr": "Gaiwan 10 cl"
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "id": "21",
+        "id": "ga21",
         "titre": {
             "en": "Gaiwan 10 cl",
             "fr": "Gaiwan 10 cl"
@@ -64,7 +64,7 @@
         ]
     },
     {
-        "id": "22",
+        "id": "ga22",
         "titre": {
             "en": "Gaiwan 10 cl",
             "fr": "Gaiwan 10 cl"
@@ -85,7 +85,7 @@
         ]
     },
     {
-        "id": "42",
+        "id": "th42",
         "titre": {
             "en": "Small teapot 10cl",
             "fr": "Petite théière 10cl"
@@ -104,7 +104,7 @@
         ]
     },
     {
-        "id": "44",
+        "id": "th44",
         "titre": {
             "en": "Small teapot 10cl",
             "fr": "Petite théière 10cl"
@@ -123,7 +123,7 @@
         ]
     },
     {
-        "id": "65",
+        "id": "th65",
         "titre": {
             "en": "Small enamelled teapot 9 cl",
             "fr": "Petite théière émaillée 9 cl"
@@ -145,7 +145,7 @@
         ]
     },
     {
-        "id": "67",
+        "id": "th67",
         "titre": {
             "en": "Small enamelled teapot 9 cl",
             "fr": "Petite théière émaillée 9 cl"
@@ -167,7 +167,7 @@
         ]
     },
     {
-        "id": "68",
+        "id": "th68",
         "titre": {
             "en": "Small enamelled teapot 10 cl",
             "fr": "Petite théière émaillée 10 cl"
@@ -189,7 +189,7 @@
         ]
     },
     {
-        "id": "70",
+        "id": "th70",
         "titre": {
             "en": "Small enamelled teapot 9 cl",
             "fr": "Petite théière émaillée 9 cl"
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "id": "71",
+        "id": "th71",
         "titre": {
             "en": "Small enamelled teapot 14 cl",
             "fr": "Petite théière émaillée 14 cl"
@@ -232,7 +232,7 @@
         ]
     },
     {
-        "id": "72",
+        "id": "th72",
         "titre": {
             "en": "Small teapot 9cl",
             "fr": "Petite théière 9cl"
@@ -254,7 +254,7 @@
         ]
     },
     {
-        "id": "73",
+        "id": "th73",
         "titre": {
             "en": "Small enamelled teapot 7,5 cl",
             "fr": "Petite théière émaillée 7,5 cl"
@@ -276,7 +276,7 @@
         ]
     },
     {
-        "id": "74",
+        "id": "th74",
         "titre": {
             "en": "Small enamelled teapot 14 cl",
             "fr": "Petite théière émaillée 14 cl"
@@ -298,7 +298,7 @@
         ]
     },
     {
-        "id": "9",
+        "id": "k9",
         "titre": {
             "en": "Kyusu 20cl",
             "fr": "Kyusu 20cl"
@@ -317,7 +317,7 @@
         ]
     },
     {
-        "id": "11",
+        "id": "k11",
         "titre": {
             "en": "Kyusu 12cl",
             "fr": "Kyusu 12cl"
@@ -336,7 +336,7 @@
         ]
     },
     {
-        "id": "15",
+        "id": "k15",
         "titre": {
             "en": "Kyusu 12cl",
             "fr": "Kyusu 12cl"
@@ -355,7 +355,7 @@
         ]
     },
     {
-        "id": "16",
+        "id": "k16",
         "titre": {
             "en": "Kyusu 13cl",
             "fr": "Kyusu 13cl"
@@ -374,7 +374,7 @@
         ]
     },
     {
-        "id": "17",
+        "id": "k17",
         "titre": {
             "en": "Kyusu 22cl",
             "fr": "Kyusu 22cl"
@@ -393,7 +393,7 @@
         ]
     },
     {
-        "id": "18",
+        "id": "k18",
         "titre": {
             "en": "Kyusu 13cl",
             "fr": "Kyusu 13cl"
@@ -412,7 +412,7 @@
         ]
     },
     {
-        "id": "19",
+        "id": "k19",
         "titre": {
             "en": "Kyusu 13cl",
             "fr": "Kyusu 13cl"
@@ -431,7 +431,7 @@
         ]
     },
     {
-        "id": "20",
+        "id": "k20",
         "titre": {
             "en": "Kyusu 12cl",
             "fr": "Kyusu 13cl"
@@ -450,7 +450,7 @@
         ]
     },
     {
-        "id": "21",
+        "id": "k21",
         "titre": {
             "en": "Kyusu 20cl",
             "fr": "Kyusu 20cl"
@@ -469,7 +469,7 @@
         ]
     },
     {
-        "id": "18",
+        "id": "sh18",
         "titre": {
             "en": "Shiboridashi 9cl",
             "fr": "Shiboridashi 9cl"
@@ -488,7 +488,7 @@
         ]
     },
     {
-        "id": "19",
+        "id": "sh19",
         "titre": {
             "en": "Shiboridashi 9cl",
             "fr": "Shiboridashi 9cl"
@@ -507,7 +507,7 @@
         ]
     },
     {
-        "id": "21",
+        "id": "sh21",
         "titre": {
             "en": "Shiboridashi 8,5cl",
             "fr": "Shiboridashi 8,5cl"
@@ -526,7 +526,7 @@
         ]
     },
     {
-        "id": "22",
+        "id": "sh22",
         "titre": {
             "en": "Shiboridashi 8,5cl",
             "fr": "Shiboridashi 8,5cl"
@@ -545,7 +545,7 @@
         ]
     },
     {
-        "id": "28",
+        "id": "sh28",
         "titre": {
             "en": "Shiboridashi 8cl",
             "fr": "Shiboridashi 8cl"
@@ -564,7 +564,7 @@
         ]
     },
     {
-        "id": "29",
+        "id": "sh29",
         "titre": {
             "en": "Shiboridashi 3,5cl",
             "fr": "Shiboridashi 3,5cl"
