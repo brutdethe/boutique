@@ -1,21 +1,12 @@
-<script context="module">
-  export async function preload() {
-    const res = await this.fetch("./produits.json");
-    const data = await res.json();
-
-    if (res.status === 200) {
-      return { items: data };
-    } else {
-      this.error(res.status, data.message);
-    }
-  }
-</script>
-
 <script>
   import { goto } from "@sapper/app";
-  import { language, category } from "../stores.js";
+  import {
+    loadProducts,
+    languageSelected,
+    categorySelected
+  } from "../stores.js";
+
   import Categories from "../components/Categories.svelte";
-  export let items;
 
   const dict = {
     buy: {
@@ -32,7 +23,11 @@
     }
   };
 
-  items.find = function(query) {
+  let products = loadProducts();
+  let produits = products.products;
+
+  /*
+  products.find = function(query) {
     const properties = Object.getOwnPropertyNames(query);
 
     function checkQuery(item, query) {
@@ -49,7 +44,7 @@
       }, {})
     ).sort((a, b) => new Date(b.création) - new Date(a.création));
   };
-
+*/
   function detailClick(evt) {
     const id = evt.currentTarget.getAttribute("data-product");
     goto(`/produit-${id}`);
@@ -88,38 +83,46 @@
 </header>
 <section>
   <div class="columns">
-    {#each items.find({ catégorie: $category, stock: { $gt: 0 } }) as item}
-      <div class="column col-4 col-xs-12">
-        <article class="card">
-          <div class="card-header">
-            <div class="card-title h5">{item.titre[$language]} #{item.id}</div>
-            <div class="card-subtitle text-gray">{$category}</div>
-          </div>
-          <div class="card-image">
-            <img
-              class="img-responsive"
-              src="/produits/{item.photos[0]}"
-              alt="{item.titre[$language]} #{item.id}" />
-          </div>
-          <div class="card-body">
-            <p class="description">
-              {item.description[$language]} - {item.poids} g -
-            </p>
-            <h3 class="price">{item.prix} {dict.currency[$language]}</h3>
-          </div>
-          <div class="card-footer">
-            <div class="btn-group btn-group-block">
-              <button
-                class="detail btn btn-secondary"
-                on:click|once={detailClick}
-                data-product={item.id}>
-                {dict.detail[$language]}
-              </button>
-              <button class="buy btn btn-primary">{dict.buy[$language]}</button>
+    {#if $products.products}
+      {#each $products.products as product}
+        <div class="column col-4 col-xs-12">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title h5">
+                {product.titre[$languageSelected]} #{product.id}
+              </div>
+              <div class="card-subtitle text-gray">{$categorySelected}</div>
             </div>
-          </div>
-        </article>
-      </div>
-    {/each}
+            <div class="card-image">
+              <img
+                class="img-responsive"
+                src="/produits/{product.photos[0]}"
+                alt="{product.titre[$languageSelected]} #{product.id}" />
+            </div>
+            <div class="card-body">
+              <p class="description">
+                {product.description[$languageSelected]} - {product.poids} g -
+              </p>
+              <h3 class="price">
+                {product.prix} {dict.currency[$languageSelected]}
+              </h3>
+            </div>
+            <div class="card-footer">
+              <div class="btn-group btn-group-block">
+                <button
+                  class="detail btn btn-secondary"
+                  on:click|once={detailClick}
+                  data-product={product.id}>
+                  {dict.detail[$languageSelected]}
+                </button>
+                <button class="buy btn btn-primary">
+                  {dict.buy[$languageSelected]}
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      {/each}
+    {/if}
   </div>
 </section>
