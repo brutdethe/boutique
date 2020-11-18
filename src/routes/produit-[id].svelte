@@ -14,7 +14,7 @@
 </script>
 
 <script>
-  import { language, category } from "../stores.js";
+  import { languageSelected } from "../stores.js";
 
   export let item;
 
@@ -27,23 +27,23 @@
 </script>
 
 <svelte:head>
-  <title>{item.titre[$language]}</title>
+  <title>{item.titre[$languageSelected]}</title>
 </svelte:head>
 
-<h1>{item.titre[$language]} #{item.id}</h1>
+<h1>{item.titre[$languageSelected]} #{item.id}</h1>
 <ul>
-  <li>description: {item.description[$language]}</li>
+  <li>description: {item.description[$languageSelected]}</li>
   <li>prix: {item.prix}</li>
   <li>poids: {item.poids}</li>
   <li>stock: {item.stock}</li>
   {#if item.stock}
     <li>
-      <button class="buy btn btn-primary">{dict.buy[$language]}</button>
+      <button class="buy btn btn-primary">{dict.buy[$languageSelected]}</button>
     </li>
   {/if}
   {#each item.photos as photo}
     <li>
-      <img src="/produits/{photo}" alt={item.titre[$language]} />
+      <img src="/produits/{photo}" alt={item.titre[$languageSelected]} />
     </li>
   {/each}
 </ul>

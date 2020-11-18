@@ -1,5 +1,5 @@
 <script>
-  import { language } from "../stores.js";
+  import { languageSelected } from "../stores.js";
   import Language from "../components/Language.svelte";
 
   export let segment;
@@ -80,7 +80,7 @@
     </li>
   </ul>
   <h1 class="title column col-6">
-    <a href="/">{dict.title[$language]}</a>
+    <a href="/">{dict.title[$languageSelected]}</a>
   </h1>
   <div class="language">
     <Language />

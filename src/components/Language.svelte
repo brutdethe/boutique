@@ -1,23 +1,23 @@
 <script>
-  import { language } from "../stores.js";
+  import { languageSelected } from "../stores.js";
 
-  const changeLanguage = evt => lang.set(evt.currentTarget.value);
+  const changeLanguageSelected = evt => lang.set(evt.currentTarget.value);
 </script>
 
 <article>
   <label>
     <input
       type="radio"
-      bind:group={$language}
-      on:change={changeLanguage}
+      bind:group={$languageSelected}
+      on:change={changeLanguageSelected}
       value="en" />
     EN
   </label>
   <label>
     <input
       type="radio"
-      bind:group={$language}
-      on:change={changeLanguage}
+      bind:group={$languageSelected}
+      on:change={changeLanguageSelected}
       value="fr" />
     FR
   </label>
