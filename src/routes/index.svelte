@@ -24,7 +24,6 @@
   };
 
   let products = loadProducts();
-  let produits = products.products;
 
   /*
   products.find = function(query) {
@@ -79,7 +78,8 @@
 </svelte:head>
 
 <header>
-  <Categories />
+  <Categories categories={$products.categories} {categorySelected} />
+
 </header>
 <section>
   <div class="columns">
