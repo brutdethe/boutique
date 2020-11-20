@@ -6,7 +6,6 @@ function getCategories(products) {
     return [...categories]
 }
 
-
 export const languageSelected = writable('fr');
 export const categorySelected = writable('Gaiwan');
 
@@ -26,10 +25,6 @@ async function fetchProducts(set) {
 
         if (response.ok) {
             const products = await response.json();
-            const unsubscribe = languageSelected.subscribe(value => {
-                console.log('value is:', value);
-            });
-            unsubscribe();
             set({ products: products, categories: getCategories(products) });
             throw new Error();
         } else {

@@ -25,8 +25,7 @@
 
   let products = loadProducts();
 
-  /*
-  products.find = function(query) {
+  function find(products, query) {
     const properties = Object.getOwnPropertyNames(query);
 
     function checkQuery(item, query) {
@@ -37,13 +36,15 @@
       return item === query;
     }
 
-    return this.filter(item =>
-      properties.reduce((acc, prop) => {
-        return acc && checkQuery(item[prop], query[prop]);
-      }, {})
-    ).sort((a, b) => new Date(b.création) - new Date(a.création));
-  };
-*/
+    return products
+      .filter(item =>
+        properties.reduce((acc, prop) => {
+          return acc && checkQuery(item[prop], query[prop]);
+        }, {})
+      )
+      .sort((a, b) => new Date(b.création) - new Date(a.création));
+  }
+
   function detailClick(evt) {
     const id = evt.currentTarget.getAttribute("data-product");
     goto(`/produit-${id}`);
@@ -84,7 +85,10 @@
 <section>
   <div class="columns">
     {#if $products.products}
-      {#each $products.products as product}
+      {#each find($products.products, {
+        catégorie: $categorySelected,
+        stock: { $gt: 0 }
+      }) as product}
         <div class="column col-4 col-xs-12">
           <article class="card">
             <div class="card-header">
