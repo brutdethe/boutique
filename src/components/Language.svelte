@@ -1,7 +1,8 @@
 <script>
   import { languageSelected } from "../stores.js";
 
-  const changeLanguageSelected = evt => lang.set(evt.currentTarget.value);
+  const changeLanguageSelected = evt =>
+    languageSelected.set(evt.currentTarget.value);
 </script>
 
 <article>
