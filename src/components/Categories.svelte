@@ -1,5 +1,12 @@
 <script>
-  export let categories, categorySelected;
+  import {
+    loadCategories,
+    categorySelected,
+    languageSelected
+  } from "../stores.js";
+
+  export let categories;
+  let categoriesDescription = loadCategories();
 
   const changeCategory = evt => categorySelected.set(evt.currentTarget.value);
 </script>
@@ -32,6 +39,8 @@
 <div class="hero-sm bg-dark">
   <div class="hero-body">
     <h3>{$categorySelected}</h3>
-    <p />
+    {#if $categoriesDescription[$categorySelected]}
+      <p>{$categoriesDescription[$categorySelected][$languageSelected]}</p>
+    {/if}
   </div>
 </div>

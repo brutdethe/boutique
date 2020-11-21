@@ -79,7 +79,7 @@
 </svelte:head>
 
 <header>
-  <Categories categories={$products.categories} {categorySelected} />
+  <Categories categories={$products.categories} />
 
 </header>
 <section>
