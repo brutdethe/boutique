@@ -16,10 +16,6 @@
     detail: {
       en: "detail",
       fr: "détail"
-    },
-    currency: {
-      en: "$",
-      fr: "€"
     }
   };
 
@@ -106,9 +102,7 @@
               <p class="description">
                 {product.description[$languageSelected]} - {product.poids} g -
               </p>
-              <h3 class="price">
-                {product.prix} {dict.currency[$languageSelected]}
-              </h3>
+              <h3 class="price">{product.prix} €</h3>
             </div>
             <div class="card-footer">
               <div class="btn-group btn-group-block">
