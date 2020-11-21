@@ -1,5 +1,9 @@
 import { writable, readable } from 'svelte/store';
 
+export const languageSelected = writable('fr');
+export const categorySelected = writable('Gaiwan');
+export const basket = writable([]);
+
 function getCategoriesInStock(products) {
 
     function getCategories(products) {
@@ -25,10 +29,6 @@ function getProduct(products, id) {
     if (!id) return
     return products.filter(product => product.id === id)[0]
 }
-
-export const languageSelected = writable('fr');
-export const categorySelected = writable('Gaiwan');
-
 
 export function loadProducts(id=null) {
     let products = readable([], set => {

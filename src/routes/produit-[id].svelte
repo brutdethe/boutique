@@ -8,6 +8,7 @@
 <script>
   import {
     loadProducts,
+    basket,
     languageSelected,
     categorySelected
   } from "../stores.js";
@@ -21,6 +22,11 @@
       fr: "acheter"
     }
   };
+
+  function basketClick(evt) {
+    const id = evt.currentTarget.getAttribute("data-product");
+    basket.set([...$basket, id]);
+  }
 </script>
 
 <style>
@@ -104,20 +110,12 @@
       {#if $products.product.stock}
         <button
           class="btn btn-primary badge float-right"
-          data-badge={$products.product.stock}>
+          data-badge={$products.product.stock}
+          on:click|once={basketClick}
+          data-product={$products.product.id}>
           {dict.buy[$languageSelected]}
         </button>
       {/if}
     </div>
   </div>
-
-  <!-- 
-    {#each $products.product.photos as photo}
-      <li>
-        <img
-          src="/produits/{photo}"
-          alt={$products.product.titre[$languageSelected]} />
-      </li>
-    {/each}
--->
 {/if}

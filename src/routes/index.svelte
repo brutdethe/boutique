@@ -2,6 +2,7 @@
   import { goto } from "@sapper/app";
   import {
     loadProducts,
+    basket,
     languageSelected,
     categorySelected
   } from "../stores.js";
@@ -45,6 +46,10 @@
     const id = evt.currentTarget.getAttribute("data-product");
     goto(`/produit-${id}`);
   }
+  function basketClick(evt) {
+    const id = evt.currentTarget.getAttribute("data-product");
+    basket.set([...$basket, id]);
+  }
 </script>
 
 <style>
@@ -73,7 +78,6 @@
 <svelte:head>
   <title>La petite boutique de Jé</title>
 </svelte:head>
-
 <header>
   <Categories categories={$products.categories} />
 </header>
@@ -114,7 +118,10 @@
                   data-product={product.id}>
                   {dict.detail[$languageSelected]}
                 </button>
-                <button class="buy btn btn-primary">
+                <button
+                  class="buy btn btn-primary"
+                  on:click|once={basketClick}
+                  data-product={product.id}>
                   {dict.buy[$languageSelected]}
                 </button>
               </div>
