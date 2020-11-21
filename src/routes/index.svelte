@@ -93,10 +93,12 @@
               <div class="card-subtitle text-gray">{$categorySelected}</div>
             </div>
             <div class="card-image">
-              <img
-                class="img-responsive"
-                src="/produits/{product.photos[0]}"
-                alt="{product.titre[$languageSelected]} #{product.id}" />
+              <a href="/produit-{product.id}">
+                <img
+                  class="img-responsive"
+                  src="/produits/{product.photos[0]}"
+                  alt="{product.titre[$languageSelected]} #{product.id}" />
+              </a>
             </div>
             <div class="card-body">
               <p class="description">
