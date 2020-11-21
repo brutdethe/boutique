@@ -80,7 +80,6 @@
 
 <header>
   <Categories categories={$products.categories} />
-
 </header>
 <section>
   <div class="columns">

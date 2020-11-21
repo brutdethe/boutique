@@ -1,9 +1,24 @@
 import { writable, readable } from 'svelte/store';
 
-function getCategories(products) {
-    const categories = new Set(products.map(product => product.catégorie))
+function getCategoriesInStock(products) {
 
-    return [...categories]
+    function getCategories(products) {
+        const categories = new Set(products.map(product => product.catégorie))
+    
+        return [...categories]
+    }
+
+    return getCategories(products)
+        .filter(category => products
+            .filter(product => product.catégorie === category) 
+            .reduce((acc, cur) => {
+                if (cur.stock > 0) {
+                    return true;
+                } else {
+                    return (acc === true) && true;
+                }
+            }) === true
+        )
 }
 
 function getProduct(products, id) {
@@ -30,7 +45,7 @@ async function fetchProducts(set, id) {
 
         if (response.ok) {
             const products = await response.json();
-            set({ products: products, categories: getCategories(products), product: getProduct(products, id) });
+            set({ products: products, categories: getCategoriesInStock(products), product: getProduct(products, id) });
         } else {
             const text = response.text();
             throw new Error(text);

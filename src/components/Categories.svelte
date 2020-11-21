@@ -21,21 +21,6 @@
   }
 </style>
 
-{#if categories}
-  {#each categories as category}
-    <label>
-      <input
-        type="radio"
-        bind:group={$categorySelected}
-        on:change={changeCategory}
-        value={category} />
-      {category}
-    </label>
-  {/each}
-{/if}
-
-<hr />
-
 <div class="hero-sm bg-dark">
   <div class="hero-body">
     <h3>{$categorySelected}</h3>
@@ -44,3 +29,22 @@
     {/if}
   </div>
 </div>
+
+{#if categories}
+  <div class="form-group">
+    |
+    {#each categories as category}
+      <label class="form-radio form-inline">
+        <input
+          type="radio"
+          bind:group={$categorySelected}
+          on:change={changeCategory}
+          value={category} />
+        <i class="form-icon" />
+        {category} |
+      </label>
+    {/each}
+  </div>
+{/if}
+
+<hr />
