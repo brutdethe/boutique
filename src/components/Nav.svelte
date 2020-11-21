@@ -2,8 +2,6 @@
   import { languageSelected } from "../stores.js";
   import Language from "../components/Language.svelte";
 
-  export let segment;
-
   const dict = {
     title: { en: "Jé's little store", fr: "La petite boutique de Jé" }
   };
