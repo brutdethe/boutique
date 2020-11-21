@@ -6,7 +6,11 @@
 </script>
 
 <script>
-  import { loadProducts, languageSelected } from "../stores.js";
+  import {
+    loadProducts,
+    languageSelected,
+    categorySelected
+  } from "../stores.js";
 
   export let id;
   let products = loadProducts(id);
@@ -19,12 +23,94 @@
   };
 </script>
 
+<style>
+  .carousel {
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+  }
+
+  .price {
+    padding-top: 0.8rem;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  .btn {
+    width: 5rem;
+  }
+</style>
+
 <svelte:head>
   <title>Produit {id}</title>
 </svelte:head>
 
 {#if $products.product}
-  <h1>{$products.product.titre[$languageSelected]} #{$products.product.id}</h1>
+  <div class="card">
+    <div class="card-image carousel">
+      <!-- carousel locator -->
+      {#each $products.product.photos as photo, count}
+        <input
+          class="carousel-locator"
+          id="slide-{count + 1}"
+          type="radio"
+          name="carousel-radio"
+          hidden="true"
+          checked={!count && true} />
+      {/each}
+
+      <!-- carousel container -->
+      <div class="carousel-container">
+        <!-- carousel item -->
+        {#each $products.product.photos as photo, count}
+          <figure class="carousel-item">
+            <label
+              class="item-prev btn btn-action btn-lg"
+              for="slide-{count ? count : $products.product.photos.length}">
+              <i class="icon icon-arrow-left" />
+            </label>
+            <label
+              class="item-next btn btn-action btn-lg"
+              for="slide-{count + 2 <= $products.product.photos.length ? count + 2 : 1}">
+              <i class="icon icon-arrow-right" />
+            </label>
+            <img
+              class="img-responsive rounded"
+              src="/produits/{photo}"
+              alt={$products.product.titre[$languageSelected]} />
+          </figure>
+        {/each}
+      </div>
+      <!-- carousel navigation -->
+      <div class="carousel-nav">
+        {#each $products.product.photos as photo, count}
+          <label class="nav-item text-hide c-hand" for="slide-{count + 1}">
+            {count}
+          </label>
+        {/each}
+      </div>
+
+    </div>
+    <div class="card-header">
+      <div class="card-title h4">
+        {$products.product.titre[$languageSelected]}
+      </div>
+      <div class="card-subtitle text-gray">{$categorySelected}</div>
+    </div>
+    <div class="card-body">
+      {$products.product.description[$languageSelected]} - {$products.product.poids}
+      g.
+      <h3 class="card-title h1 price">{$products.product.prix} €</h3>
+    </div>
+    <div class="card-footer">
+      {#if $products.product.stock}
+        <button
+          class="btn btn-primary badge float-right"
+          data-badge={$products.product.stock}>
+          {dict.buy[$languageSelected]}
+        </button>
+      {/if}
+    </div>
+  </div>
+
   <!-- 
     {#each $products.product.photos as photo}
       <li>
@@ -34,107 +120,4 @@
       </li>
     {/each}
 -->
-
-  <div class="carousel">
-    <!-- carousel locator -->
-    <input
-      class="carousel-locator"
-      id="slide-1"
-      type="radio"
-      name="carousel-radio"
-      hidden="true"
-      checked="true" />
-    <input
-      class="carousel-locator"
-      id="slide-2"
-      type="radio"
-      name="carousel-radio"
-      hidden="true" />
-    <input
-      class="carousel-locator"
-      id="slide-3"
-      type="radio"
-      name="carousel-radio"
-      hidden="true" />
-    <input
-      class="carousel-locator"
-      id="slide-4"
-      type="radio"
-      name="carousel-radio"
-      hidden="true" />
-
-    <!-- carousel container -->
-    <div class="carousel-container">
-      <!-- carousel item -->
-      <figure class="carousel-item">
-        <label class="item-prev btn btn-action btn-lg" for="slide-4">
-          <i class="icon icon-arrow-left" />
-        </label>
-        <label class="item-next btn btn-action btn-lg" for="slide-2">
-          <i class="icon icon-arrow-right" />
-        </label>
-        <img
-          class="img-responsive rounded"
-          src="/produits/gaiwan-10cl_21-a.jpg"
-          alt="macOS Yosemite Wallpaper" />
-      </figure>
-      <figure class="carousel-item">
-        <label class="item-prev btn btn-action btn-lg" for="slide-1">
-          <i class="icon icon-arrow-left" />
-        </label>
-        <label class="item-next btn btn-action btn-lg" for="slide-3">
-          <i class="icon icon-arrow-right" />
-        </label>
-        <img
-          class="img-responsive rounded"
-          src="/produits/gaiwan-10cl_21-b.jpg"
-          alt="macOS Yosemite Wallpaper" />
-      </figure>
-      <figure class="carousel-item">
-        <label class="item-prev btn btn-action btn-lg" for="slide-2">
-          <i class="icon icon-arrow-left" />
-        </label>
-        <label class="item-next btn btn-action btn-lg" for="slide-4">
-          <i class="icon icon-arrow-right" />
-        </label>
-        <img
-          class="img-responsive rounded"
-          src="/produits/gaiwan-10cl_21-c.jpg"
-          alt="macOS El Capitan Wallpaper" />
-      </figure>
-      <figure class="carousel-item">
-        <label class="item-prev btn btn-action btn-lg" for="slide-3">
-          <i class="icon icon-arrow-left" />
-        </label>
-        <label class="item-next btn btn-action btn-lg" for="slide-1">
-          <i class="icon icon-arrow-right" />
-        </label>
-        <img
-          class="img-responsive rounded"
-          src="/produits/gaiwan-10cl_21-d.jpg"
-          alt="macOS El Capitan Wallpaper" />
-      </figure>
-    </div>
-    <!-- carousel navigation -->
-    <div class="carousel-nav">
-      <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-      <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-      <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-      <label class="nav-item text-hide c-hand" for="slide-4">4</label>
-    </div>
-  </div>
-
-  <ul>
-    <li>{$products.product.description[$languageSelected]}</li>
-    <li>prix: {$products.product.prix}</li>
-    <li>poids: {$products.product.poids}</li>
-    <li>stock: {$products.product.stock}</li>
-    {#if $products.product.stock}
-      <li>
-        <button class="buy btn btn-primary">
-          {dict.buy[$languageSelected]}
-        </button>
-      </li>
-    {/if}
-  </ul>
 {/if}
