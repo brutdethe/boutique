@@ -9,10 +9,9 @@
 
 <style>
   .title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #777;
-    line-height: 4rem;
   }
 
   nav {
