@@ -8,11 +8,12 @@
   } from "../stores.js";
 
   import Categories from "../components/Categories.svelte";
+  import Buy from "../components/Buy.svelte";
 
   const dict = {
-    buy: {
-      en: "buy",
-      fr: "acheter"
+    title: {
+      en: "product's list",
+      fr: "liste des produits"
     },
     detail: {
       en: "detail",
@@ -76,7 +77,7 @@
 </style>
 
 <svelte:head>
-  <title>La petite boutique de Jé</title>
+  <title>dict.title[$languageSelected]</title>
 </svelte:head>
 <header>
   <Categories categories={$products.categories} />
@@ -118,12 +119,7 @@
                   data-product={product.id}>
                   {dict.detail[$languageSelected]}
                 </button>
-                <button
-                  class="buy btn btn-primary"
-                  on:click|once={basketClick}
-                  data-product={product.id}>
-                  {dict.buy[$languageSelected]}
-                </button>
+                <Buy item={product} />
               </div>
             </div>
           </article>

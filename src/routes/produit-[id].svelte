@@ -8,25 +8,21 @@
 <script>
   import {
     loadProducts,
-    basket,
     languageSelected,
     categorySelected
   } from "../stores.js";
+
+  import Buy from "../components/Buy.svelte";
 
   export let id;
   let products = loadProducts(id);
 
   const dict = {
-    buy: {
-      en: "buy",
-      fr: "acheter"
+    title: {
+      en: "product",
+      fr: "produit"
     }
   };
-
-  function basketClick(evt) {
-    const id = evt.currentTarget.getAttribute("data-product");
-    basket.set([...$basket, id]);
-  }
 </script>
 
 <style>
@@ -46,7 +42,7 @@
 </style>
 
 <svelte:head>
-  <title>Produit {id}</title>
+  <title>dict.product[$languageSelected] {id}</title>
 </svelte:head>
 
 {#if $products.product}
@@ -107,15 +103,7 @@
       <h3 class="card-title h1 price">{$products.product.prix} €</h3>
     </div>
     <div class="card-footer">
-      {#if $products.product.stock}
-        <button
-          class="btn btn-primary badge float-right"
-          data-badge={$products.product.stock}
-          on:click|once={basketClick}
-          data-product={$products.product.id}>
-          {dict.buy[$languageSelected]}
-        </button>
-      {/if}
+      <Buy item={$products.product} />
     </div>
   </div>
 {/if}

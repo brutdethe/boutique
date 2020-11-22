@@ -1,7 +1,5 @@
 <script>
-  import { loadProducts, basket, languageSelected } from "../stores.js";
-
-  let products = loadProducts();
+  import { basket, languageSelected } from "../stores.js";
 
   const dict = {
     title: { en: "Summary of purchases", fr: "Récapitulatif des achats" },
@@ -48,15 +46,13 @@
   </thead>
   <tbody>
     {#if $basket.length}
-      {#if $products.products}
-        {#each $basket as id}
-          <tr class="active">
-            <td>{id}</td>
-            <td>52,00 €</td>
-            <td>1</td>
-          </tr>
-        {/each}
-      {/if}
+      {#each $basket as item}
+        <tr class="active">
+          <td>{item.titre[$languageSelected]}</td>
+          <td>{item.prix} €</td>
+          <td>1</td>
+        </tr>
+      {/each}
     {:else}
       <tr>
         <td colspan="3">{dict.empty[$languageSelected]}</td>
