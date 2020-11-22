@@ -1,5 +1,5 @@
 <script>
-  import { languageSelected } from "../stores.js";
+  import { languageSelected, basket } from "../stores.js";
   import Language from "../components/Language.svelte";
 
   export let segment;
@@ -76,9 +76,13 @@
       <a href="./categories.json">categories.json</a>
     </li>
     <li>
+
       <a aria-current={segment === 'panier' ? 'page' : undefined} href="panier">
-        Panier
+        <span class="badge" data-badge={$basket.length} data-initial="YZ">
+          panier
+        </span>
       </a>
+
     </li>
   </ul>
   <h1 class="title column col-6">
