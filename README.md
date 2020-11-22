@@ -4,7 +4,7 @@
 
 ### Les fonctionnalités 
 
-Backlog du projet : https://github.com/orgs/brutdethe/projects/1
+Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 
 ### L'équipe
 
