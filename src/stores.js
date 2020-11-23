@@ -8,13 +8,13 @@ function getCategoriesInStock(products) {
 
     function getCategories(products) {
         const categories = new Set(products.map(product => product.catégorie))
-    
+
         return [...categories]
     }
 
     return getCategories(products)
         .filter(category => products
-            .filter(product => product.catégorie === category) 
+            .filter(product => product.catégorie === category)
             .reduce((acc, cur) => {
                 if (cur.stock > 0) {
                     return true;
@@ -30,7 +30,7 @@ function getProduct(products, id) {
     return products.filter(product => product.id === id)[0]
 }
 
-export function loadProducts(id=null) {
+export function loadProducts(id = null) {
     let products = readable([], set => {
         fetchProducts(set, id)
         return () => { }
@@ -58,7 +58,7 @@ async function fetchProducts(set, id) {
     return () => { };
 }
 
-export function loadCategories(id=null) {
+export function loadCategories(id = null) {
     let categories = readable([], set => {
         fetchCategories(set)
         return () => { }
@@ -80,7 +80,7 @@ async function fetchCategories(set) {
         }
 
     } catch (error) {
-        console.warn('Fetch Error categories in stores');
+        console.warn('Fetch Error categories in stores', error);
     }
 
     return () => { };
