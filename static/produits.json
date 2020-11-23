@@ -1011,4 +1011,384 @@
             ""
         ]
     }
+{
+        "id": "bo10",
+        "titre": {
+            "en": "Kettle in stoneware 35cl.",
+            "fr": "Bouilloire en grès 35cl."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bouilloire",
+        "description": {
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 350 ml, Weight: 430 gr.",
+            "fr": "Bouilloire en grès "120.7" dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 350 ml, Poids : 430 gr."
+        },
+        "prix": 148.00,
+        "poids": 0.8,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+"id": "bo11",
+        "titre": {
+            "en": "Kettle in stoneware 88cl.",
+            "fr": "Bouilloire en grès 88cl."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bouilloire",
+        "description": {
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 880 ml, Weight: 680 gr.",
+            "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 880 ml, Poids : 680 gr."
+        },
+        "prix": 148.00,
+        "poids": 0.8,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+"id": "bo12",
+        "titre": {
+            "en": "Kettle in stoneware 70cl.",
+            "fr": "Bouilloire en grès 70cl."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bouilloire",
+        "description": {
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 700 ml, Weight: 630 gr.",
+            "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 700 ml, Poids : 630 gr."
+        },
+        "prix": 148.00,
+        "poids": 0.8,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+"id": "bo14",
+        "titre": {
+            "en": "Kettle in stoneware 90cl.",
+            "fr": "Bouilloire en grès 90cl."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bouilloire",
+        "description": {
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 900 ml, Weight: 880 gr.",
+            "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 900 ml, Poids : 880 gr."
+        },
+        "prix": 148.00,
+        "poids": 0.8,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "br6",
+        "titre": {
+            "en": "Brazier",
+            "fr": "Brasero"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Brasero",
+        "description": {
+            "en": "Brazier made of Baillet clay (crucible clay) particularly resistant to temperature variations . Manufactured in two parts. Outside diameter of the kettle support: 13.5 cm. Can accommodate kettles with a bottom between 8 cm and 11 cm. Height: 16.5 cm",
+            "fr": "Brasero en terre de Baillet (terre à creuset) particulièrement résistante aux écarts de température.. Fabriqué en deux parties. Diamètre extérieur de support de la bouilloire : 13,5 cm. Peut accueillir des bouilloires ayant un fond entre 8 cm et 11 cm. Hauteur : 16,5 cm"
+        },
+        "prix": 150.00,
+        "poids": 2.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "br10",
+        "titre": {
+            "en": "Brazier",
+            "fr": "Brasero"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Brasero",
+        "description": {
+            "en": "Brazier made of Baillet clay (crucible clay) particularly resistant to temperature variations . Made in two parts. External diameter of the kettle support: 16 cm (can accommodate kettles with a bottom between 9 cm and 13 cm . Height : 14 cm",
+            "fr": "Brasero en terre de Baillet (terre à creuset) particulièrement résistante aux écarts de température.. Fabriqué en deux parties. diamètre extérieur de support de la bouilloire : 16 cm (peut accueillir des bouilloires ayant un fond entre 9 cm et 13 cm . Hauteur : 14 cm"
+        },
+        "prix": 150.00,
+        "poids": 2.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bat16",
+        "titre": {
+            "en": "tea boat",
+            "fr": "Bateau à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bateau à thé",
+        "description": {
+            "en": "Handcrafted tea boat, made of raw clay, manufactured and decorated by hand. Outside diameter: 15 cm. Diameter of the teapot rest: 6. Height: 3 cm. Weight: 286 gr",
+            "fr": "Bateau à thé artisanale, en terre brute, fabriqué et décoré à la main. Diamètre extérieur : 15 cm. Diamètre du repose théière : 6. Hauteur : 3 cm. Poids : 286 gr"
+        },
+        "prix": 54.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bat15",
+        "titre": {
+            "en": "tea boat",
+            "fr": "Bateau à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bateau à thé",
+        "description": {
+            "en": "Handcrafted glazed, handcrafted and decorated tea boat. Outside diameter: 15 cm. Diameter of the teapot rest: 6.5. Height: 3 cm. Weight: 310 gr.",
+            "fr": "Bateau à thé artisanale émaillé, fabriqué et décoré à la main. Diamètre extérieur : 15 cm. Diamètre du repose théière : 6,5. Hauteur : 3 cm. Poids : 310 gr."
+        },
+        "prix": 54.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bat8",
+        "titre": {
+            "en": "tea boat",
+            "fr": "Bateau à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bateau à thé",
+        "description": {
+            "en": "Handcrafted enamelled, handcrafted and decorated tea boat. Outside diameter: 14 cm. Diameter of the teapot rest: 5.5. Height: 3 cm. Weight: 250 gr ",
+            "fr": "Bateau à thé artisanale émaillé, fabriqué et décoré à la main. Diamètre extérieur : 14 cm. Diamètre du repose théière : 5,5. Hauteur : 3 cm. Poids : 250 gr "
+        },
+        "prix": 54.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bat9",
+        "titre": {
+            "en": "tea boat",
+            "fr": "Bateau à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bateau à thé",
+        "description": {
+            "en": "Handcrafted glazed, handcrafted and decorated tea boat. Outside diameter: 14 cm. Diameter of the teapot rest: 5.5. Height: 3 cm. Weight: 250 gr ",
+            "fr": "Bateau à thé artisanale émaillé, fabriqué et décoré à la main. Diamètre extérieur : 14 cm. Diamètre du repose théière : 5,5. Hauteur : 3 cm. Poids : 250 gr "
+        },
+        "prix": 54.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bat17",
+        "titre": {
+            "en": "tea boat",
+            "fr": "Bateau à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bateau à thé",
+        "description": {
+            "en": "Handcrafted tea boat in Treigny sandstone, hand made and decorated. This tea boat is composed of a removable openwork tray and a receptacle. Outside diameter: 18.5 cm. Height: 4.5 cm. Weight: 0.9 kg",
+            "fr": "Bateau à thé artisanale en grés de Treigny, fabriqué et décoré à la main. Ce bateau à thé se compose d'un plateau ajouré et amovible ainsi que d'un réceptacle. Diamètre extérieur : 18,5 cm. Hauteur : 4,5 cm. Poids : 0,9 kg "
+        },
+        "prix": 70.00,
+        "poids": 0.9,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "pp1",
+        "titre": {
+            "en": "small tea pot",
+            "fr": "Petit pot à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
+        },
+        "prix": 50.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "pp2",
+        "titre": {
+            "en": "small tea pot",
+            "fr": "Petit pot à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
+        },
+        "prix": 50.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "pp3",
+        "titre": {
+            "en": "small tea pot",
+            "fr": "Petit pot à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
+        },
+        "prix": 50.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "pp4",
+        "titre": {
+            "en": "small tea pot",
+            "fr": "Petit pot à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
+        },
+        "prix": 50.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "pp5",
+        "titre": {
+            "en": "small tea pot",
+            "fr": "Petit pot à thé"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
+        },
+        "prix": 50.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "j1",
+        "titre": {
+            "en": "Jar for puerh cakes",
+            "fr": "Jarre pour galette de puerh"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of GECH, a 6.5% porosity stoneware. Height: 26 cm. Diameter of the opening: 24 cm. Weight : 5 kg",
+            "fr": "Pièce unique. Jarre pour stocker des galettes entières de puerh. Jarre fabriquée en GECH, un grès à 6,5 % de porosité. Hauteur : 26 cm. Diamètre de l'ouverture : 24 cm. Poids : 5 kg"
+        },
+        "prix": 200.00,
+        "poids": 5.0,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "j2",
+        "titre": {
+            "en": "Jar for puerh cakes",
+            "fr": "Jarre pour galette de puerh"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of St Amand sandstone, 0.9% porosity. Height : 11,5 cm. Diameter of the opening : 23,5 cm. Weight : 3 kg",
+            "fr": "Pièce unique. Jarre pour stocker des galettes entières de puerh. Jarre fabriquée en grès de St Amand, 0,9 % de porosité. Hauteur : 11,5 cm. Diamètre de l'ouverture : 23,5 cm. Poids : 3 kg"
+        },
+        "prix": 100.00,
+        "poids": 3.0,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "j3",
+        "titre": {
+            "en": "Jar for puerh cakes",
+            "fr": "Jarre pour galette de puerh"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Jarre",
+        "description": {
+            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of Moutiers stoneware, 0.2% porosity. Height : 22,5 cm. Diameter of the opening : 22,5 cm. Weight : 5 kg",
+            "fr": "Pièce unique. Jarre pour stocker des galettes entières de puerh. Jarre fabriquée en grès de Moutiers, 0,2 % de porosité. Hauteur : 22,5 cm. Diamètre de l'ouverture : 22,5 cm. Poids : 5 kg"
+        },
+        "prix": 200.00,
+        "poids": 3.0,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
 ]
