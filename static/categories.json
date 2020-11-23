@@ -1,18 +1,34 @@
 {
     "Gaiwan": {
-        "fr": "Le Gaiwan est un petit appareil qui se glisse dans l'oreille des chats.",
-        "en": "In addition, Strobos smuggled guns and radios for the resistance and forged passports to help refugees escape the country. Despite being arrested and interrogated nine times by the Gestapo, she never betrayed the whereabouts of a Jew."
+        "fr": "Le gaiwan ou zhong, est l'ustensile idéal pour démarrer sur la voie du thé. En effet, le gaiwan est émaillé (donc plutôt neutre). Sa forme et sa conception permettent d'observer l'évolution de l'infusion facilement. Son prix est moins élevé que celui d'une théière. Il faut juste prendre le coup de main pour l'utiliser. Tester un nouveau thé. Continuer à préparer du thé lorsqu'on est en déplacement.",
+        "en": "The gaiwan or zhong, is the ideal utensil to start on the way to tea. Indeed, the gaiwan is enamelled (therefore rather neutral). Its shape and design allow to observe the evolution of the infusion easily. Its price is lower than that of a teapot. You just have to take the hand to use it. Test a new tea. Continue making tea while you are on the go."
     },
     "Théière": {
-        "fr": "Papa Penguin was the Luxembourgish entry in the Eurovision Song Contest 1980, performed in French by the French twin sisters Sophie & Magaly.",
-        "en": "Papa Pingouin (Papá Pinguim) foi a canção que representou o Luxemburgo no Festival Eurovisão da Canção 1980, interpretada em francês interpretada pelo grupo/duo francês Sophie & Magaly."
+        "fr": "Chaque théière que je fabrique, représente une pièce unique dans laquelle je m'implique et je m'applique. Il n'y a pas de surprise, c'est en fabriquant des théières que, petit à petit, les subtilités de fabrication se révèlent. En continuant dans la réalisation de théières, la naïveté s'estompe pour laisser la place à une meilleure compréhension de l'objet. Pour aller plus loin dans ma démarche, je me forme, auprès d'une maître de thé chinoise, à la pratique du thé. Il s'agit d'un enseignement théorique et pratique, qui m'apporte énormément d'éléments et contribue à l'évolution de mon travail.",
+        "en": "Each teapot that I make represents a unique piece in which I am involved and apply myself. There is no surprise, it is by making teapots that, little by little, the subtleties of fabrication are revealed. By continuing in the making of teapots, naivety fades away to give way to a better understanding of the object. To go further in my approach, I train myself, with a Chinese tea master, to the practice of tea. It is a theoretical and practical teaching, which brings me a lot of elements and contributes to the evolution of my work."
     },
     "Kyusu": {
-        "fr": "La viande est un aliment constitué des tissus musculaires de certains animaux, notamment les mammifères, les oiseaux, les reptiles, mais aussi certains poissons comme les requins.",
-        "en": "Meat is animal flesh that is eaten as food. Humans have hunted and killed animals for meat since prehistoric times."
+        "fr": "La théière traditionnelle japonaise possède une forme particulière. Si je m’arrête à la forme de cette théière, il n'y a pas de difficultés apparentes dans sa réalisation. Ceci dit, cette pièce renferme de multiples subtilités, qui font de cette théière une pièce particulièrement exigeante. Pour tenter de comprendre au mieux comment fabriquer ce type de pièce, je m'en suis acheté une, auprès d'un maître potier japonais, et je l'utilise le plus possible...",
+        "en": "The traditional Japanese teapot has a special shape. If I stop at the shape of this teapot, there are no apparent difficulties in its realization. That said, there are many subtleties that make this teapot a particularly demanding piece. To try to understand as well as possible how to make this type of piece, I bought one from a Japanese master potter, and I use it as much as possible..."
     },
     "Shiboridashi": {
-        "fr": "Il y est consommé depuis l'Antiquité, puis s'est étendu au Japon et au monde arabe au IXe siècle et à l'Europe au XVIe siècle.",
-        "en": "Tea originated in the region encompassing today's Northeast India, north Myanmar, Southwest China and Tibet, where it was used as a medicinal drink by various ethnic groups in the region."
-    }
+        "fr": "Les shiboridashi sont des infuseurs japonais, principalement destinés à la prépration des "Gyokuro" (thé vert particulièrement riche en goût.) Comme ce type de thé s'infuse à une température relativement basse (entre 50 et 70°C), il est possible d'utiliser le shiboridashi sans risque de se brûler. Les shiboridashi se caractérisent par leur forme aplatie, et leur faible contenance.",
+        "en": "Shiboridashi are Japanese infusers, mainly intended for the preparation of "Gyokuro" (green tea particularly rich in taste.) As this type of tea is brewed at a relatively low temperature (between 50 and 70°C), it is possible to use shiboridashi without risk of burning oneself. Shiboridashi are characterized by their flattened shape and their small capacity."
+    },
+    "Hohin": {
+        "fr": "Le hohin est une pièce que je trouve particulièrement intéressante dans la pratique du thé. Le hohin est à la fois fonctionnel et facile d'utilisation. Cette pièce réunie les avantages du gaïwan et ceux de la théière. A l'origine le hohin se destine aux thés verts, qui s'infusent avec une eau entre 50°C et 70°C. Aujourd'hui, je découvre cet ustensile avec des thés différents : puerh, wulong, thé rouges. J'apprécie particulièrement la rapidité de la verse et le diamètre de l'ouverture qui donne un accès plus aisé aux feuilles de thé.",
+        "en": "The hohin is a piece that I find particularly interesting in the practice of tea. The hohin is both functional and easy to use. This piece combines the advantages of the gaiwan and the teapot. Originally, hohin is intended for green teas, which are brewed with water between 50°C and 70°C. Today, I discover this utensil with different teas: puerh, wulong, red teas. I particularly appreciate the rapidity of the pouring and the diameter of the opening which gives an easier access to the tea leaves."
+    },
+    "Bol à thé": {
+        "fr": "",
+        "en": ""
+    },
+    "Verseuse": {
+        "fr": "Les verseuses ou pichets d'équité, servent à harmoniser l'infusion avant de la servir dans les tasses.",
+        "en": "The pourers or equity pitchers are used to harmonize the infusion before serving it in the cups."
+    },
+    "Set de voyage": {
+        "fr": "Le set de voyage se veut pratique et fonctionnel, il peut se glisser facilement dans vos bagages ou votre sac. Le set de voyage se compose : d'un infuseur (style hohin), d'une ou deux tasses, d'un morceau de tissus qui se place entre la tasse et le couvercle, afin de maintenir ce dernier, d'un élastique pour assembler le tout, et d'une housse de transport cousue à la main par ma compagne !",
+        "en": "The travel set is practical and functional, it can be easily slipped into your luggage or bag. The travel set is composed of: an infuser (hohin style), one or two cups, a piece of fabric that is placed between the cup and the lid to hold the lid, an elastic band to assemble the whole, and a carrying case sewn by hand by my girlfriend!"
+    },
 }
