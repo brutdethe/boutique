@@ -611,4 +611,404 @@
             ""
         ]
     }
+     {
+        "id": "h29",
+        "titre": {
+            "en": "Hohin 10cl,
+            "fr": "Hohin 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Hohin",
+        "description": {
+            "en": "Hohin stoneware GECH30 raw (very porous) of 10 cl.",
+            "fr": "Hohin en terre GECH30 brute (très poreuse) de 10 cl."
+        },
+        "prix": 98.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "h30",
+        "titre": {
+            "en": "Hohin 10cl,
+            "fr": "Hohin 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Hohin",
+        "description": {
+            "en": "Hohin made in Moutiers stoneware (burgundy) of 10 cl.",
+            "fr": "Hohin en terre de Moutiers (bourgogne) de 10 cl."
+        },
+        "prix": 98.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "h31",
+        "titre": {
+            "en": "Hohin 10cl,
+            "fr": "Hohin 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Hohin",
+        "description": {
+            "en": "Glazed Hohin of 10 cl.",
+            "fr": "Hohin émaillé de 10 cl."
+        },
+        "prix": 98.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt1",
+        "titre": {
+            "en": "Set gongfu bowls 4cl.",
+            "fr": "Set bols à gongfu 4cl."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Set consisting of a smelling bowl and a drinking bowl of 4 cl",
+            "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl"
+        },
+        "prix": 25.00,
+        "poids": 0.4,
+        "stock": 20,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt2",
+        "titre": {
+            "en": "tea bowl 10 cl",
+            "fr": "Bol à thé 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
+        },
+        "prix": 14.00,
+        "poids": 0.25,
+        "stock": 15,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt3",
+        "titre": {
+            "en": "tea bowl 12 cl",
+            "fr": "Bol à thé 12cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Diameter 8,9cm, height 5,5cm, weight 130gr, capacity 12cl.",
+            "fr": "Diamètre 8,9cm, hauteur 5,5cm, poids 130gr, contenance 12cl."
+        },
+        "prix": 36.00,
+        "poids": 0.25,
+        "stock": 10,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt4",
+        "titre": {
+            "en": "tea bowl 12 cl",
+            "fr": "Bol à thé 12cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Diameter 8,9cm, height 5,5cm, weight 130gr, capacity 12cl.",
+            "fr": "Diamètre 8,9cm, hauteur 5,5cm, poids 130gr, contenance 12cl."
+        },
+        "prix": 36.00,
+        "poids": 0.25,
+        "stock": 3,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt5",
+        "titre": {
+            "en": "tea bowl 10 cl",
+            "fr": "Bol à thé 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
+        },
+        "prix": 20.00,
+        "poids": 0.25,
+        "stock": 2,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt6",
+        "titre": {
+            "en": "tea bowl 10 cl",
+            "fr": "Bol à thé 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
+        },
+        "prix": 20.00,
+        "poids": 0.25,
+        "stock": 2,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "bt7",
+        "titre": {
+            "en": "tea bowl 10 cl",
+            "fr": "Bol à thé 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Bol à thé",
+        "description": {
+            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
+        },
+        "prix": 14.00,
+        "poids": 0.25,
+        "stock": 2,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "v3",
+        "titre": {
+            "en": "Pourer 13cl",
+            "fr": "Verseuse 13cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "verseuse",
+        "description": {
+            "en": "Glazed pourer of 13cl",
+            "fr": "Verseuse de 13cl émaillée."
+        },
+        "prix": 25.00,
+        "poids": 0.25,
+        "stock": 2,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "v4",
+        "titre": {
+            "en": "Pourer 13cl",
+            "fr": "Verseuse 13cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "verseuse",
+        "description": {
+            "en": "Glazed pourer of 13cl",
+            "fr": "Verseuse de 13cl émaillée."
+        },
+        "prix": 30.00,
+        "poids": 0.25,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "v5",
+        "titre": {
+            "en": "Pourer 13cl",
+            "fr": "Verseuse 13cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "verseuse",
+        "description": {
+            "en": "Glazed pourer of 13cl",
+            "fr": "Verseuse de 13cl émaillée."
+        },
+        "prix": 30.00,
+        "poids": 0.25,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "sdv10",
+        "titre": {
+            "en": "Travel set for 2",
+            "fr": "Set de voyage pour 2"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Travel set in Moutiers stoneware (Burgundy), 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers (Bourgogne), brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+        },
+        "prix": 160.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "sdv11",
+        "titre": {
+            "en": "Travel set for 2",
+            "fr": "Set de voyage pour 2"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Travel set in Treigny stoneware (Burgundy), 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Treigny (Bourgogne), brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+        },
+        "prix": 160.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "sdv12",
+        "titre": {
+            "en": "Travel set for 2",
+            "fr": "Set de voyage pour 2"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Travel set in Moutiers stoneware, 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers, brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+        },
+        "prix": 160.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "sdv13",
+        "titre": {
+            "en": "Travel set for 2",
+            "fr": "Set de voyage pour 2"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Travel set in Moutiers stoneware, 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers, brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+        },
+        "prix": 160.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "sdv14",
+        "titre": {
+            "en": "Travel set for 2",
+            "fr": "Set de voyage pour 2"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Travel set in Moutiers stoneware, 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers, brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+        },
+        "prix": 130.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "hp1",
+        "titre": {
+            "en": "Protective cover only.",
+            "fr": "Housse de protection seule."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Protective cover with separation. Size: square of 22cm side. This cover is shipped with two pieces of assorted fabric to hold the pieces once unpacked.",
+            "fr": "Housse de protection munie d'une séparation. Taille : carré de 22cm de côté. Cette housse est expédiée avec deux morceaux de tissus assortis, permettant d'accueillir les pièces une fois déballées."
+        },
+        "prix": 130.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
+{
+        "id": "hp2",
+        "titre": {
+            "en": "Protective cover only.",
+            "fr": "Housse de protection seule."
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-23",
+        "catégorie": "Set de Voyage",
+        "description": {
+            "en": "Protective cover with separation. Size: square of 22cm side. This cover is shipped with two pieces of assorted fabric to hold the pieces once unpacked.",
+            "fr": "Housse de protection munie d'une séparation. Taille : carré de 22cm de côté. Cette housse est expédiée avec deux morceaux de tissus assortis, permettant d'accueillir les pièces une fois déballées."
+        },
+        "prix": 130.00,
+        "poids": 0.5,
+        "stock": 1,
+        "photos": [
+            ""
+        ]
+    }
 ]
