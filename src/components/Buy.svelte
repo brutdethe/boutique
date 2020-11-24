@@ -4,7 +4,7 @@
   export let item;
 
   function basketClick(evt) {
-    const id = evt.currentTarget.getAttribute("data-product");
+    item.qty = 1;
     basket.set([...$basket, item]);
   }
 
