@@ -862,7 +862,8 @@
         "poids": 0.25,
         "stock": 2,
         "photos": [
-            ""
+            "verseuse_3-a.jpg",
+            "verseuse_3-b.jpg"
         ]
     },
     {
@@ -882,7 +883,10 @@
         "poids": 0.25,
         "stock": 1,
         "photos": [
-            ""
+            "verseuse_4-a.jpg",
+            "verseuse_4-b.jpg",
+            "verseuse_4-c.jpg",
+            "verseuse_4-d.jpg"
         ]
     },
     {
@@ -902,7 +906,10 @@
         "poids": 0.25,
         "stock": 1,
         "photos": [
-            ""
+            "verseuse_5-a.jpg",
+            "verseuse_5-b.jpg",
+            "verseuse_5-c.jpg",
+            "verseuse_5-d.jpg"
         ]
     },
     {
@@ -922,7 +929,10 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "set-de-voyage_10-a.jpg",
+            "set-de-voyage_10-b.jpg",
+            "set-de-voyage_10-c.jpg",
+            "set-de-voyage_10-d.jpg"
         ]
     },
     {
@@ -942,7 +952,10 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "set-de-voyage_11-a.jpg",
+            "set-de-voyage_11-b.jpg",
+            "set-de-voyage_11-d.jpg",
+            "set-de-voyage_11-e.jpg"
         ]
     },
     {
@@ -962,7 +975,10 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "set-de-voyage_12-a.jpg",
+            "set-de-voyage_12-b.jpg",
+            "set-de-voyage_12-c.jpg",
+            "set-de-voyage_12-d.jpg"
         ]
     },
     {
@@ -982,7 +998,10 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "set-de-voyage_13-a.jpg",
+            "set-de-voyage_13-b.jpg",
+            "set-de-voyage_13-c.jpg",
+            "set-de-voyage_13-d.jpg"
         ]
     },
     {
@@ -1002,7 +1021,10 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "set-de-voyage_14-a.jpg",
+            "set-de-voyage_14-b.jpg",
+            "set-de-voyage_14-c.jpg",
+            "set-de-voyage_14-d.jpg"
         ]
     },
     {
@@ -1022,7 +1044,8 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "housse_1-a.jpg",
+            "housse_1-b.jpg"
         ]
     },
     {
@@ -1042,7 +1065,8 @@
         "poids": 0.5,
         "stock": 1,
         "photos": [
-            ""
+            "housse_2-a.jpg",
+            "housse_2-b.jpg"
         ]
     },
     {
@@ -1062,7 +1086,9 @@
         "poids": 0.8,
         "stock": 1,
         "photos": [
-            ""
+            "bouilloire_10-a.jpg",
+            "bouilloire_10-b.jpg",
+            "bouilloire_10-c.jpg"
         ]
     },
     {
@@ -1082,7 +1108,9 @@
         "poids": 0.8,
         "stock": 1,
         "photos": [
-            ""
+            "bouilloire_11-a.jpg",
+            "bouilloire_11-b.jpg",
+            "bouilloire_11-c.jpg"
         ]
     },
     {
@@ -1102,7 +1130,9 @@
         "poids": 0.8,
         "stock": 1,
         "photos": [
-            ""
+            "bouilloire_12-a.jpg",
+            "bouilloire_12-b.jpg",
+            "bouilloire_12-c.jpg"
         ]
     },
     {
@@ -1122,7 +1152,9 @@
         "poids": 0.8,
         "stock": 1,
         "photos": [
-            ""
+            "bouilloire_14-a.jpg",
+            "bouilloire_14-b.jpg",
+            "bouilloire_14-c.jpg"
         ]
     },
     {
@@ -1282,7 +1314,11 @@
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            ""
+            "pot-a-t_1-a.jpg",
+            "pot-a-t_1-b.jpg",
+            "pot-a-t_1-c.jpg",
+            "pot-a-t_1-d.jpg",
+            "pot-a-t_1-e.jpg"
         ]
     },
     {
@@ -1302,7 +1338,9 @@
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            ""
+            "pot-a-t_2-a.jpg",
+            "pot-a-t_2-b.jpg",
+            "pot-a-t_2-c.jpg"
         ]
     },
     {
@@ -1322,7 +1360,10 @@
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            ""
+            "pot-a-t_3-a.jpg",
+            "pot-a-t_3-b.jpg",
+            "pot-a-t_3-c.jpg",
+            "pot-a-t_3-d.jpg"
         ]
     },
     {
@@ -1342,7 +1383,9 @@
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            ""
+            "pot-a-t_4-a.jpg",
+            "pot-a-t_4-b.jpg",
+            "pot-a-t_4-c.jpg"
         ]
     },
     {
@@ -1362,7 +1405,9 @@
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            ""
+            "pot-a-t_5-a.jpg",
+            "pot-a-t_5-b.jpg",
+            "pot-a-t_5-c.jpg"
         ]
     },
     {
@@ -1382,7 +1427,8 @@
         "poids": 5.0,
         "stock": 1,
         "photos": [
-            ""
+            "jarre_1-a.jpg",
+            "jarre_1-b.jpg"
         ]
     },
     {
@@ -1402,7 +1448,9 @@
         "poids": 3.0,
         "stock": 1,
         "photos": [
-            ""
+            "jarre_2-a.jpg",
+            "jarre_2-b.jpg",
+            "jarre_2-c.jpg"
         ]
     },
     {
@@ -1422,7 +1470,9 @@
         "poids": 3.0,
         "stock": 1,
         "photos": [
-            ""
+            "jarre_3-a.jpg",
+            "jarre_3-b.jpg",
+            "jarre_3-c.jpg"
         ]
     }
 ]
