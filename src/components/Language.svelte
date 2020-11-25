@@ -6,28 +6,22 @@
 </script>
 
 <style>
-  .form-group {
+  .language {
     line-height: 4em;
   }
 </style>
 
-<div class="form-group column col-1 ">
-  <label class="form-radio form-inline">
-    <input
-      type="radio"
-      bind:group={$languageSelected}
-      on:change={changeLanguageSelected}
-      value="en" />
-    <i class="form-icon" />
-    EN
-  </label>
-  <label class="form-radio form-inline">
-    <input
-      type="radio"
-      bind:group={$languageSelected}
-      on:change={changeLanguageSelected}
-      value="fr" />
-    <i class="form-icon" />
-    FR
-  </label>
+<div class="language column col-2">
+  <button
+    class="btn btn-sm {'en' === $languageSelected ? 'bg-secondary' : ''}"
+    on:click={changeLanguageSelected}
+    value="en">
+    En
+  </button>
+  <button
+    class="btn btn-sm {'fr' === $languageSelected ? 'bg-secondary' : ''}"
+    on:click={changeLanguageSelected}
+    value="fr">
+    Fr
+  </button>
 </div>
