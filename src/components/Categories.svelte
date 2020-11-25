@@ -19,6 +19,9 @@
   hr {
     color: #ddd;
   }
+  .btn {
+    margin: 0.1em;
+  }
 </style>
 
 <div class="hero-sm bg-dark">
@@ -31,20 +34,14 @@
 </div>
 
 {#if categories}
-  <div class="form-group">
-    |
-    {#each categories as category}
-      <label class="form-radio form-inline">
-        <input
-          type="radio"
-          bind:group={$categorySelected}
-          on:change={changeCategory}
-          value={category} />
-        <i class="form-icon" />
-        {category} |
-      </label>
-    {/each}
-  </div>
+  {#each categories as category}
+    <button
+      class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
+      on:click={changeCategory}
+      value={category}>
+      {category}
+    </button>
+  {/each}
 {/if}
 
 <hr />
