@@ -77,7 +77,7 @@
 </style>
 
 <svelte:head>
-  <title>dict.title[$languageSelected]</title>
+  <title>{dict.title[$languageSelected]}</title>
 </svelte:head>
 <header>
   <Categories categories={$products.categories} />
