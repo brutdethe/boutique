@@ -15,16 +15,19 @@
   .hero-body {
     padding: 0.8rem;
     margin-bottom: 0.8rem;
+    height: 11em;
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   }
   hr {
     color: #ddd;
   }
   .btn {
     margin: 0.1em;
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   }
 </style>
 
-<div class="hero-sm bg-dark">
+<div class="hero-sm bg-primary">
   <div class="hero-body">
     <h3>{$categorySelected}</h3>
     {#if $categoriesDescription[$categorySelected]}
