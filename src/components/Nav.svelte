@@ -62,27 +62,26 @@
 </style>
 
 <nav class="columns">
-  <ul class="column col-4">
+  <ul class="column col-2">
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        home
+        Produits
       </a>
     </li>
-
     <li>
-      <a href="./produits.json">produits.json</a>
-    </li>
-    <li>
-      <a href="./categories.json">categories.json</a>
-    </li>
-    <li>
-
       <a aria-current={segment === 'panier' ? 'page' : undefined} href="panier">
         <span class="badge" data-badge={$basket.length} data-initial="YZ">
           panier
         </span>
       </a>
-
+    </li>
+  </ul>
+  <ul class="column col-2">
+    <li>
+      <a href="./produits.json" class="text-secondary">produits.json</a>
+    </li>
+    <li>
+      <a href="./categories.json" class="text-secondary">categories.json</a>
     </li>
   </ul>
   <h1 class="title column col-6">
