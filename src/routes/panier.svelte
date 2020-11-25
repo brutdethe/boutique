@@ -1,9 +1,13 @@
 <script>
   import { basket, languageSelected } from "../stores.js";
 
-  let subTotal = 70;
   let transport = 8;
-  let total = subTotal + transport;
+
+  $: subTotal = $basket
+    .filter(product => product.stock > 0)
+    .reduce((acc = 0, product) => product.prix * product.qty + acc, 0);
+
+  $: total = subTotal + transport;
 
   const dict = {
     title: { en: "Summary of purchases", fr: "Récapitulatif des achats" },
@@ -32,6 +36,10 @@
       fr: "total"
     }
   };
+
+  function changeQty(evt) {
+    console.log(evt.target);
+  }
 </script>
 
 <style>
@@ -41,15 +49,18 @@
   .card {
     box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   }
+  .form-input {
+    width: 3.5em;
+  }
 </style>
 
 <svelte:head>
   <title>{dict.title[$languageSelected]}</title>
 </svelte:head>
+
 <h2>{dict.title[$languageSelected]}</h2>
 <div class="container">
   <div class="columns">
-
     <table class="table table-striped table-hover column col-8">
       <thead>
         <tr>
@@ -63,9 +74,19 @@
         {#if $basket.length}
           {#each $basket as item, index}
             <tr class="active">
-              <td>{item.titre[$languageSelected]}</td>
+              <td>{item.titre[$languageSelected]} - {item.poids} g</td>
               <td>{item.prix} €</td>
-              <td>{item.qty}</td>
+              <td>
+                {#if item.stock > 1}
+                  <input
+                    class="form-input"
+                    type="number"
+                    bind:value={item.qty}
+                    on:change={changeQty}
+                    min="1"
+                    max={item.stock} />
+                {:else}{item.qty}{/if}
+              </td>
               <td>{item.prix * item.qty} €</td>
             </tr>
           {/each}
