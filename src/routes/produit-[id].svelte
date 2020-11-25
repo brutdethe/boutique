@@ -47,50 +47,46 @@
 
 {#if $products.product}
   <div class="card">
-    <div class="card-image carousel">
-      <!-- carousel locator -->
-      {#each $products.product.photos as photo, count}
-        <input
-          class="carousel-locator"
-          id="slide-{count + 1}"
-          type="radio"
-          name="carousel-radio"
-          hidden="true"
-          checked={!count && true} />
-      {/each}
-
-      <!-- carousel container -->
-      <div class="carousel-container">
-        <!-- carousel item -->
+    {#if $products.product.photos.length}
+      <div class="card-image carousel">
         {#each $products.product.photos as photo, count}
-          <figure class="carousel-item">
-            <label
-              class="item-prev btn btn-action btn-lg"
-              for="slide-{count ? count : $products.product.photos.length}">
-              <i class="icon icon-arrow-left" />
-            </label>
-            <label
-              class="item-next btn btn-action btn-lg"
-              for="slide-{count + 2 <= $products.product.photos.length ? count + 2 : 1}">
-              <i class="icon icon-arrow-right" />
-            </label>
-            <img
-              class="img-responsive rounded"
-              src="/produits/{photo}"
-              alt={$products.product.titre[$languageSelected]} />
-          </figure>
+          <input
+            class="carousel-locator"
+            id="slide-{count + 1}"
+            type="radio"
+            name="carousel-radio"
+            hidden="true"
+            checked={!count && true} />
         {/each}
+        <div class="carousel-container">
+          {#each $products.product.photos as photo, count}
+            <figure class="carousel-item">
+              <label
+                class="item-prev btn btn-action btn-lg"
+                for="slide-{count ? count : $products.product.photos.length}">
+                <i class="icon icon-arrow-left" />
+              </label>
+              <label
+                class="item-next btn btn-action btn-lg"
+                for="slide-{count + 2 <= $products.product.photos.length ? count + 2 : 1}">
+                <i class="icon icon-arrow-right" />
+              </label>
+              <img
+                class="img-responsive rounded"
+                src="/produits/{photo}"
+                alt={$products.product.titre[$languageSelected]} />
+            </figure>
+          {/each}
+        </div>
+        <div class="carousel-nav">
+          {#each $products.product.photos as photo, count}
+            <label class="nav-item text-hide c-hand" for="slide-{count + 1}">
+              {count}
+            </label>
+          {/each}
+        </div>
       </div>
-      <!-- carousel navigation -->
-      <div class="carousel-nav">
-        {#each $products.product.photos as photo, count}
-          <label class="nav-item text-hide c-hand" for="slide-{count + 1}">
-            {count}
-          </label>
-        {/each}
-      </div>
-
-    </div>
+    {/if}
     <div class="card-header">
       <div class="card-title h4">
         {$products.product.titre[$languageSelected]}
