@@ -7,6 +7,9 @@
   const dict = {
     title: { en: "Jé's little store", fr: "La petite boutique de Jé" }
   };
+
+  const basketCount = basket =>
+    basket.reduce((acc, product) => product.qty + acc, 0);
 </script>
 
 <style>
@@ -70,7 +73,7 @@
     </li>
     <li>
       <a aria-current={segment === 'panier' ? 'page' : undefined} href="panier">
-        <span class="badge" data-badge={$basket.length} data-initial="YZ">
+        <span class="badge" data-badge={basketCount($basket)} data-initial="YZ">
           panier
         </span>
       </a>
