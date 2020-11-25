@@ -327,9 +327,7 @@
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "k11",
@@ -347,9 +345,7 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "k15",
@@ -389,9 +385,7 @@
         "prix": 136.00,
         "poids": 0.4,
         "stock": 0,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "k17",
@@ -651,9 +645,7 @@
         "prix": 98.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "h30",
@@ -671,9 +663,7 @@
         "prix": 98.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "h31",
@@ -691,9 +681,7 @@
         "prix": 98.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bt1",
@@ -755,9 +743,7 @@
         "prix": 36.00,
         "poids": 0.25,
         "stock": 10,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bt4",
@@ -775,9 +761,7 @@
         "prix": 36.00,
         "poids": 0.25,
         "stock": 3,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bt5",
@@ -1173,9 +1157,7 @@
         "prix": 150.00,
         "poids": 2.5,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "br10",
@@ -1193,9 +1175,7 @@
         "prix": 150.00,
         "poids": 2.5,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bat16",
@@ -1213,9 +1193,7 @@
         "prix": 54.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bat15",
@@ -1233,9 +1211,7 @@
         "prix": 54.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bat8",
@@ -1253,9 +1229,7 @@
         "prix": 54.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bat9",
@@ -1273,9 +1247,7 @@
         "prix": 54.00,
         "poids": 0.4,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "bat17",
@@ -1293,9 +1265,7 @@
         "prix": 70.00,
         "poids": 0.9,
         "stock": 1,
-        "photos": [
-            ""
-        ]
+        "photos": []
     },
     {
         "id": "pp1",
