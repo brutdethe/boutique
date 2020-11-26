@@ -3,9 +3,10 @@
 
   let transport = 8;
 
-  $: subTotal = $basket
-    .filter(product => product.stock > 0)
-    .reduce((acc = 0, product) => product.prix * product.qty + acc, 0);
+  $: subTotal = $basket.reduce(
+    (acc, product) => product.prix * product.qty + acc,
+    0
+  );
 
   $: total = subTotal + transport;
 
