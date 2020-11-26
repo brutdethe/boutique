@@ -36,10 +36,6 @@
       fr: "total"
     }
   };
-
-  function changeQty(evt) {
-    console.log(evt.target);
-  }
 </script>
 
 <style>
@@ -83,7 +79,6 @@
                     class="form-input"
                     type="number"
                     bind:value={item.qty}
-                    on:change={changeQty}
                     min="1"
                     max={item.stock} />
                 {:else}{item.qty}{/if}
