@@ -59,19 +59,20 @@
 </svelte:head>
 
 <h2>{dict.title[$languageSelected]}</h2>
+
 <div class="container">
   <div class="columns">
-    <table class="table table-striped table-hover column col-8">
-      <thead>
-        <tr>
-          <th>{dict.product[$languageSelected]}</th>
-          <th>{dict.price[$languageSelected]}</th>
-          <th>{dict.qty[$languageSelected]}</th>
-          <th>{dict.total[$languageSelected]}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {#if $basket.length}
+    {#if $basket.length}
+      <table class="table table-striped table-hover column col-8">
+        <thead>
+          <tr>
+            <th>{dict.product[$languageSelected]}</th>
+            <th>{dict.price[$languageSelected]}</th>
+            <th>{dict.qty[$languageSelected]}</th>
+            <th>{dict.total[$languageSelected]}</th>
+          </tr>
+        </thead>
+        <tbody>
           {#each $basket as item, index}
             <tr class="active">
               <td>{item.titre[$languageSelected]} - {item.poids} g</td>
@@ -90,41 +91,52 @@
               <td>{item.prix * item.qty} €</td>
             </tr>
           {/each}
-        {:else}
-          <tr>
-            <td colspan="4">{dict.empty[$languageSelected]}</td>
-          </tr>
-        {/if}
-      </tbody>
-    </table>
-    <article class="card">
-      <div class="card-header">
-        <div class="card-title h5">Ticket</div>
-      </div>
-      <div class="card-body">
-        <table class="table">
-          <tbody>
-            <tr>
-              <td>S/Total</td>
-              <td class="text-right">{subTotal} €</td>
-            </tr>
-            <tr>
-              <td>Transport</td>
-              <td class="text-right">{transport} €</td>
-            </tr>
-            <tr class="active">
-              <td class="text-bold">Total</td>
-              <td class="text-right text-bold">{total} €</td>
-            </tr>
-          </tbody>
-        </table>
+        </tbody>
+      </table>
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title h5">Ticket</div>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>S/Total</td>
+                <td class="text-right">{subTotal} €</td>
+              </tr>
+              <tr>
+                <td>Transport</td>
+                <td class="text-right">{transport} €</td>
+              </tr>
+              <tr class="active">
+                <td class="text-bold">Total</td>
+                <td class="text-right text-bold">{total} €</td>
+              </tr>
+            </tbody>
+          </table>
 
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-success">Passer la commande</button>
+        </div>
+      </article>
+    {:else}
+      <div class="empty column col-12">
+        <div class="empty-icon">
+          <i class="icon icon-stop" />
+        </div>
+        <p class="empty-title h5">{dict.empty[$languageSelected]}</p>
+        <div class="empty-action">
+          <a href="/" class="back-shop">
+            &lsaquo; {dict.backToShop[$languageSelected]}
+          </a>
+        </div>
       </div>
-      <div class="card-footer">
-        <button class="btn btn-success">Passer la commande</button>
-      </div>
-    </article>
+    {/if}
   </div>
 </div>
-
-<a href="/" class="back-shop">&lsaquo; {dict.backToShop[$languageSelected]}</a>
+{#if $basket.length}
+  <a href="/" class="back-shop">
+    &lsaquo; {dict.backToShop[$languageSelected]}
+  </a>
+{/if}
