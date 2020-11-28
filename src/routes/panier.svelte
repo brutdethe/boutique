@@ -10,6 +10,10 @@
 
   $: total = subTotal + transport;
 
+  function deleteClick(id) {
+    $basket = $basket.filter(product => product.id !== id);
+  }
+
   const dict = {
     title: { en: "Summary of purchases", fr: "Récapitulatif des achats" },
     empty: {
@@ -68,6 +72,7 @@
         <thead>
           <tr>
             <th>{dict.product[$languageSelected]}</th>
+            <th />
             <th>{dict.price[$languageSelected]}</th>
             <th>{dict.qty[$languageSelected]}</th>
             <th>{dict.total[$languageSelected]}</th>
@@ -77,6 +82,11 @@
           {#each $basket as item, index}
             <tr class="active">
               <td>{item.titre[$languageSelected]} - {item.poids} g</td>
+              <td>
+                <i
+                  class="icon icon-delete c-hand"
+                  on:click|once={deleteClick(item.id)} />
+              </td>
               <td>{item.prix} €</td>
               <td>
                 {#if item.stock > 1}
