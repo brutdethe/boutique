@@ -35,6 +35,10 @@
     total: {
       en: "total",
       fr: "total"
+    },
+    order: {
+      en: "Placing the order",
+      fr: "Passez la commande"
     }
   };
 </script>
@@ -113,7 +117,9 @@
 
         </div>
         <div class="card-footer">
-          <button class="btn btn-success">Passer la commande</button>
+          <button class="btn btn-success">
+            {dict.order[$languageSelected]}
+          </button>
         </div>
       </article>
     {:else}
