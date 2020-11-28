@@ -47,6 +47,7 @@
     const id = evt.currentTarget.getAttribute("data-product");
     goto(`/produit-${id}`);
   }
+
   function basketClick(evt) {
     const id = evt.currentTarget.getAttribute("data-product");
     basket.set([...$basket, id]);
