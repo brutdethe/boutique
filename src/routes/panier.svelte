@@ -1,4 +1,5 @@
 <script>
+  import { goto } from "@sapper/app";
   import { basket, languageSelected } from "../stores.js";
 
   let transport = 8;
@@ -127,7 +128,7 @@
 
         </div>
         <div class="card-footer">
-          <button class="btn btn-success">
+          <button class="btn btn-success" on:click|once={goto(`/adresse`)}>
             {dict.order[$languageSelected]}
           </button>
         </div>
