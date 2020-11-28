@@ -43,11 +43,6 @@
       .sort((a, b) => new Date(b.création) - new Date(a.création));
   }
 
-  function detailClick(evt) {
-    const id = evt.currentTarget.getAttribute("data-product");
-    goto(`/produit-${id}`);
-  }
-
   function basketClick(evt) {
     const id = evt.currentTarget.getAttribute("data-product");
     basket.set([...$basket, id]);
@@ -116,7 +111,7 @@
               <div class="btn-group btn-group-block">
                 <button
                   class="detail btn btn-secondary"
-                  on:click|once={detailClick}
+                  on:click|once={goto(`/produit-${product.id}`)}
                   data-product={product.id}>
                   {dict.detail[$languageSelected]}
                 </button>
