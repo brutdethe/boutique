@@ -5,7 +5,9 @@
   export let segment;
 
   const dict = {
-    title: { en: "Jé's little store", fr: "La petite boutique de Jé" }
+    title: { en: "Jé's little store", fr: "La petite boutique de Jé" },
+    nav_products: { en: "product", fr: "produits" },
+    nav_basket: { en: "basket", fr: "panier" }
   };
 
   const basketCount = basket =>
@@ -68,13 +70,13 @@
   <ul class="column col-2">
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        Produits
+        {dict.nav_products[$languageSelected]}
       </a>
     </li>
     <li>
       <a aria-current={segment === 'panier' ? 'page' : undefined} href="panier">
         <span class="badge" data-badge={basketCount($basket)} data-initial="YZ">
-          panier
+          {dict.nav_basket[$languageSelected]}
         </span>
       </a>
     </li>

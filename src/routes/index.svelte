@@ -94,7 +94,7 @@
           <article class="card">
             <div class="card-header">
               <div class="card-title h5">
-                {product.titre[$languageSelected]} #{product.id}
+                {product.titre[$languageSelected]}
               </div>
               <div class="card-subtitle text-gray">{$categorySelected}</div>
             </div>
