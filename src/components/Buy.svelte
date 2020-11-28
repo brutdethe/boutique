@@ -3,11 +3,16 @@
 
   export let item;
 
-  function basketClick() {
-    if (!$basket.filter(product => product.id === item.id).length) {
-      // create a product
-      item.qty = item.qty ? item.qty++ : 1;
+  const getBasketProduct = id =>
+    $basket.filter(product => product.id === id)[0];
+
+  $: disabled = getBasketProduct(item.id) ? true : false;
+
+  function basketClick(item) {
+    if (getBasketProduct(item.id) === undefined) {
+      item.qty = 1;
       basket.set([...$basket, item]);
+      disabled = true;
     }
   }
 
@@ -19,6 +24,9 @@
   };
 </script>
 
-<button class="btn btn-primary float-right" on:click|once={basketClick}>
+<button
+  class="btn btn-primary float-right"
+  on:click|once={basketClick(item)}
+  {disabled}>
   {dict.buy[$languageSelected]}
 </button>
