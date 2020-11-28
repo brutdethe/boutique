@@ -6,7 +6,7 @@
   } from "../stores.js";
 
   export let categories;
-  let categoriesDescription = loadCategories();
+  let categoriesWording = loadCategories();
 
   const changeCategory = evt => categorySelected.set(evt.currentTarget.value);
 </script>
@@ -30,8 +30,10 @@
 <div class="hero-sm bg-primary">
   <div class="hero-body">
     <h3>{$categorySelected}</h3>
-    {#if $categoriesDescription[$categorySelected]}
-      <p>{$categoriesDescription[$categorySelected][$languageSelected]}</p>
+    {#if $categoriesWording[$categorySelected]}
+      <p>
+        {$categoriesWording[$categorySelected].description[$languageSelected]}
+      </p>
     {/if}
   </div>
 </div>
@@ -42,7 +44,9 @@
       class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
       on:click={changeCategory}
       value={category}>
-      {category}
+      {#if $categoriesWording[category]}
+        {$categoriesWording[category].titre[$languageSelected]}
+      {/if}
     </button>
   {/each}
 {/if}

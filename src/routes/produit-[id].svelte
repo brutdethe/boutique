@@ -91,11 +91,13 @@
       <div class="card-title h4">
         {$products.product.titre[$languageSelected]}
       </div>
-      <div class="card-subtitle text-gray">{$categorySelected}</div>
     </div>
     <div class="card-body">
-      {$products.product.description[$languageSelected]} - {$products.product.poids}
-      g.
+      <p>
+        {$products.product.description[$languageSelected]} - {$products.product.poids}
+        g.
+      </p>
+      <p>Stock : {$products.product.prix}</p>
       <h3 class="card-title h1 price">{$products.product.prix} €</h3>
     </div>
     <div class="card-footer">
