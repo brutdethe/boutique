@@ -77,7 +77,8 @@
       class="form-input"
       type="text"
       id="last-name"
-      placeholder={dict.lastName[$languageSelected]} />
+      placeholder={dict.lastName[$languageSelected]}
+      required />
 
     <label class="form-label" for="first-name">
       {dict.firstName[$languageSelected]}
@@ -91,10 +92,10 @@
     <label class="form-label" for="email">Email</label>
     <input
       class="form-input"
-      required
       type="email"
       id="email"
-      placeholder="Email" />
+      placeholder="Email"
+      required />
 
     <label class="form-label" for="street">
       {dict.street[$languageSelected]}
@@ -103,21 +104,24 @@
       class="form-input"
       type="text"
       id="street"
-      placeholder={dict.street[$languageSelected]} />
+      placeholder={dict.street[$languageSelected]}
+      required />
 
     <label class="form-label" for="zip">{dict.zip[$languageSelected]}</label>
     <input
       class="form-input"
       type="text"
       id="zip"
-      placeholder={dict.zip[$languageSelected]} />
+      placeholder={dict.zip[$languageSelected]}
+      required />
 
     <label class="form-label" for="town">{dict.town[$languageSelected]}</label>
     <input
       class="form-input"
       type="text"
       id="town"
-      placeholder={dict.town[$languageSelected]} />
+      placeholder={dict.town[$languageSelected]}
+      required />
 
     <label class="form-label" for="country">
       {dict.country[$languageSelected]}
@@ -126,7 +130,8 @@
       class="form-input"
       type="text"
       id="country"
-      placeholder={dict.country[$languageSelected]} />
+      placeholder={dict.country[$languageSelected]}
+      required />
     <label class="form-label" for="message">Message</label>
     <textarea class="form-input" id="message" placeholder="Textarea" rows="3" />
     <hr />
