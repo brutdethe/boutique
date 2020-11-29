@@ -128,7 +128,7 @@
 
         </div>
         <div class="card-footer">
-          <button class="btn btn-success" on:click|once={goto(`/adresse`)}>
+          <button class="btn btn-success" on:click|once={null}>
             {dict.order[$languageSelected]}
           </button>
         </div>
