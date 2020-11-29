@@ -53,7 +53,7 @@ async function fetchProducts(set, id) {
         }
 
     } catch (error) {
-        console.warn('Fetch Error products in stores');
+        console.warn('Fetch Error products in stores:', error);
     }
 
     return () => { };
