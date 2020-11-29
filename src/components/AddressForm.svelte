@@ -54,8 +54,8 @@
       fr: "Pays"
     },
     submit: {
-      en: "Create address",
-      fr: "Créer mon adresse"
+      en: "Save my address",
+      fr: "Enregistrer mon adresse"
     },
     errorEmail: {
       en: "Please enter a valid email address",
@@ -113,6 +113,7 @@
       type="text"
       id="zip"
       placeholder={dict.zip[$languageSelected]}
+      pattern="[0-9]*"
       required />
 
     <label class="form-label" for="town">{dict.town[$languageSelected]}</label>
