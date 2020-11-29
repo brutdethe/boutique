@@ -1,5 +1,6 @@
 <script>
   import { address, languageSelected } from "../stores.js";
+  import Address from "../components/displayAddress.svelte";
 
   function handleSubmit(evt) {
     const formValues = {
@@ -15,8 +16,6 @@
 
     $address.livraison = formValues;
   }
-
-  console.log("$address:", $address);
 
   const dict = {
     lastName: {
@@ -106,6 +105,10 @@
       placeholder={dict.country[$languageSelected]} />
     <label class="form-label" for="message">Message</label>
     <textarea class="form-input" id="message" placeholder="Textarea" rows="3" />
+    <hr />
     <button type="submit">{dict.submit[$languageSelected]}</button>
   </div>
 </form>
+
+<hr />
+<Address />
