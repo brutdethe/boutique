@@ -3,10 +3,8 @@ import { writable, readable } from 'svelte/store';
 export const languageSelected = writable('fr');
 export const categorySelected = writable('Gaiwan');
 export const basket = writable([]);
-export const address = writable({});
 
 function getCategoriesInStock(products) {
-
     function getCategories(products) {
         const categories = new Set(products.map(product => product.catégorie))
 
@@ -53,7 +51,7 @@ async function fetchProducts(set, id) {
         }
 
     } catch (error) {
-        console.warn('Fetch Error products in stores:', error);
+        console.warn('Fetch Error products in stores:');
     }
 
     return () => { };
@@ -81,7 +79,7 @@ async function fetchCategories(set) {
         }
 
     } catch (error) {
-        console.warn('Fetch Error categories in stores', error);
+        console.warn('Fetch Error categories in stores');
     }
 
     return () => { };
