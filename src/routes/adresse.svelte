@@ -9,7 +9,8 @@
       street: evt.target.street.value,
       zip: evt.target.zip.value,
       town: evt.target.town.value,
-      country: evt.target.country.value
+      country: evt.target.country.value,
+      message: evt.target.message.value
     };
 
     console.log("target:", formValues);
@@ -101,6 +102,8 @@
       type="text"
       id="country"
       placeholder={dict.country[$languageSelected]} />
+    <label class="form-label" for="message">Message</label>
+    <textarea class="form-input" id="message" placeholder="Textarea" rows="3" />
     <button type="submit">{dict.submit[$languageSelected]}</button>
   </div>
 </form>
