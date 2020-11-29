@@ -11,7 +11,7 @@
   };
 </script>
 
-<div class="card">
+<div class="card column col-6 col-xs-12">
   <div class="card-header">
     <div class="card-title h5">{dict.deliveryAddress[$languageSelected]}</div>
   </div>
@@ -21,4 +21,5 @@
 </div>
 
 <hr />
+
 <Address />
