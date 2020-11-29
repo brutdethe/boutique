@@ -3,6 +3,7 @@ import { writable, readable } from 'svelte/store';
 export const languageSelected = writable('fr');
 export const categorySelected = writable('Gaiwan');
 export const basket = writable([]);
+export const address = writable({});
 
 function getCategoriesInStock(products) {
 

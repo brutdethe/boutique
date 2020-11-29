@@ -1,5 +1,5 @@
 <script>
-  import { languageSelected } from "../stores.js";
+  import { address, languageSelected } from "../stores.js";
 
   function handleSubmit(evt) {
     const formValues = {
@@ -13,8 +13,10 @@
       message: evt.target.message.value
     };
 
-    console.log("target:", formValues);
+    $address.livraison = formValues;
   }
+
+  console.log("$address:", $address);
 
   const dict = {
     lastName: {
