@@ -16,6 +16,18 @@
     $address.livraison = formValues;
   }
 
+  function validateMessageEmail(event) {
+    let textbox = event.target;
+    if (textbox.value === "") {
+      textbox.setCustomValidity(dict.errorEmail[$languageSelected]);
+    } else if (textbox.validity.typeMismatch) {
+      textbox.setCustomValidity(dict.errorEmail[$languageSelected]);
+    } else {
+      textbox.setCustomValidity("");
+    }
+    return true;
+  }
+
   const dict = {
     lastName: {
       en: "Last Name",
@@ -44,11 +56,19 @@
     submit: {
       en: "Create address",
       fr: "Créer mon adresse"
+    },
+    errorEmail: {
+      en: "Please enter a valid email address",
+      fr: "Svp, entrez une adresse email valide"
     }
   };
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
+<form
+  on:submit|preventDefault={handleSubmit}
+  on:invalid={validateMessageEmail}
+  on:changed={validateMessageEmail}
+  on:input={validateMessageEmail}>
   <div class="form-group">
     <label class="form-label" for="last-name">
       {dict.lastName[$languageSelected]}
@@ -69,7 +89,12 @@
       placeholder={dict.firstName[$languageSelected]} />
 
     <label class="form-label" for="email">Email</label>
-    <input class="form-input" type="text" id="email" placeholder="Email" />
+    <input
+      class="form-input"
+      required
+      type="email"
+      id="email"
+      placeholder="Email" />
 
     <label class="form-label" for="street">
       {dict.street[$languageSelected]}
