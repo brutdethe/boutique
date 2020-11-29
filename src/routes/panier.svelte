@@ -15,6 +15,10 @@
     $basket = $basket.filter(product => product.id !== id);
   }
 
+  function gotoAddress() {
+    goto("adresse");
+  }
+
   const dict = {
     title: { en: "Summary of purchases", fr: "Récapitulatif des achats" },
     empty: {
@@ -128,7 +132,7 @@
 
         </div>
         <div class="card-footer">
-          <button class="btn btn-success" on:click|once={null}>
+          <button class="btn btn-success" on:click|once={gotoAddress}>
             {dict.order[$languageSelected]}
           </button>
         </div>
