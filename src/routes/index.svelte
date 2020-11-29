@@ -6,7 +6,6 @@
     languageSelected,
     categorySelected
   } from "../stores.js";
-
   import Categories from "../components/Categories.svelte";
   import Buy from "../components/Buy.svelte";
 
