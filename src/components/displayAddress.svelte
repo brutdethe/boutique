@@ -4,7 +4,7 @@
 
 <div class="hero bg-gray">
   <div class="hero-body">
-    <h3>Adresse de livraison :</h3>
+    <h3>Address</h3>
     {#if $address.livraison}
       <ul>
         {#each Object.keys($address.livraison) as key}
