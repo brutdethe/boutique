@@ -89,46 +89,6 @@
         ]
     },
     {
-        "id": "th42",
-        "titre": {
-            "en": "Small teapot 10cl",
-            "fr": "Petite théière 10cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-13",
-        "catégorie": "Théière",
-        "description": {
-            "en": "This is a Treigny earthenware teapot of 10 cl.",
-            "fr": "Il s'agit d'une théière en terre de Treigny de 10 cl."
-        },
-        "prix": 132.00,
-        "poids": 0.4,
-        "stock": 1,
-        "photos": [
-            "1576232229.jpg"
-        ]
-    },
-    {
-        "id": "th44",
-        "titre": {
-            "en": "Small teapot 10cl",
-            "fr": "Petite théière 10cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-13",
-        "catégorie": "Théière",
-        "description": {
-            "en": "It is a teapot in Moutiers clay of 10 cl.",
-            "fr": "Il s'agit d'une théière en terre de Moutiers de 10 cl."
-        },
-        "prix": 132.00,
-        "poids": 0.4,
-        "stock": 1,
-        "photos": [
-            "1603013987.jpg"
-        ]
-    },
-    {
         "id": "th65",
         "titre": {
             "en": "Small enamelled teapot 9 cl",
@@ -326,7 +286,7 @@
         },
         "prix": 142.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -344,7 +304,7 @@
         },
         "prix": 136.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -644,7 +604,7 @@
         },
         "prix": 98.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -662,7 +622,7 @@
         },
         "prix": 98.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -680,7 +640,7 @@
         },
         "prix": 98.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -742,7 +702,7 @@
         },
         "prix": 36.00,
         "poids": 0.25,
-        "stock": 10,
+        "stock": 0,
         "photos": []
     },
     {
@@ -760,7 +720,7 @@
         },
         "prix": 36.00,
         "poids": 0.25,
-        "stock": 3,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1156,7 +1116,7 @@
         },
         "prix": 150.00,
         "poids": 2.5,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1174,7 +1134,7 @@
         },
         "prix": 150.00,
         "poids": 2.5,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1192,7 +1152,7 @@
         },
         "prix": 54.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1210,7 +1170,7 @@
         },
         "prix": 54.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1228,7 +1188,7 @@
         },
         "prix": 54.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1246,7 +1206,7 @@
         },
         "prix": 54.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
@@ -1264,7 +1224,7 @@
         },
         "prix": 70.00,
         "poids": 0.9,
-        "stock": 1,
+        "stock": 0,
         "photos": []
     },
     {
