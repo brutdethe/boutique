@@ -73,7 +73,7 @@
         // Specify the URL to which the customer should be redirected
         // after paying.
         redirect: {
-          return_url: "https://shop.brutdethé.fr/stripe-back"
+          return_url: "https://fast-castle-84215.herokuapp.com/stripe-back"
         }
       };
 
