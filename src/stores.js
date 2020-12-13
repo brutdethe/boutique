@@ -1,4 +1,10 @@
-import { writable, readable } from 'svelte/store';
+import {
+    writable,
+    readable
+} from 'svelte/store';
+import createProducts from "./createProducts.js"
+
+createProducts()
 
 export const languageSelected = writable('fr');
 export const categorySelected = writable('Gaiwan');
@@ -32,7 +38,7 @@ function getProduct(products, id) {
 export function loadProducts(id = null) {
     let products = readable([], set => {
         fetchProducts(set, id)
-        return () => { }
+        return () => {}
     });
 
     return products;
@@ -44,7 +50,11 @@ async function fetchProducts(set, id) {
 
         if (response.ok) {
             const products = await response.json();
-            set({ products: products, categories: getCategoriesInStock(products), product: getProduct(products, id) });
+            set({
+                products: products,
+                categories: getCategoriesInStock(products),
+                product: getProduct(products, id)
+            });
         } else {
             const text = response.text();
             throw new Error(text);
@@ -54,13 +64,13 @@ async function fetchProducts(set, id) {
         console.warn('Fetch Error products in stores:');
     }
 
-    return () => { };
+    return () => {};
 }
 
 export function loadCategories(id = null) {
     let categories = readable([], set => {
         fetchCategories(set)
-        return () => { }
+        return () => {}
     });
 
     return categories;
@@ -82,6 +92,5 @@ async function fetchCategories(set) {
         console.warn('Fetch Error categories in stores');
     }
 
-    return () => { };
+    return () => {};
 }
-
