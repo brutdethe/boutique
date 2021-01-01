@@ -1,7 +1,10 @@
 import Stripe from 'stripe'
 import fs from 'fs'
+import dotenv from 'dotenv'
+dotenv.config()
 
-const stripe = new Stripe('sk_test_51HEFz3GJpQWhfcWwkbkeaZ9zrgTFZHnlsyOfXY2neWGkI3eTa79xAgHVqnvAeVXiMGo86ibca9TyN8t0YQGTVJOH005du8IAAg')
+const stripeSecret = process.env['stripe_secret']
+const stripe = new Stripe(stripeSecret)
 
 async function createProduct(product) {
     const url = 'https://shop.xn--brutdeth-i1a.fr'
