@@ -2,6 +2,18 @@
   import { goto } from "@sapper/app";
   import { basket, languageSelected } from "../stores.js";
 
+  const stripe_secret =
+    "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
+
+  const session = {
+    id: "cs_test_a17uHxS8IVLcZTQfZcydz8KJaabRGxe8irPXVFgBGPCh87sxmgBIJSs6Ja"
+  };
+
+  function stripeLoaded() {
+    const stripe = Stripe(stripe_secret);
+    stripe.redirectToCheckout({ sessionId: session.id });
+  }
+
   let transport = 8;
 
   $: subTotal = $basket.reduce(
@@ -61,6 +73,9 @@
 </style>
 
 <svelte:head>
+  <script src="https://js.stripe.com/v3/" on:load={stripeLoaded}>
+
+  </script>
   <title>{dict.title[$languageSelected]}</title>
 </svelte:head>
 
@@ -128,7 +143,10 @@
 
         </div>
         <div class="card-footer">
-          <button class="btn btn-success" on:click|once={null}>
+          <button
+            id="checkout-button"
+            class="btn btn-success"
+            on:click|once={null}>
             {dict.order[$languageSelected]}
           </button>
         </div>
