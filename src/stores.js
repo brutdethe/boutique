@@ -1,8 +1,11 @@
-import { writable, readable } from 'svelte/store';
+import {
+    writable,
+    readable
+} from 'svelte/store'
 
-export const languageSelected = writable('fr');
-export const categorySelected = writable('Gaiwan');
-export const basket = writable([]);
+export const languageSelected = writable('fr')
+export const categorySelected = writable('Gaiwan')
+export const basket = writable([])
 
 function getCategoriesInStock(products) {
     function getCategories(products) {
@@ -16,9 +19,9 @@ function getCategoriesInStock(products) {
             .filter(product => product.catégorie === category)
             .reduce((acc, cur) => {
                 if (cur.stock > 0) {
-                    return true;
+                    return true
                 } else {
-                    return (acc === true) && true;
+                    return (acc === true) && true
                 }
             }) === true
         )
@@ -32,56 +35,59 @@ function getProduct(products, id) {
 export function loadProducts(id = null) {
     let products = readable([], set => {
         fetchProducts(set, id)
-        return () => { }
-    });
+        return () => {}
+    })
 
-    return products;
+    return products
 }
 
 async function fetchProducts(set, id) {
     try {
-        const response = await fetch('./produits.json');
+        const response = await fetch('./produits.json')
 
         if (response.ok) {
-            const products = await response.json();
-            set({ products: products, categories: getCategoriesInStock(products), product: getProduct(products, id) });
+            const products = await response.json()
+            set({
+                products: products,
+                categories: getCategoriesInStock(products),
+                product: getProduct(products, id)
+            })
         } else {
-            const text = response.text();
-            throw new Error(text);
+            const text = response.text()
+            throw new Error(text)
         }
 
     } catch (error) {
-        console.warn('Fetch Error products in stores:');
+        console.warn('Fetch Error products in stores')
     }
 
-    return () => { };
+    return () => {}
 }
 
 export function loadCategories(id = null) {
     let categories = readable([], set => {
         fetchCategories(set)
-        return () => { }
-    });
+        return () => {}
+    })
 
-    return categories;
+    return categories
 }
 
 async function fetchCategories(set) {
     try {
-        const response = await fetch('./categories.json');
+        const response = await fetch('./categories.json')
 
         if (response.ok) {
-            const categories = await response.json();
-            set(categories);
+            const categories = await response.json()
+            set(categories)
         } else {
-            const text = response.text();
-            throw new Error(text);
+            const text = response.text()
+            throw new Error(text)
         }
 
     } catch (error) {
-        console.warn('Fetch Error categories in stores');
+        console.warn('Fetch Error categories in stores')
     }
 
-    return () => { };
+    return () => {}
 }
-

@@ -29,6 +29,18 @@ Et les sources sont présentes sur la branche principale : _dev_
 
 `$ npm run deploy`
 
+### Stripe
+
+#### Pour stocker les clés
+
+On utilise [dotenv](https://github.com/motdotla/dotenv) pour récupérer les variables stockées dans un fichier *.env*  
+C'est dans ce ficher que l'on place la [clé stripe](https://dashboard.stripe.com/test/apikeys) :
+`stripe_secret=sk_test_66HYYSHXXXXXXXXXXXXXXXXXXX`
+
+#### Pour créer des produits dans stripe
+
+`$ node --experimental-modules scripts/createProducts.mjs`
+
 ## Licence
 
 [CC1.0](LICENSE)
