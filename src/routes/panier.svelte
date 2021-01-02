@@ -6,7 +6,7 @@
     "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
 
   const session = {
-    id: "cs_test_b1LP78MdVpTezCgQ0fSLrUJtJF6F59IoqzpZgQ1ACO67thyshF3IdxAFw1"
+    id: "cs_test_b1sc8VCKqH3QVjBy32qttUy9cnrBUZPTRdRpeQtWubK8EiWiFaubvCoVH1"
   };
 
   function checkout() {
