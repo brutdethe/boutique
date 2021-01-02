@@ -6,10 +6,10 @@
     "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
 
   const session = {
-    id: "cs_test_a17uHxS8IVLcZTQfZcydz8KJaabRGxe8irPXVFgBGPCh87sxmgBIJSs6Ja"
+    id: "cs_test_b1LP78MdVpTezCgQ0fSLrUJtJF6F59IoqzpZgQ1ACO67thyshF3IdxAFw1"
   };
 
-  function stripeLoaded() {
+  function checkout() {
     const stripe = Stripe(stripe_secret);
     stripe.redirectToCheckout({ sessionId: session.id });
   }
@@ -73,7 +73,7 @@
 </style>
 
 <svelte:head>
-  <script src="https://js.stripe.com/v3/" on:load={stripeLoaded}>
+  <script src="https://js.stripe.com/v3/">
 
   </script>
   <title>{dict.title[$languageSelected]}</title>
@@ -146,7 +146,7 @@
           <button
             id="checkout-button"
             class="btn btn-success"
-            on:click|once={null}>
+            on:click|once={checkout}>
             {dict.order[$languageSelected]}
           </button>
         </div>
