@@ -26,7 +26,7 @@
 
 <button
   class="btn btn-primary float-right"
-  on:click|once={basketClick(item)}
+  on:click={basketClick(item)}
   {disabled}>
   {dict.buy[$languageSelected]}
 </button>
