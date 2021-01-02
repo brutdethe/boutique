@@ -18,8 +18,8 @@ Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 
 ### Organisation GitHub
 
-Le site est déployé sur la branche [_main_](https://github.com/brutdethe/shop/tree/main)  
-Et les sources sont présentes sur la branche principale : _dev_
+Le site est déployé sur la branche [heroku](https://heroku.com)  
+Et les sources sont présentes sur la branche principale : [_dev_](https://github.com/brutdethe/shop/tree/main)
 
 ### Pour lancer le site en local
 
@@ -29,7 +29,7 @@ Et les sources sont présentes sur la branche principale : _dev_
 
 `$ npm run deploy`
 
-https://fast-castle-84215.herokuapp.com
+https://shop.brutdethé.fr
 
 ### Stripe
 
