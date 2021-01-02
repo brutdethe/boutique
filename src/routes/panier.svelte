@@ -5,14 +5,10 @@
   const stripe_secret =
     "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
 
-  const session = {
-    id: "cs_test_b1dBQH8DoQkyM0zpoXMKeOCqNY9AyUnUxEeCSXfJ7zMltWXOwyBYU4uKIW"
-  };
-
   function checkout() {
     const stripe = Stripe(stripe_secret);
-    const data = { server_id: 123 };
-    const url = "/checkout-session-id"; // associated script = /src/routes/process/contact.js
+    const data = $basket;
+    const url = "/checkout-session-id";
 
     fetch(url, {
       method: "POST",
