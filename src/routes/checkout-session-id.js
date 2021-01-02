@@ -18,7 +18,7 @@ const checkoutData = {
 
 export async function post(req, res) {
     res.setHeader('Content-Type', 'application/json')
-    const items = req.body;
+    const items = req.body.basket;
     const stripeSecret = process.env['stripe_secret']
     const stripe = new Stripe(stripeSecret)
 
@@ -28,7 +28,7 @@ export async function post(req, res) {
                 price_data: {
                     currency: 'eur',
                     product_data: {
-                        name: item.titre.fr,
+                        name: item.titre[req.body.language],
                     },
                     unit_amount: item.prix * 100,
                 },

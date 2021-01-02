@@ -7,7 +7,7 @@
 
   function checkout() {
     const stripe = Stripe(stripe_secret);
-    const data = $basket;
+    const data = { basket: $basket, language: $languageSelected };
     const url = "/checkout-session-id";
 
     fetch(url, {
