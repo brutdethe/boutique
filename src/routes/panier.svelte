@@ -5,13 +5,26 @@
   const stripe_secret =
     "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
 
-  const session = {
-    id: "cs_test_b1sc8VCKqH3QVjBy32qttUy9cnrBUZPTRdRpeQtWubK8EiWiFaubvCoVH1"
-  };
-
   function checkout() {
     const stripe = Stripe(stripe_secret);
-    stripe.redirectToCheckout({ sessionId: session.id });
+    const data = $basket;
+    const url = "/checkout-session-id";
+
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(r => {
+        r.json().then(result =>
+          stripe.redirectToCheckout({ sessionId: result.session.id })
+        );
+      })
+      .catch(err => {
+        console.log("POST error", err.message);
+      });
   }
 
   let transport = 8;
