@@ -9,6 +9,7 @@ async function session() {
     return stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         billing_address_collection: 'auto',
+        locale: 'fr',
         shipping_address_collection: {
             allowed_countries: ['FR', 'ES']
         },
@@ -32,8 +33,8 @@ async function session() {
             quantity: 2,
         }, ],
         mode: 'payment',
-        success_url: 'https://fast-castle-84215.herokuapp.com/stripe-back',
-        cancel_url: 'https://fast-castle-84215.herokuapp.com/stripe-back',
+        success_url: 'https://fast-castle-84215.herokuapp.com/panier-ok',
+        cancel_url: 'https://fast-castle-84215.herokuapp.com/panier-annule'
     });
 }
 
