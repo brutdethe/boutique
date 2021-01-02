@@ -6,12 +6,29 @@
     "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
 
   const session = {
-    id: "cs_test_b1sc8VCKqH3QVjBy32qttUy9cnrBUZPTRdRpeQtWubK8EiWiFaubvCoVH1"
+    id: "cs_test_b1dBQH8DoQkyM0zpoXMKeOCqNY9AyUnUxEeCSXfJ7zMltWXOwyBYU4uKIW"
   };
 
   function checkout() {
     const stripe = Stripe(stripe_secret);
-    stripe.redirectToCheckout({ sessionId: session.id });
+    const data = { server_id: 123 };
+    const url = "/checkout-session-id"; // associated script = /src/routes/process/contact.js
+
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(r => {
+        r.json().then(result =>
+          stripe.redirectToCheckout({ sessionId: result.session.id })
+        );
+      })
+      .catch(err => {
+        console.log("POST error", err.message);
+      });
   }
 
   let transport = 8;
