@@ -7,7 +7,7 @@
         "build": "sapper build --legacy",
         "clean": "rm -rf ./__sapper__",
         "export": "sapper export --legacy",
-        "start": "npm install; sapper build --legacy; node __sapper__/build",
+        "start": "npm install; npm run optimize; sapper build --legacy; node __sapper__/build",
         "deploy": "npm run clean && npm run export && node ./scripts/deploy.js",
         "optimize": "sh ./scripts/optimize.sh"
     },
