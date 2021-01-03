@@ -4,7 +4,7 @@ dotenv.config()
 
 const checkoutData = {
     payment_method_types: ['card', 'sepa_debit'],
-    billing_address_collection: 'auto',
+    billing_address_collection: 'required',
     locale: '',
     shipping_address_collection: {
         allowed_countries: ['FR', 'ES']
