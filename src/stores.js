@@ -3,9 +3,21 @@ import {
     readable
 } from 'svelte/store'
 
-export const languageSelected = writable('fr')
+let storedLanguage
+
+if (process.browser) {
+    storedLanguage = localStorage.getItem('languageSelected')
+}
+
+export const languageSelected = writable(storedLanguage)
 export const categorySelected = writable('Gaiwan')
 export const basket = writable([])
+
+languageSelected.subscribe(value => {
+    if (process.browser) {
+        localStorage.setItem('languageSelected', value === 'en' ? 'en' : 'fr');
+    }
+});
 
 function getCategoriesInStock(products) {
     function getCategories(products) {
