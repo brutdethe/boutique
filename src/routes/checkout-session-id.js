@@ -31,6 +31,7 @@ export async function post(req, res) {
     } = req.body;
 
     const stripeSecret = process.env['stripe_secret']
+    console.log('stripeSecret', process.env['stripe_secret'])
     const stripe = new Stripe(stripeSecret)
 
     async function session() {
