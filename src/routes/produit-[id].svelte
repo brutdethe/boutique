@@ -97,7 +97,7 @@
         {$products.product.description[$languageSelected]} - {$products.product.poids}
         g.
       </p>
-      <p>Stock : {$products.product.prix}</p>
+      <p>Stock : {$products.product.stock}</p>
       <h3 class="card-title h1 price">{$products.product.prix} €</h3>
     </div>
     <div class="card-footer">
