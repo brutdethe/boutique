@@ -19,7 +19,7 @@ Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 ### Organisation GitHub
 
 Le site est déployé sur la branche [heroku](https://heroku.com)  
-Et les sources sont présentes sur la branche principale : [_dev_](https://github.com/brutdethe/shop/tree/main)
+Et les sources sont présentes sur la branche principale : [_dev_](https://github.com/brutdethe/shop/tree/dev)
 
 ### Pour lancer le site en local
 
@@ -27,6 +27,9 @@ Et les sources sont présentes sur la branche principale : [_dev_](https://githu
 
 ### Pour déployer 
 
+Le déploiement est automatisé de la branche [_dev_](https://github.com/brutdethe/shop/tree/dev) vers *heroku*
+
+Cette commande propose un déploiement sur la branche [_main_](https://github.com/brutdethe/shop/tree/main)
 `$ npm run deploy`
 
 https://shop.brutdethé.fr
@@ -38,6 +41,8 @@ https://shop.brutdethé.fr
 On utilise [dotenv](https://github.com/motdotla/dotenv) pour récupérer les variables stockées dans un fichier *.env*  
 C'est dans ce ficher que l'on place la [clé stripe](https://dashboard.stripe.com/test/apikeys) :
 `stripe_secret=sk_test_66HYYSHXXXXXXXXXXXXXXXXXXX`
+
+Pour *heroku* la clé est stockée dans les *settings*
 
 #### Pour créer des produits dans stripe
 
