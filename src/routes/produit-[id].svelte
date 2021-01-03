@@ -73,7 +73,7 @@
               </label>
               <img
                 class="img-responsive rounded"
-                src="/produits/{photo}"
+                src="/produits/carousel_{photo}"
                 alt={$products.product.titre[$languageSelected]} />
             </figure>
           {/each}

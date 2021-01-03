@@ -45,7 +45,10 @@ C'est dans ce ficher que l'on place la [clé stripe](https://dashboard.stripe.co
 
 ### Pour optimiser les photos
 
-`$ for f in *a.jpg ; do convert -resize 446x297\> "$f" "thumb_$f" ; done`
+```bash
+$ for f in *.jpg ; do convert -resize 1374x916\> "$f" "carousel_$f" ; done
+$ for f in *a.jpg ; do convert -resize 446x297\> "$f" "thumb_$f" ; done
+```
 
 ## Licence
 
