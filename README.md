@@ -2,7 +2,7 @@
 
 ## À propos de l'organisation
 
-### Les fonctionnalités 
+### Les fonctionnalités
 
 Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 
