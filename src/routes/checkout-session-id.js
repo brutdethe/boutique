@@ -11,8 +11,8 @@ const checkoutData = {
     },
     line_items: [],
     mode: 'payment',
-    success_url: 'http://shop.brutdethé.fr/panier-ok',
-    cancel_url: 'http://shop.brutdethé.fr/panier-annule'
+    success_url: 'http://shop.xn--brutdeth-i1a.fr/panier-ok',
+    cancel_url: 'http://shop.xn--brutdeth-i1a.fr/panier-annule'
 }
 
 const dict = {
@@ -29,7 +29,7 @@ export async function post(req, res) {
         language,
         shipping
     } = req.body;
-    console.log('stripe_secret', process.env['stripe_secret'])
+
     const stripeSecret = process.env['stripe_secret']
     const stripe = new Stripe(stripeSecret)
 
