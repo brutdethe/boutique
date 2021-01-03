@@ -5,16 +5,15 @@ dotenv.config()
 const checkoutData = {
     payment_method_types: ['card', 'sepa_debit'],
     billing_address_collection: 'auto',
-    locale: 'fr',
+    locale: '',
     shipping_address_collection: {
         allowed_countries: ['FR', 'ES']
     },
     line_items: [],
     mode: 'payment',
-    success_url: 'https://fast-castle-84215.herokuapp.com/panier-ok',
-    cancel_url: 'https://fast-castle-84215.herokuapp.com/panier-annule'
+    success_url: 'http://shop.brutdethé.fr/panier-ok',
+    cancel_url: 'http://shop.brutdethé.fr/panier-annule'
 }
-
 
 const dict = {
     shipping: {
@@ -30,10 +29,12 @@ export async function post(req, res) {
         language,
         shipping
     } = req.body;
+    console.log('stripe_secret', process.env['stripe_secret'].length)
     const stripeSecret = process.env['stripe_secret']
     const stripe = new Stripe(stripeSecret)
 
     async function session() {
+        checkoutData.locale = language
         checkoutData.line_items = basket.map(item => {
             return {
                 price_data: {
