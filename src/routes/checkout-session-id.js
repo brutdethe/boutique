@@ -29,7 +29,7 @@ export async function post(req, res) {
         language,
         shipping
     } = req.body;
-    console.log('stripe_secret', process.env['stripe_secret'].length)
+    console.log('stripe_secret', process.env['stripe_secret'])
     const stripeSecret = process.env['stripe_secret']
     const stripe = new Stripe(stripeSecret)
 
