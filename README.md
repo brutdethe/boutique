@@ -43,6 +43,10 @@ C'est dans ce ficher que l'on place la [clé stripe](https://dashboard.stripe.co
 
 `$ node --experimental-modules scripts/createProducts.mjs`
 
+### Pour optimiser les photos
+
+`$ for f in *a.jpg ; do convert -resize 446x297\> "$f" "thumb_$f" ; done`
+
 ## Licence
 
 [CC1.0](LICENSE)
