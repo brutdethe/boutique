@@ -12,9 +12,8 @@
       language: $languageSelected,
       shipping: transport
     };
-    const url = "/checkout-session-id";
 
-    fetch(url, {
+    fetch("/server/checkout-session-id", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
