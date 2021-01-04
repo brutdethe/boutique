@@ -1,5 +1,6 @@
 <script>
   import { basket, languageSelected } from "../stores.js";
+  import { onMount } from "svelte";
   const dict = {
     title: { en: "Purchases made", fr: "Achats effectués" },
     message: {
@@ -11,7 +12,22 @@
       fr: "revenir dans la boutique"
     }
   };
-  basket.set([]);
+
+  onMount(async () =>
+    fetch("/server/update-stock", {
+      method: "POST",
+      body: JSON.stringify({ basket: $basket }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(r => {
+        basket.set([]);
+      })
+      .catch(err => {
+        console.log("POST error", err.message);
+      })
+  );
 </script>
 
 <svelte:head>
