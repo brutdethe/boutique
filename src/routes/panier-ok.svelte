@@ -1,5 +1,5 @@
 <script>
-  import { languageSelected } from "../stores.js";
+  import { basket, languageSelected } from "../stores.js";
   const dict = {
     title: { en: "Purchases made", fr: "Achats effectués" },
     message: {
@@ -11,6 +11,7 @@
       fr: "revenir dans la boutique"
     }
   };
+  basket.set([]);
 </script>
 
 <svelte:head>
