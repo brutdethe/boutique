@@ -3,19 +3,27 @@ import {
     readable
 } from 'svelte/store'
 
-let storedLanguage
+let storedLanguage = 'fr'
+let storedBasket = []
 
 if (process.browser) {
-    storedLanguage = localStorage.getItem('languageSelected')
+    storedLanguage = localStorage.getItem('languageSelected') || 'fr'
+    storedBasket = JSON.parse(localStorage.getItem('basket'))
 }
 
 export const languageSelected = writable(storedLanguage)
 export const categorySelected = writable('Gaiwan')
-export const basket = writable([])
+export const basket = writable(storedBasket)
 
 languageSelected.subscribe(value => {
     if (process.browser) {
         localStorage.setItem('languageSelected', value === 'en' ? 'en' : 'fr');
+    }
+});
+
+basket.subscribe(values => {
+    if (process.browser) {
+        localStorage.setItem('basket', JSON.stringify(values))
     }
 });
 
