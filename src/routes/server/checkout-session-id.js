@@ -11,7 +11,7 @@ const checkoutData = {
     },
     line_items: [],
     mode: 'payment',
-    success_url: 'http://shop.xn--brutdeth-i1a.fr/panier-ok',
+    success_url: 'http://shop.xn--brutdeth-i1a.fr/panier-ok?session_id={CHECKOUT_SESSION_ID}',
     cancel_url: 'http://shop.xn--brutdeth-i1a.fr/panier-annule'
 }
 
