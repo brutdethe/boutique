@@ -10,6 +10,8 @@ export async function post(req, res) {
         basket
     } = req.body;
 
+    console.log('req.query.session_id', req.query.session_id)
+
     basket.map(item => produits.forEach((produit, index) => {
         if (produit.id === item.id) {
             produits[index].stock = produits[index].stock - item.qty
