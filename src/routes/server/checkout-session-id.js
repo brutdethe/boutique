@@ -41,6 +41,10 @@ export async function post(req, res) {
                     currency: 'eur',
                     product_data: {
                         name: item.titre[language],
+                        description: item.id,
+                        metadata: {
+                            item_id: item.id
+                        }
                     },
                     unit_amount: item.prix * 100,
                 },
