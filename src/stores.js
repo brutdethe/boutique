@@ -8,7 +8,7 @@ let storedBasket = []
 
 if (process.browser) {
     storedLanguage = localStorage.getItem('languageSelected') || 'fr'
-    storedBasket = JSON.parse(localStorage.getItem('basket'))
+    storedBasket = JSON.parse(localStorage.getItem('basket')) || []
 }
 
 export const languageSelected = writable(storedLanguage)
