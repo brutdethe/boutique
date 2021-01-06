@@ -113,7 +113,7 @@
         <tbody>
           {#each $basket as item, index}
             <tr class="active">
-              <td>{item.titre[$languageSelected]} - {item.poids} g</td>
+              <td>{item.titre[$languageSelected]} - {item.id}</td>
               <td>
                 <i
                   class="icon icon-delete c-hand"
