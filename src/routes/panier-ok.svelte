@@ -1,4 +1,5 @@
 <script>
+  import { goto } from "@sapper/app";
   import { basket, languageSelected } from "../stores.js";
   import { onMount } from "svelte";
 
@@ -18,7 +19,10 @@
     const sessionId = new URLSearchParams(window.location.search).get(
       "session_id"
     );
-
+    if (!sessionId) {
+      console.log("Session is not defined");
+      goto("/");
+    }
     fetch("/server/update-stock", {
       method: "POST",
       body: JSON.stringify({ basket: $basket, session_id: sessionId }),

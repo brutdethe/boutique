@@ -2,8 +2,10 @@ import Stripe from 'stripe'
 import fs from 'fs'
 
 const produitsFilepath = './static/produits.json'
+const logsFilepath = './log-sales.json'
 
-let produits = JSON.parse(fs.readFileSync(produitsFilepath));
+const logs = JSON.parse(fs.readFileSync(logsFilepath));
+const produits = JSON.parse(fs.readFileSync(produitsFilepath));
 
 export async function post(req, res) {
     res.setHeader('Content-Type', 'application/json')
@@ -11,10 +13,23 @@ export async function post(req, res) {
         session_id
     } = req.body;
 
+    if (logs.includes(session_id)) {
+        console.log('Stripe session already saved')
+
+        return
+    }
+
     const stripeSecret = process.env['stripe_secret']
     const stripe = new Stripe(stripeSecret)
+    let session
 
-    const session = await stripe.checkout.sessions.listLineItems(session_id)
+    try {
+        session = await stripe.checkout.sessions.listLineItems(session_id)
+    } catch {
+        console.log('No such checkout stripe session')
+
+        return
+    }
 
     const basket = await Promise.all(session.data.map(async item => {
         const product = await stripe.products.retrieve(item.price.product)
@@ -32,6 +47,7 @@ export async function post(req, res) {
     }))
 
     fs.writeFileSync(produitsFilepath, JSON.stringify(produits, null, 4))
+    fs.writeFileSync(logsFilepath, JSON.stringify([...logs, session_id], null, 4))
 
     return res.end(JSON.stringify({
         status: "ok"
