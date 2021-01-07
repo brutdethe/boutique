@@ -2,16 +2,16 @@ import Stripe from 'stripe'
 import fs from 'fs'
 
 const produitsFilepath = './static/produits.json'
-const logsFilepath = './static/log-sales.json'
-
-const logs = JSON.parse(fs.readFileSync(logsFilepath));
-const produits = JSON.parse(fs.readFileSync(produitsFilepath));
+const logsFilepath = './log-sales.json'
 
 export async function post(req, res) {
     res.setHeader('Content-Type', 'application/json')
     const {
         session_id
     } = req.body;
+
+    const logs = JSON.parse(fs.readFileSync(logsFilepath));
+    const produits = JSON.parse(fs.readFileSync(produitsFilepath));
 
     if (logs.includes(session_id)) {
         console.log('Stripe session already saved')
