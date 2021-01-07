@@ -2,7 +2,7 @@ import Stripe from 'stripe'
 import fs from 'fs'
 
 const produitsFilepath = './static/produits.json'
-const logsFilepath = './log-sales.json'
+const logsFilepath = './static/log-sales.json'
 
 const logs = JSON.parse(fs.readFileSync(logsFilepath));
 const produits = JSON.parse(fs.readFileSync(produitsFilepath));
@@ -40,7 +40,7 @@ export async function post(req, res) {
         }
     }))
 
-    basket.forEach((item, index) => produits.forEach(produit => {
+    basket.forEach(item => produits.forEach((produit, index) => {
         if (produit.id === item.id) {
             produits[index].stock -= item.qty
         }
