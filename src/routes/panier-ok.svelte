@@ -48,7 +48,7 @@
   <div class="columns">
     <div class="empty column col-12">
       <div class="empty-icon">
-        <i class="icon icon-stop" />
+        <i class="icon icon-check" />
       </div>
       <p class="empty-title h5">{dict.message[$languageSelected]}</p>
       <div class="empty-action">
