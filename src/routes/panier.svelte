@@ -30,14 +30,49 @@
       });
   }
 
-  let transport = 8;
+  function shippingCost(basket, language) {
+    const collisimo = {
+      fr: [
+        { limit: 0.25, price: 4.95 },
+        { limit: 0.5, price: 6.45 },
+        { limit: 0.75, price: 7.35 },
+        { limit: 1, price: 7.99 },
+        { limit: 2, price: 9.15 },
+        { limit: 5, price: 14.1 },
+        { limit: 10, price: 20.5 },
+        { limit: 15, price: 26.0 },
+        { limit: 30, price: 32.2 }
+      ],
+      en: [
+        { limit: 0.5, price: 28.1 },
+        { limit: 1, price: 31.35 },
+        { limit: 2, price: 42.95 },
+        { limit: 5, price: 62.9 },
+        { limit: 10, price: 118.9 },
+        { limit: 15, price: 169.0 },
+        { limit: 20, price: 206.0 }
+      ]
+    };
+    const weightTotal = basket.reduce(
+      (acc, product) => product.poids * product.qty + acc,
+      0
+    );
 
-  $: subTotal = $basket.reduce(
-    (acc, product) => product.prix * product.qty + acc,
-    0
+    return collisimo[language].filter(rate => weightTotal <= rate.limit)[0]
+      .price;
+  }
+
+  $: subTotal = parseFloat(
+    $basket
+      .reduce((acc, product) => product.prix * product.qty + acc, 0)
+      .toFixed(2)
+  ).toFixed(2);
+
+  $: transport = parseFloat(shippingCost($basket, $languageSelected)).toFixed(
+    2
   );
 
-  $: total = subTotal + transport;
+  $: total = parseFloat(subTotal + transport).toFixed(2);
 
   function deleteClick(id) {
     $basket = $basket.filter(product => product.id !== id);
