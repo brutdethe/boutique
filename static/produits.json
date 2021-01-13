@@ -9,7 +9,7 @@
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
-            "en": "Artisanal stoneware gaiwan 10cl. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
+            "en": "Artisanal stoneware gaiwan 3.4oz. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
             "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
         },
         "prix": 48.00,
@@ -31,16 +31,17 @@
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
-            "en": "Artisanal stoneware gaiwan 10cl. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
-            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+            "en": "Artisanal glazed stoneware gaiwan 3.4 oz.",
+            "fr": "Gaiwan artisanal en grès émaillé de 10cl."
         },
         "prix": 52.00,
         "poids": 0.3,
         "stock": 1,
         "photos": [
-            "gaiwan-10cl_18-a.jpg",
-            "gaiwan-10cl_18-b.jpg",
-            "gaiwan-10cl_18-c.jpg"
+            "gaiwan_18-a.jpg",
+            "gaiwan_18-b.jpg",
+            "gaiwan_18-c.jpg",
+            "gaiwan_18-d.jpg"
         ]
     },
     {
@@ -53,17 +54,17 @@
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
-            "en": "This gaiwan is covered with an ash-based enamel, which gives it this rather lively aspect.",
-            "fr": "Ce gaïwan est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
+            "en": "This 3.4oz gaiwan is glazed with an ash-based enamel, which gives it this rather lively aspect.",
+            "fr": "Ce gaïwan de 10cl est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
         },
-        "prix": 54.00,
+        "prix": 58.00,
         "poids": 0.3,
-        "stock": 1,
+        "stock": 6,
         "photos": [
-            "gaiwan-10cl_21-a.jpg",
-            "gaiwan-10cl_21-b.jpg",
-            "gaiwan-10cl_21-c.jpg",
-            "gaiwan-10cl_21-d.jpg"
+            "gaiwan_21-a.jpg",
+            "gaiwan_21-b.jpg",
+            "gaiwan_21-c.jpg",
+            "gaiwan_21-d.jpg"
         ]
     },
     {
@@ -76,16 +77,63 @@
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
-            "en": "Artisanal stoneware gaiwan 10cl. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
-            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+            "en": "This 3.4oz gaiwan is glazed with an ash-based enamel, which gives it this rather lively aspect.",
+            "fr": "Ce gaïwan de 10cl est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
         },
-        "prix": 54.00,
+        "prix": 58.00,
+        "poids": 0.3,
+        "stock": 6,
+        "photos": [
+            "gaiwan_22-a.jpg",
+            "gaiwan_22-b.jpg",
+            "gaiwan_22-c.jpg",
+            "gaiwan_22-d.jpg"
+        ]
+    },
+     {
+        "id": "ga23",
+        "titre": {
+            "en": "Gaiwan 10 cl",
+            "fr": "Gaiwan 10 cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-13",
+        "catégorie": "Gaiwan",
+        "description": {
+            "en": "This 3.4oz gaiwan is glazed with an ash-based enamel, which gives it this rather lively aspect.",
+            "fr": "Ce gaïwan de 10cl est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
+        },
+        "prix": 58.00,
         "poids": 0.3,
         "stock": 1,
         "photos": [
-            "gaiwan-10cl_22-a.jpg",
-            "gaiwan-10cl_22-b.jpg",
-            "gaiwana-10cl_22-c.jpg"
+            "gaiwan_23-a.jpg",
+            "gaiwan_23-b.jpg",
+            "gaiwan_23-c.jpg",
+            "gaiwan_23-d.jpg"
+        ]
+    },
+    {
+        "id": "ga24",
+        "titre": {
+            "en": "Gaiwan 10cl",
+            "fr": "Gaiwan 10cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-13",
+        "catégorie": "Gaiwan",
+        "description": {
+            "en": "Artisanal stoneware gaiwan 3.4oz. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
+            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+        },
+        "prix": 52.00,
+        "poids": 0.3,
+        "stock": 5,
+        "photos": [
+            "gaiwan_24-a.jpg",
+            "gaiwan_24-b.jpg",
+            "gaiwan_24-c.jpg",
+            "gaiwan_24-d.jpg"
         ]
     },
     {
