@@ -137,52 +137,6 @@
         ]
     },
     {
-        "id": "th65",
-        "titre": {
-            "en": "Small enamelled teapot 9 cl",
-            "fr": "Petite théière émaillée 9 cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-13",
-        "catégorie": "Théière",
-        "description": {
-            "en": "It is a small teapot of 9cl enamelled inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
-        },
-        "prix": 142.00,
-        "poids": 0.4,
-        "stock": 1,
-        "photos": [
-            "theiere-9cl_65-a.jpg",
-            "theiere-9cl_65-b.jpg",
-            "theiere-9cl_65-c.jpg",
-            "theiere-9cl_65-d.jpg"
-        ]
-    },
-    {
-        "id": "th67",
-        "titre": {
-            "en": "Small enamelled teapot 9 cl",
-            "fr": "Petite théière émaillée 9 cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-13",
-        "catégorie": "Théière",
-        "description": {
-            "en": "It is a small teapot of 9 cl enamelled inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 9 cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
-        },
-        "prix": 142.00,
-        "poids": 0.3,
-        "stock": 1,
-        "photos": [
-            "theiere-9cl_67-a.jpg",
-            "theiere-9cl_67-b.jpg",
-            "theiere-9cl_67-c.jpg",
-            "theiere-9cl_67-d.jpg"
-        ]
-    },
-    {
         "id": "th68",
         "titre": {
             "en": "Small enamelled teapot 10 cl",
