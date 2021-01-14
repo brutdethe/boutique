@@ -139,24 +139,24 @@
     {
         "id": "th68",
         "titre": {
-            "en": "Small enamelled teapot 10 cl",
-            "fr": "Petite théière émaillée 10 cl"
+            "en": "Small glazed teapot 3.4oz",
+            "fr": "Petite théière émaillée 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "It is a small teapot of 10cl enamelled inside and outside. It is perfectly versatile.",
+            "en": "It is a small teapot of 3.4oz, glazed inside and outside. It is perfectly versatile.",
             "fr": "Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
         "photos": [
-            "theiere-10cl_68-a.jpg",
-            "theiere-10cl_68-b.jpg",
-            "theiere-10cl_68-c.jpg",
-            "theiere-10cl_68-d.jpg"
+            "theiere_68-a.jpg",
+            "theiere_68-b.jpg",
+            "theiere_68-c.jpg",
+            "theiere_68-d.jpg"
         ]
     },
     {
