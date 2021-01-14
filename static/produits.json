@@ -2,7 +2,7 @@
     {
         "id": "ga17",
         "titre": {
-            "en": "Gaiwan 10cl",
+            "en": "Gaiwan 3.4oz",
             "fr": "Gaiwan 10cl"
         },
         "modification": "2020-11-21",
@@ -24,8 +24,8 @@
     {
         "id": "ga18",
         "titre": {
-            "en": "Gaiwan 10 cl",
-            "fr": "Gaiwan 10 cl"
+            "en": "Gaiwan 3.4oz",
+            "fr": "Gaiwan 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
@@ -47,8 +47,8 @@
     {
         "id": "ga21",
         "titre": {
-            "en": "Gaiwan 10 cl",
-            "fr": "Gaiwan 10 cl"
+            "en": "Gaiwan 3.4oz",
+            "fr": "Gaiwan 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
@@ -70,8 +70,8 @@
     {
         "id": "ga22",
         "titre": {
-            "en": "Gaiwan 10 cl",
-            "fr": "Gaiwan 10 cl"
+            "en": "Gaiwan 3.4oz",
+            "fr": "Gaiwan 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
@@ -93,17 +93,17 @@
      {
         "id": "ga23",
         "titre": {
-            "en": "Gaiwan 10 cl",
-            "fr": "Gaiwan 10 cl"
+            "en": "Gaiwan 3.4oz",
+            "fr": "Gaiwan 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
-            "en": "This 3.4oz gaiwan is glazed with an ash-based enamel, which gives it this rather lively aspect.",
-            "fr": "Ce gaïwan de 10cl est recouvert d'un émail à base de cendre, ce qui lui donne cette aspect assez vivant."
+            "en": "Unique piece, glazed gaïwan of 3.4oz",
+            "fr": "Pièce unique, gaïwan émaillé de 10cl"
         },
-        "prix": 58.00,
+        "prix": 62.00,
         "poids": 0.3,
         "stock": 1,
         "photos": [
@@ -116,15 +116,15 @@
     {
         "id": "ga24",
         "titre": {
-            "en": "Gaiwan 10cl",
+            "en": "Gaiwan 3.4oz",
             "fr": "Gaiwan 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Gaiwan",
         "description": {
-            "en": "Artisanal stoneware gaiwan 3.4oz. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea.",
-            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé."
+            "en": "Artisanal stoneware gaiwan 3.4oz. The glaze used is satin, which means that the gaiwan will not be completely neutral. Indeed, the more a glaze is matt, the closer it is to the characteristics of the earth, so it will interact with the tea. The inside of the gaïwan is not white. For this reason, I recommend to use it more for ripe puerh.",
+            "fr": "Gaiwan artisanal en grès émaillé de 10cl. L'émail utilisé est satiné, cela veut dire que le gaiwan ne sera pas complètement neutre. En effet, plus un émail est mat, plus il se rapproche des caractéristiques de la terre, il va donc interagir avec le thé. L'intérieur du gaïwan n'est pas blanc. Pour cette raison, je préconise de l'utiliser plus pour des puerh cuits."
         },
         "prix": 52.00,
         "poids": 0.3,
