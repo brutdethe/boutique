@@ -146,8 +146,8 @@
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "It is a small teapot of 3.4oz, glazed inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+            "en": "Unique piece. It is a small teapot of 3oz, glazed inside and outside. It is perfectly versatile.",
+            "fr": "Pièce unique. Il s'agit d'une petite théière de 10cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
         "poids": 0.3,
@@ -162,115 +162,164 @@
     {
         "id": "th70",
         "titre": {
-            "en": "Small enamelled teapot 9 cl",
-            "fr": "Petite théière émaillée 9 cl"
+            "en": "Small glazed teapot 3oz",
+            "fr": "Petite théière émaillée 9cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "It is a small teapot of 9cl enamelled inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+            "en": "Unique piece. It is a small teapot of 3.4oz, glazed inside and outside. It is perfectly versatile.",
+            "fr": "Pièce unique. Il s'agit d'une petite théière de 9cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
         "poids": 0.3,
         "stock": 1,
         "photos": [
-            "theiere-9cl_70-a.jpg",
-            "theiere-9cl_70-b.jpg",
-            "theiere-9cl_70-c.jpg"
+            "theiere_70-a.jpg",
+            "theiere_70-b.jpg",
+            "theiere_70-c.jpg",
+            "theiere_70-d.jpg"
         ]
     },
     {
         "id": "th71",
         "titre": {
-            "en": "Small enamelled teapot 14 cl",
-            "fr": "Petite théière émaillée 14 cl"
+            "en": "Small glazed teapot 4.7oz",
+            "fr": "Petite théière émaillée 14cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "It is a small teapot of 14cl enamelled inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+            "en": "Unique piece. It is a small teapot of 4.7oz glazed inside and outside. It is perfectly versatile.",
+            "fr": "Pièce unique. Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            "theiere-14cl_71-a.jpg",
-            "theiere-14cl_71-b.jpg",
-            "theiere-14cl_71-c.jpg",
-            "theiere-14cl_71-d.jpg"
+            "theiere_71-a.jpg",
+            "theiere_71-b.jpg",
+            "theiere_71-c.jpg",
+            "theiere_71-d.jpg",
+            "theiere_71-e.jpg"
         ]
     },
     {
         "id": "th72",
         "titre": {
-            "en": "Small teapot 9cl",
-            "fr": "Petite théière 9cl"
+            "en": "Small raw teapot 3oz",
+            "fr": "Petite théière en terre brute 9cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "This is a St Amand earthenware teapot of 9 cl.",
-            "fr": "Il s'agit d'une théière en terre de St Amand de 9 cl."
+            "en": "This is a St Amand stoneware teapot of 3oz. The clay used comes from Burgundy (France). It is rather hard. Its memory is weak, but the absence of enamel will allow the clay to interact with the tea. It is advisable to use this teapot for only one tea family.",
+            "fr": "Il s'agit d'une théière en terre de St Amand de 9cl. L'argile utilisée provient de Bourgogne (France). Elle est plutôt dure. Sa mémoire est faible, mais l'absence d'émail permettra à l'argile d'interagir avec le thé. Il est conseillé d'utiliser cette théière pour une seule famille de thé."
         },
         "prix": 132.00,
         "poids": 0.3,
         "stock": 1,
         "photos": [
-            "theiere-9cl_72-a.jpg",
-            "theiere-9cl_72-b.jpg",
-            "theiere-9cl_72-c.jpg",
-            "theiere-9cl_72-d.jpg"
+            "theiere_72-a.jpg",
+            "theiere_72-b.jpg",
+            "theiere_72-c.jpg",
+            "theiere_72-d.jpg"
         ]
     },
     {
         "id": "th73",
         "titre": {
-            "en": "Small enamelled teapot 7,5 cl",
-            "fr": "Petite théière émaillée 7,5 cl"
+            "en": "Small glazed teapot 2,5oz",
+            "fr": "Petite théière émaillée 7,5cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "It is a small teapot of 7.5cl enamelled inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 7,5cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+            "en": "Unique piece. It is a small teapot of 2.7oz, glazed inside and outside. It is perfectly versatile.",
+            "fr": "Pièce unique. Il s'agit d'une petite théière de 7,5cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            "theiere-75ml_73-a.jpg",
-            "theiere-75ml_73-b.jpg",
-            "theiere-75ml_73-c.jpg",
-            "theiere-75ml_73-d.jpg"
+            "theiere_73-a.jpg",
+            "theiere_73-b.jpg",
+            "theiere_73-c.jpg",
+            "theiere_73-d.jpg"
         ]
     },
     {
         "id": "th74",
         "titre": {
-            "en": "Small enamelled teapot 14 cl",
-            "fr": "Petite théière émaillée 14 cl"
+            "en": "Small enamelled teapot 4.7oz",
+            "fr": "Petite théière émaillée 14cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-13",
         "catégorie": "Théière",
         "description": {
-            "en": "It is a small teapot of 14cl enamelled inside and outside. It is perfectly versatile.",
-            "fr": "Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
+            "en": "Unique piece. It is a small teapot of 4.7oz glazed inside and outside. It is perfectly versatile.",
+            "fr": "Pièce unique. Il s'agit d'une petite théière de 14cl émaillée à l'intérieur comme à l'extérieur. Elle est parfaitement polyvalente."
         },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            "theiere-14cl_74-a.jpg",
-            "theiere-14cl_74-b.jpg",
-            "theiere-14cl_74-c.jpg",
-            "theiere-14cl_74-d.jpg"
+            "theiere_74-a.jpg",
+            "theiere_74-b.jpg",
+            "theiere_74-c.jpg",
+            "theiere_74-d.jpg",
+            "theiere_74-e.jpg"
+        ]
+    },
+    {
+        "id": "th75",
+        "titre": {
+            "en": "Small raw teapot 3oz",
+            "fr": "Petite théière en terre brute 9cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": {
+            "en": "This is a Moutiers stoneware teapot of 3oz. The clay used comes from Burgundy (France). It is very hard. Its memory is very weak, but the absence of enamel will allow the clay to interact with the tea. It is advisable to use this teapot for only one tea family.",
+            "fr": "Il s'agit d'une théière en terre de Moutiers de 9cl. L'argile utilisée provient de Bourgogne (France). Elle est dure. Sa mémoire est faible, mais l'absence d'émail permettra à l'argile d'interagir avec le thé. Il est conseillé d'utiliser cette théière pour une seule famille de thé."
+        },
+        "prix": 132.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": [
+            "theiere_75-a.jpg",
+            "theiere_75-b.jpg",
+            "theiere_75-c.jpg",
+            "theiere_75-d.jpg"
+        ]
+    },
+    {
+        "id": "th76",
+        "titre": {
+            "en": "Small raw teapot 3oz",
+            "fr": "Petite théière en terre brute 9cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-13",
+        "catégorie": "Théière",
+        "description": {
+            "en": "This is a Treigny stoneware teapot of 3oz. The clay used comes from Burgundy (France). The clay is quite soft. Its memory starts to be important. The absence of glaze will allow the clay to interact with the tea. It is advisable to use this teapot for only one kind of tea.",
+            "fr": "Il s'agit d'une théière en terre de Treigny de 9cl. L'argile utilisée provient de Bourgogne (France). Elle est assez tendre. Sa mémoire commence à être importante. L'absence d'émail permettra à l'argile d'interagir avec le thé. Il est conseillé d'utiliser cette théière pour un seul type de thé."
+        },
+        "prix": 132.00,
+        "poids": 0.3,
+        "stock": 1,
+        "photos": [
+            "theiere_76-a.jpg",
+            "theiere_76-b.jpg",
+            "theiere_76-c.jpg",
+            "theiere_76-d.jpg"
         ]
     },
     {
