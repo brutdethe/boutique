@@ -322,42 +322,6 @@
         ]
     },
     {
-        "id": "k9",
-        "titre": {
-            "en": "Kyusu 20cl",
-            "fr": "Kyusu 20cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-14",
-        "catégorie": "Kyusu",
-        "description": {
-            "en": "Enamelled Kyusu, for right-handed people, 20cl, for 240 grams. This kyusu is enamelled inside and outside. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu émaillé, pour droitier de 20cl, pour 240 grammes. Ce kyusu est émaillé intérieur et extérieur. Son filtre assez large, est composé de trous fins pour permettre l'infusion des thés verts japonais."
-        },
-        "prix": 142.00,
-        "poids": 0.4,
-        "stock": 0,
-        "photos": []
-    },
-    {
-        "id": "k11",
-        "titre": {
-            "en": "Kyusu 12cl",
-            "fr": "Kyusu 12cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-14",
-        "catégorie": "Kyusu",
-        "description": {
-            "en": "Kyusu for left-handed person of 12cl for only 140 grams. This kyusu is made of St Amand sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour gaucher de 12cl pour seulement 140 grammes. Ce kyusu est fabriqué en grès de St Amand. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
-        },
-        "prix": 136.00,
-        "poids": 0.4,
-        "stock": 0,
-        "photos": []
-    },
-    {
         "id": "k15",
         "titre": {
             "en": "Kyusu 12cl",
