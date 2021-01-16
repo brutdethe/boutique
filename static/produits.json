@@ -1,5 +1,4 @@
-[
-    {
+[{
         "id": "ga17",
         "titre": {
             "en": "Gaiwan 3.4oz",
@@ -90,7 +89,7 @@
             "gaiwan_22-d.jpg"
         ]
     },
-     {
+    {
         "id": "ga23",
         "titre": {
             "en": "Gaiwan 3.4oz",
@@ -551,7 +550,7 @@
             "shiboridashi_22-a.jpg",
             "shiboridashi_22-b.jpg",
             "shiboridashi_22-c.jpg",
-            "shiboridashi_22-d.jpg
+            "shiboridashi_22-d.jpg"
         ]
     },
     {
