@@ -1,8 +1,13 @@
 <script>
-  import { languageSelected, basket } from "../stores.js";
+  import { stores } from "@sapper/app";
+  import { basket } from "../stores.js";
   import Language from "../components/Language.svelte";
 
+  const { page } = stores();
+
   export let segment;
+
+  $: lang = !!$page.path.match("^/en/") ? "en" : "fr";
 
   const dict = {
     title: { en: "Jé's little store", fr: "La petite boutique de Jé" },
@@ -16,9 +21,10 @@
 
 <style>
   .title {
+    line-height: 1.5em;
     font-size: 2rem;
     font-weight: 700;
-    color: #777;
+    color: #5755d9;
   }
 
   nav {
@@ -69,14 +75,18 @@
 <nav class="columns">
   <ul class="column col-2">
     <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        {dict.nav_products[$languageSelected]}
+      <a
+        aria-current={segment === undefined ? 'page' : undefined}
+        href={lang === 'fr' ? '.' : `${lang}/`}>
+        {dict.nav_products[lang]}
       </a>
     </li>
     <li>
-      <a aria-current={segment === 'panier' ? 'page' : undefined} href="panier">
+      <a
+        aria-current={segment === 'panier' ? 'page' : undefined}
+        href="/{lang}/panier">
         <span class="badge" data-badge={basketCount($basket)} data-initial="YZ">
-          {dict.nav_basket[$languageSelected]}
+          {dict.nav_basket[lang]}
         </span>
       </a>
     </li>
@@ -89,8 +99,6 @@
       <a href="./categories.json" class="text-secondary">categories.json</a>
     </li>
   </ul>
-  <h1 class="title column col-6">
-    <a href="/">{dict.title[$languageSelected]}</a>
-  </h1>
+  <h1 class="title column col-6">{dict.title[lang]}</h1>
   <Language />
 </nav>

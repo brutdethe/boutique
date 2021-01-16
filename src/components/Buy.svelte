@@ -1,7 +1,8 @@
 <script>
-  import { basket, languageSelected } from "../stores.js";
+  import { basket } from "../stores.js";
 
   export let item;
+  export let lang;
 
   const getBasketProduct = id =>
     $basket.filter(product => product.id === id)[0];
@@ -28,5 +29,5 @@
   class="btn btn-primary float-right"
   on:click={basketClick(item)}
   {disabled}>
-  {dict.buy[$languageSelected]}
+  {dict.buy[lang]}
 </button>
