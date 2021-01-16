@@ -62,6 +62,7 @@
 
     return collisimo[language].filter(rate => weightTotal <= rate.limit)[0]
       .price;
+    transport;
   }
 
   $: subTotal = parseFloat(
@@ -69,10 +70,8 @@
       .reduce((acc, product) => product.prix * product.qty + acc, 0)
       .toFixed(2)
   ).toFixed(2);
-
   $: transport = parseFloat(shippingCost($basket, lang)).toFixed(2);
-
-  $: total = parseFloat(subTotal + transport).toFixed(2);
+  $: total = parseFloat(+transport + +subTotal).toFixed(2);
 
   function deleteClick(id) {
     $basket = $basket.filter(product => product.id !== id);
