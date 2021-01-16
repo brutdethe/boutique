@@ -5,7 +5,6 @@
   import Buy from "../components/Buy.svelte";
 
   export let lang;
-  console.log("buy-fr", lang);
 
   const dict = {
     title: {
@@ -89,7 +88,7 @@
               <div class="card-subtitle text-gray">{$categorySelected}</div>
             </div>
             <div class="card-image">
-              <a href="/produit-{product.id}">
+              <a href="/{lang}/produit-{product.id}">
                 <img
                   class="img-responsive"
                   src="/produits/thumbs/{product.photos[0]}"
@@ -106,7 +105,7 @@
               <div class="btn-group btn-group-block">
                 <button
                   class="detail btn btn-secondary"
-                  on:click|once={goto(`/produit-${product.id}`)}
+                  on:click|once={goto(`/${lang}/produit-${product.id}`)}
                   data-product={product.id}>
                   {dict.detail[lang]}
                 </button>
