@@ -322,153 +322,233 @@
         ]
     },
     {
-        "id": "k15",
+        "id": "k11",
         "titre": {
-            "en": "Kyusu 12cl",
+            "en": "Kyusu 4oz",
             "fr": "Kyusu 12cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Kyusu for left-handed person of 12cl for only 120 grams. This kyusu is made of Moutiers sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour gaucher de 12cl pour seulement 120 grammes. Ce kyusu est fabriqué en grès de Moutiers. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
+            "en": "Unique piece. Kyusu for left-hander of 4oz. This kyusu is made of stoneware from St Amand (Burgundy - France), a hard clay.  Its filter is quite large, and is composed of fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu pour gaucher de 12cl. Ce kyusu est fabriqué en grès de St Amand (Bourgogne - France), une terre dure. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
         },
         "prix": 136.00,
-        "poids": 0.4,
+        "poids": 0.3,
         "stock": 1,
         "photos": [
-            "kyusu-12cl_15-a.jpg",
-            "kyusu-12cl_15-b.jpg",
-            "kyusu-12cl_15-c.jpg"
+            "kyusu_13.jpg",
+            "kyusu_14.jpg",
+            "kyusu_15.jpg",
+            "kyusu_16.jpg"
         ]
     },
     {
-        "id": "k16",
+        "id": "k15",
         "titre": {
-            "en": "Kyusu 13cl",
-            "fr": "Kyusu 13cl"
+            "en": "Kyusu 4oz",
+            "fr": "Kyusu 12cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Kyusu for right-handed person of 13cl for only 140 grams. This kyusu is made of Moutiers sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour droitier de 13cl pour seulement 140 grammes. Ce kyusu est fabriqué en grès de Moutiers. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
+            "en": "Unique piece. Kyusu for left-handed person of 4oz. This kyusu is made of Moutiers stoneware (Burgundy - France), a very hard clay. Its filter is quite large, and is composed of fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu pour gaucher de 12cl. Ce kyusu est fabriqué en grès de Moutiers (Bourgogne - France), une terre très dure. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
         },
         "prix": 136.00,
-        "poids": 0.4,
-        "stock": 0,
-        "photos": []
+        "poids": 0.2,
+        "stock": 1,
+        "photos": [
+            "kyusu-12cl_15-a.jpg",
+            "kyusu_17.jpg",
+            "kyusu_18.jpg",
+            "kyusu_19.jpg"
+        ]
     },
     {
         "id": "k17",
         "titre": {
-            "en": "Kyusu 22cl",
+            "en": "Kyusu 7.5oz",
             "fr": "Kyusu 22cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Kyusu for right-handed person of 22cl for only 200 grams. This kyusu is made of St Amand sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour droitier de 22cl pour seulement 200 grammes. Ce kyusu est fabriqué en grès de St Amand. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
+            "en": "Unique piece. Kyusu for right-hander of 7.5oz. This kyusu is made of stoneware from St Amand (Burgundy - France), a hard clay.  Its filter is quite large, and is composed of fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu pour droitier de 22cl. Ce kyusu est fabriqué en grès de St Amand (Bourgogne - France), une terre dure. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
         },
         "prix": 136.00,
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            "kyusu-22cl_17-a.jpg",
-            "kyusu-22cl_17-b.jpg",
-            "kyusu-22cl_17-c.jpg"
+            "kyusu_20.jpg",
+            "kyusu_21.jpg",
+            "kyusu_22.jpg",
+            "kyusu_23.jpg"
         ]
     },
     {
         "id": "k18",
         "titre": {
-            "en": "Kyusu 13cl",
+            "en": "Kyusu 4.4oz",
             "fr": "Kyusu 13cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Kyusu for right-handed person of 13cl for only 150 grams. This kyusu is made of St Amand sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour droitier de 13cl pour seulement 150 grammes. Ce kyusu est fabriqué en grès de St Amand. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
+            "en": "Unique piece. Kyusu for right-hander of 4.4oz. This kyusu is made of stoneware from St Amand (Burgundy - France), a hard clay.  Its filter is quite large, and is composed of fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu pour droitier de 13cl. Ce kyusu est fabriqué en grès de St Amand (Bourgogne - France), une terre dure. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
         },
         "prix": 136.00,
-        "poids": 0.4,
+        "poids": 0.3,
         "stock": 1,
         "photos": [
-            "kyusu-13cl_18-a.jpg",
-            "kyusu-13cl_18-b.jpg",
-            "kyusu-13cl_18-c.jpg"
+            "kyusu_24.jpg",
+            "kyusu_25.jpg",
+            "kyusu_26.jpg",
+            "kyusu_27.jpg"
         ]
     },
     {
         "id": "k19",
         "titre": {
-            "en": "Kyusu 13cl",
+            "en": "Kyusu 4.4oz",
             "fr": "Kyusu 13cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Kyusu for right-handed person of 13cl for only 150 grams. This kyusu is made of St Amand sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour droitier de 13cl pour seulement 150 grammes. Ce kyusu est fabriqué en grès de St Amand. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
+            "en": "Unique piece. Kyusu for right-hander of 4.4oz. This kyusu is made of stoneware from St Amand (Burgundy - France), a hard clay.  Its filter is quite large, and is composed of fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu pour droitier de 13cl. Ce kyusu est fabriqué en grès de St Amand (Bourgogne - France), une terre dure. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
         },
         "prix": 136.00,
-        "poids": 0.4,
+        "poids": 0.3,
         "stock": 1,
         "photos": [
-            "kyusu-13cl_19-a.jpg",
-            "kyusu-13cl_19-b.jpg",
-            "kyusu-13cl_19-c.jpg"
+            "kyusu_28.jpg",
+            "kyusu_29.jpg",
+            "kyusu_30.jpg",
+            "kyusu_31.jpg"
         ]
     },
     {
         "id": "k20",
         "titre": {
-            "en": "Kyusu 12cl",
+            "en": "Kyusu 4.4oz",
             "fr": "Kyusu 13cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Kyusu for left-handed person of 13cl for only 150 grams. This kyusu is made of St Amand sandstone. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu pour gaucher de 13cl pour seulement 150 grammes. Ce kyusu est fabriqué en grès de St Amand. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
+            "en": "Unique piece. Kyusu for left-hander of 4.4oz. This kyusu is made of stoneware from St Amand (Burgundy - France), a hard clay.  Its filter is quite large, and is composed of fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu pour gaucher de 13cl. Ce kyusu est fabriqué en grès de St Amand (Bourgogne - France), une terre dure. Son filtre assez large, est composé de trous fins pour infuser des thés verts japonais."
         },
         "prix": 136.00,
-        "poids": 0.4,
+        "poids": 0.3,
         "stock": 1,
         "photos": [
-            "kyusu-12cl_20-a.jpg",
-            "kyusu-12cl_20-b.jpg",
-            "kyusu-12cl_20-c.jpg"
+            "kyusu_32.jpg",
+            "kyusu_33.jpg",
+            "kyusu_34.jpg",
+            "kyusu_35.jpg"
         ]
     },
     {
         "id": "k21",
         "titre": {
-            "en": "Kyusu 20cl",
+            "en": "Kyusu 6.8oz",
             "fr": "Kyusu 20cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-14",
         "catégorie": "Kyusu",
         "description": {
-            "en": "Enamelled Kyusu, for left-handed people, 20cl, for 240 grams. This kyusu is enamelled inside and outside. Its filter is large enough, with fine holes for brewing Japanese green teas.",
-            "fr": "Kyusu émaillé, pour gaucher de 20cl, pour 240 grammes. Ce kyusu est émaillé intérieur et extérieur. Son filtre assez large, est composé de trous fins pour permettre l'infusion des thés verts japonais."
+            "en": "glazed Kyusu, for left-handed people, 6.8oz. This kyusu is glazed inside and outside. Its filter is large enough, with fine holes for brewing Japanese green teas.",
+            "fr": "Kyusu émaillé, pour gaucher de 20cl. Ce kyusu est émaillé intérieur et extérieur. Son filtre assez large, est composé de trous fins pour permettre l'infusion des thés verts japonais."
         },
         "prix": 142.00,
         "poids": 0.4,
         "stock": 1,
         "photos": [
-            "kyusu-20cl_21-a.jpg",
-            "kyusu-20cl_21-b.jpg",
-            "kyusu-20cl_21-c.jpg"
+            "kyusu_36.jpg",
+            "kyusu_37.jpg",
+            "kyusu_38.jpg",
+            "kyusu_39.jpg"
+        ]
+    },
+    {
+        "id": "k22",
+        "titre": {
+            "en": "Kyusu 6.4oz",
+            "fr": "Kyusu 19cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-14",
+        "catégorie": "Kyusu",
+        "description": {
+            "en": "Unique piece. Glazed Kyusu, for right-hander, 6.4oz. This kyusu is glazed inside and outside. Its filter is large enough, with fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu émaillé, pour droitier de 19cl. Ce kyusu est émaillé intérieur et extérieur. Son filtre assez large, est composé de trous fins pour permettre l'infusion des thés verts japonais."
+        },
+        "prix": 142.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            "kyusu_05.jpg",
+            "kyusu_06.jpg",
+            "kyusu_07.jpg",
+            "kyusu_08.jpg"
+        ]
+    },
+    {
+        "id": "k23",
+        "titre": {
+            "en": "Kyusu 5.7oz",
+            "fr": "Kyusu 17cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-14",
+        "catégorie": "Kyusu",
+        "description": {
+            "en": "Unique piece. Glazed Kyusu, for right-handed people, 5.7oz. This kyusu is glazed inside and outside. Its filter is large enough, with fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu émaillé, pour droiters de 17cl. Ce kyusu est émaillé intérieur et extérieur. Son filtre assez large, est composé de trous fins pour permettre l'infusion des thés verts japonais."
+        },
+        "prix": 142.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            "kyusu_09.jpg",
+            "kyusu_10.jpg",
+            "kyusu_11.jpg",
+            "kyusu_12.jpg"
+        ]
+    },
+    {
+        "id": "k24",
+        "titre": {
+            "en": "Kyusu 7.8oz",
+            "fr": "Kyusu 23cl"
+        },
+        "modification": "2020-11-21",
+        "création": "2020-11-14",
+        "catégorie": "Kyusu",
+        "description": {
+            "en": "Unique piece. Glazed Kyusu, for left-handed people, 7.8oz. This kyusu is glazed inside and outside. Its filter is large enough, with fine holes for brewing Japanese green teas.",
+            "fr": "Pièce unique. Kyusu émaillé, pour gauchers de 23cl. Ce kyusu est émaillé intérieur et extérieur. Son filtre assez large, est composé de trous fins pour permettre l'infusion des thés verts japonais."
+        },
+        "prix": 142.00,
+        "poids": 0.4,
+        "stock": 1,
+        "photos": [
+            "kyusu_01.jpg",
+            "kyusu_02.jpg",
+            "kyusu_03.jpg",
+            "kyusu_04.jpg"
         ]
     },
     {
@@ -518,28 +598,6 @@
         ]
     },
     {
-        "id": "sh28",
-        "titre": {
-            "en": "Shiboridashi 8cl",
-            "fr": "Shiboridashi 8cl"
-        },
-        "modification": "2020-11-21",
-        "création": "2020-11-14",
-        "catégorie": "Shiboridashi",
-        "description": {
-            "en": "Shiboridashi of 8cl, in sandstone of Moutiers. Weight: 140 gr. Capacity : 8cl.",
-            "fr": "Shiboridashi de 8 cl, en grès de Moutiers. Poids : 140 gr. Contenance : 8cl"
-        },
-        "prix": 56.00,
-        "poids": 0.4,
-        "stock": 0,
-        "photos": [
-            "shiboridashi_28-a.jpg",
-            "shiboridashi_28-b.jpg",
-            "shiboridashi_28-c.jpg"
-        ]
-    },
-    {
         "id": "sh30",
         "titre": {
             "en": "Shiboridashi 2.2oz",
@@ -572,8 +630,8 @@
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
         "description": {
-            "en": "Glazed shiboridashi of 4.oz. The design of this shiboridashi allows to regulate the speed of the pouring by moving the lid forward or backward. This makes it a fairly versatile piece. Weight: 250 gr.",
-            "fr": "Shiboridashi de 12cl émaillé. La conception de ce shiboridashi permet de réguler la vitesse de la verse en avançant ou reculant le couvercle. Cela en fait une pièce assez polyvalente. Poids : 250 gr."
+            "en": "Glazed shiboridashi of 4.oz. The design of this shiboridashi allows to regulate the speed of the pouring by moving the lid forward or backward. This makes it a fairly versatile piece. Weight: 8.8oz.",
+            "fr": "Shiboridashi de 12cl émaillé. La conception de ce shiboridashi permet de réguler la vitesse de la verse en avançant ou reculant le couvercle. Cela en fait une pièce assez polyvalente. Poids : 250g."
         },
         "prix": 76.00,
         "poids": 0.4,
@@ -595,8 +653,8 @@
         "création": "2020-11-14",
         "catégorie": "Shiboridashi",
         "description": {
-            "en": "Glazed shiboridashi of 4.oz. The design of this shiboridashi allows to regulate the speed of the pouring by moving the lid forward or backward. This makes it a fairly versatile piece. Weight: 220 gr.",
-            "fr": "Shiboridashi de 12cl émaillé. La conception de ce shiboridashi permet de réguler la vitesse de la verse en avançant ou reculant le couvercle. Cela en fait une pièce assez polyvalente. Poids : 220 gr."
+            "en": "Glazed shiboridashi of 4.oz. The design of this shiboridashi allows to regulate the speed of the pouring by moving the lid forward or backward. This makes it a fairly versatile piece. Weight: 7.7oz.",
+            "fr": "Shiboridashi de 12cl émaillé. La conception de ce shiboridashi permet de réguler la vitesse de la verse en avançant ou reculant le couvercle. Cela en fait une pièce assez polyvalente. Poids : 220g."
         },
         "prix": 76.00,
         "poids": 0.4,
