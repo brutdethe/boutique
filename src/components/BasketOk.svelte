@@ -1,7 +1,9 @@
 <script>
   import { goto } from "@sapper/app";
-  import { basket, languageSelected } from "../stores.js";
+  import { basket } from "../stores.js";
   import { onMount } from "svelte";
+
+  export let lang;
 
   const dict = {
     title: { en: "Purchases made", fr: "Achats effectués" },
@@ -40,9 +42,9 @@
 </script>
 
 <svelte:head>
-  <title>{dict.title[$languageSelected]}</title>
+  <title>{dict.title[lang]}</title>
 </svelte:head>
-<h2>{dict.title[$languageSelected]}</h2>
+<h2>{dict.title[lang]}</h2>
 
 <div class="container">
   <div class="columns">
@@ -50,10 +52,10 @@
       <div class="empty-icon">
         <i class="icon icon-check" />
       </div>
-      <p class="empty-title h5">{dict.message[$languageSelected]}</p>
+      <p class="empty-title h5">{dict.message[lang]}</p>
       <div class="empty-action">
         <a href={lang === 'fr' ? '.' : `${lang}/`} class="back-shop">
-          &lsaquo; {dict.backToShop[$languageSelected]}
+          &lsaquo; {dict.backToShop[lang]}
         </a>
       </div>
     </div>
