@@ -215,5 +215,7 @@
   </div>
 </div>
 {#if $basket.length}
-  <a href="/" class="back-shop">&lsaquo; {dict.backToShop[lang]}</a>
+  <a href={lang === 'fr' ? '.' : `${lang}/`} class="back-shop">
+    &lsaquo; {dict.backToShop[lang]}
+  </a>
 {/if}
