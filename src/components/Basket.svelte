@@ -147,7 +147,11 @@
         <tbody>
           {#each $basket as item, index}
             <tr class="active">
-              <td>{item.titre[lang]} - {item.id}</td>
+              <td>
+                <a href="/{lang}/produit-{item.id}">
+                  {item.titre[lang]} - {item.id}
+                </a>
+              </td>
               <td>
                 <i
                   class="icon icon-delete c-hand"
