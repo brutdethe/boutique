@@ -37,7 +37,7 @@
 </style>
 
 <svelte:head>
-  <title>{dict.product[lang]}-{id}</title>
+  <title>{dict.title[lang]}-{id}</title>
 </svelte:head>
 
 {#if $products.product}
