@@ -7,7 +7,7 @@ const checkoutData = {
     billing_address_collection: 'required',
     locale: '',
     shipping_address_collection: {
-        allowed_countries: ['FR', 'EN']
+        allowed_countries: ['FR', 'US']
     },
     line_items: [],
     mode: 'payment',
