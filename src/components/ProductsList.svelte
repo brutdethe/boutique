@@ -72,7 +72,7 @@
   <title>{dict.title[lang]}</title>
 </svelte:head>
 <header>
-  <Categories categories={$products.categories} />
+  <Categories categories={$products.categories} {lang} />
 </header>
 <section>
   <div class="columns">
