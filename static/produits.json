@@ -904,7 +904,7 @@
         "création": "2020-11-23",
         "catégorie": "Bol à thé",
         "description": {
-            "en": "Diameter 3.23in, height 2.3in, weight 80gr, capacity 3.4oz.",
+            "en": "Diameter 3.23in, height 2.3in, weight 2.8oz, capacity 3.4oz.",
             "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
         },
         "prix": 14.00,
@@ -955,14 +955,14 @@
     {
         "id": "bt5",
         "titre": {
-            "en": "tea bowl 10 cl",
+            "en": "tea bowl 3.4oz",
             "fr": "Bol à thé 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bol à thé",
         "description": {
-            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "en": "Diameter 3.23in, height 2.3in, weight 2.8oz, capacity 3.4oz.",
             "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
         },
         "prix": 20.00,
@@ -977,14 +977,14 @@
     {
         "id": "bt6",
         "titre": {
-            "en": "tea bowl 10 cl",
+            "en": "tea bowl 3.4oz",
             "fr": "Bol à thé 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bol à thé",
         "description": {
-            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "en": "Diameter 3.23in, height 2.3in, weight 2.8oz, capacity 3.4oz.",
             "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
         },
         "prix": 20.00,
@@ -999,19 +999,19 @@
     {
         "id": "bt7",
         "titre": {
-            "en": "tea bowl 10 cl",
+            "en": "tea bowl 3.4oz",
             "fr": "Bol à thé 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bol à thé",
         "description": {
-            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "en": "Diameter 3.23in, height 2.3in, weight 2.8oz, capacity 3.4oz.",
             "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
         },
         "prix": 14.00,
         "poids": 0.25,
-        "stock": 2,
+        "stock": 0,
         "photos": [
             "bol_7-a.jpg",
             "bol_7-b.jpg",
@@ -1021,14 +1021,14 @@
     {
         "id": "v3",
         "titre": {
-            "en": "Pourer 13cl",
+            "en": "Pourer 4.4oz",
             "fr": "Verseuse 13cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Verseuse",
         "description": {
-            "en": "Glazed pourer of 13cl",
+            "en": "Glazed pourer of 4.4oz",
             "fr": "Verseuse de 13cl émaillée."
         },
         "prix": 25.00,
@@ -1042,14 +1042,14 @@
     {
         "id": "v4",
         "titre": {
-            "en": "Pourer 13cl",
+            "en": "Pourer 4.4oz",
             "fr": "Verseuse 13cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Verseuse",
         "description": {
-            "en": "Glazed pourer of 13cl",
+            "en": "Glazed pourer of 4.4oz",
             "fr": "Verseuse de 13cl émaillée."
         },
         "prix": 30.00,
@@ -1065,14 +1065,14 @@
     {
         "id": "v5",
         "titre": {
-            "en": "Pourer 13cl",
+            "en": "Pourer 4.4oz",
             "fr": "Verseuse 13cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Verseuse",
         "description": {
-            "en": "Glazed pourer of 13cl",
+            "en": "Glazed pourer of 4.4oz",
             "fr": "Verseuse de 13cl émaillée."
         },
         "prix": 30.00,
@@ -1095,8 +1095,8 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Travel set in Moutiers stoneware (Burgundy), 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
-            "fr": "Set de voyage en grès de Moutiers (Bourgogne), brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+            "en": "Raw travel set in Moutiers stoneware (Burgundy) of 3.4oz. Moutiers' stoneware is a very hard clay. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers (Bourgogne) de 10cl. Le grès de Moutiers est une argile très dure. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
         },
         "prix": 160.00,
         "poids": 0.5,
@@ -1118,8 +1118,8 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Travel set in Treigny stoneware (Burgundy), 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
-            "fr": "Set de voyage en grès de Treigny (Bourgogne), brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+            "en": "Raw travel set in Treigny stoneware (Burgundy) of 3.4oz. Treigny's stoneware is a rather soft clay. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Treigny (Bourgogne) de 10cl. Le grès de Treigny est une argile plutôt tempdre. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
         },
         "prix": 160.00,
         "poids": 0.5,
@@ -1141,8 +1141,8 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Travel set in Moutiers stoneware, 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
-            "fr": "Set de voyage en grès de Moutiers, brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+            "en": "Raw travel set in Moutiers stoneware (Burgundy) of 3.4oz. Moutiers' stoneware is a very hard clay. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers (Bourgogne) de 10cl. Le grès de Moutiers est une argile très dure. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
         },
         "prix": 160.00,
         "poids": 0.5,
@@ -1164,8 +1164,8 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Travel set in Moutiers stoneware, 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
-            "fr": "Set de voyage en grès de Moutiers, brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+            "en": "Raw travel set in Moutiers stoneware (Burgundy) of 3.4oz. Moutiers' stoneware is a very hard clay. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 pourer, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers (Bourgogne) de 10cl. Le grès de Moutiers est une argile très dure. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 verseuse, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
         },
         "prix": 160.00,
         "poids": 0.5,
@@ -1187,8 +1187,8 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Travel set in Moutiers stoneware, 10 cl raw. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 protective cover. The set is designed to be compact and functional.",
-            "fr": "Set de voyage en grès de Moutiers, brut de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
+            "en": "Raw travel set in Moutiers stoneware of 3.4oz. Unique piece. This set contains 2 bowls, 1 hohin type infuser with a fine filter to brew all the teas, 1 protective cover. The set is designed to be compact and functional.",
+            "fr": "Set de voyage en grès de Moutiers de 10 cl. Pièce unique. Ce set contient 2 bols, 1 infuseur type hohin avec un filtre fin pour infuser tous les thés, 1 housse de protection. L'ensemble est conçu pour être compact et fonctionnel."
         },
         "prix": 130.00,
         "poids": 0.5,
@@ -1210,11 +1210,11 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Protective cover with separation. Size: square of 22cm side. This cover is shipped with two pieces of assorted fabric to hold the pieces once unpacked.",
-            "fr": "Housse de protection munie d'une séparation. Taille : carré de 22cm de côté. Cette housse est expédiée avec deux morceaux de tissus assortis, permettant d'accueillir les pièces une fois déballées."
+            "en": "Protective cover with separation. Unique piece. Size: square of 8.7in side. This cover is shipped with two pieces of assorted fabric to hold the pieces once unpacked.",
+            "fr": "Housse de protection munie d'une séparation. Pièce unique. Taille : carré de 22cm de côté. Cette housse est expédiée avec deux morceaux de tissus assortis, permettant d'accueillir les pièces une fois déballées."
         },
-        "prix": 130.00,
-        "poids": 0.5,
+        "prix": 50.00,
+        "poids": 0.3,
         "stock": 1,
         "photos": [
             "housse_1-a.jpg",
@@ -1231,11 +1231,11 @@
         "création": "2020-11-23",
         "catégorie": "Set de Voyage",
         "description": {
-            "en": "Protective cover with separation. Size: square of 22cm side. This cover is shipped with two pieces of assorted fabric to hold the pieces once unpacked.",
-            "fr": "Housse de protection munie d'une séparation. Taille : carré de 22cm de côté. Cette housse est expédiée avec deux morceaux de tissus assortis, permettant d'accueillir les pièces une fois déballées."
+            "en": "Protective cover with separation. Unique piece. Size: square of 8.7in side. This cover is shipped with two pieces of assorted fabric to hold the pieces once unpacked.",
+            "fr": "Housse de protection munie d'une séparation. Pièce unique. Taille : carré de 22cm de côté. Cette housse est expédiée avec deux morceaux de tissus assortis, permettant d'accueillir les pièces une fois déballées."
         },
-        "prix": 130.00,
-        "poids": 0.5,
+        "prix": 50.00,
+        "poids": 0.3,
         "stock": 1,
         "photos": [
             "housse_2-a.jpg",
@@ -1245,14 +1245,14 @@
     {
         "id": "bo10",
         "titre": {
-            "en": "Kettle in stoneware 35cl.",
+            "en": "Kettle in stoneware 11.8oz.",
             "fr": "Bouilloire en grès 35cl."
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bouilloire",
         "description": {
-            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 350 ml, Weight: 430 gr.",
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.7in (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 11.8oz, Weight: 15.2oz.",
             "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 350 ml, Poids : 430 gr."
         },
         "prix": 148.00,
@@ -1267,14 +1267,14 @@
     {
         "id": "bo11",
         "titre": {
-            "en": "Kettle in stoneware 88cl.",
+            "en": "Kettle in stoneware 29.8oz.",
             "fr": "Bouilloire en grès 88cl."
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bouilloire",
         "description": {
-            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 880 ml, Weight: 680 gr.",
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 3.7in (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 29.8oz, Weight: 24oz.",
             "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 880 ml, Poids : 680 gr."
         },
         "prix": 148.00,
@@ -1289,14 +1289,14 @@
     {
         "id": "bo12",
         "titre": {
-            "en": "Kettle in stoneware 70cl.",
+            "en": "Kettle in stoneware 23.7oz.",
             "fr": "Bouilloire en grès 70cl."
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bouilloire",
         "description": {
-            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 700 ml, Weight: 630 gr.",
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 3.7in (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 23.7oz, Weight: 22.2oz.",
             "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 700 ml, Poids : 630 gr."
         },
         "prix": 148.00,
@@ -1311,15 +1311,15 @@
     {
         "id": "bo14",
         "titre": {
-            "en": "Kettle in stoneware 90cl.",
+            "en": "Kettle in stoneware 30.4oz.",
             "fr": "Bouilloire en grès 90cl."
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bouilloire",
         "description": {
-            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 9.5 cm (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 900 ml, Weight: 880 gr.",
-            "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 900 ml, Poids : 880 gr."
+            "en": "Stoneware kettle '120.7' called 'à feu', with a cold-formed iron handle. This handle can be removed and put back on again very easily. Kettle of small capacity, with a bottom of 3.7in (part that rests on the brazier). The pouring is precise and frank. Unique piece. Capacity: about 30.4oz, Weight: 31oz.",
+            "fr": "Bouilloire en grès '120.7' dit 'à feu', avec une anse en fer façonnée à froid. Cette anse peut se retirer et se remettre très facilement. Bouilloire de petite contenance, avec un fond de 9,5 cm (partie qui repose sur le brasero). La verse est précise et franche. Pièce unique. Contenance : environ 900ml, Poids : 880gr."
         },
         "prix": 148.00,
         "poids": 0.8,
