@@ -589,7 +589,7 @@
         },
         "prix": 76.00,
         "poids": 0.4,
-        "stock": 1,
+        "stock": 0,
         "photos": [
             "shiboridashi_22-a.jpg",
             "shiboridashi_22-b.jpg",
@@ -967,7 +967,7 @@
         },
         "prix": 20.00,
         "poids": 0.25,
-        "stock": 2,
+        "stock": 0,
         "photos": [
             "bol_5-a.jpg",
             "bol_5-b.jpg",
@@ -1011,7 +1011,7 @@
         },
         "prix": 14.00,
         "poids": 0.25,
-        "stock": 0,
+        "stock": 2,
         "photos": [
             "bol_7-a.jpg",
             "bol_7-b.jpg",
@@ -1033,7 +1033,7 @@
         },
         "prix": 25.00,
         "poids": 0.25,
-        "stock": 2,
+        "stock": 0,
         "photos": [
             "verseuse_3-a.jpg",
             "verseuse_3-b.jpg"
@@ -1054,7 +1054,7 @@
         },
         "prix": 30.00,
         "poids": 0.25,
-        "stock": 1,
+        "stock": 0,
         "photos": [
             "verseuse_4-a.jpg",
             "verseuse_4-b.jpg",
@@ -1077,7 +1077,7 @@
         },
         "prix": 30.00,
         "poids": 0.25,
-        "stock": 1,
+        "stock": 0,
         "photos": [
             "verseuse_5-a.jpg",
             "verseuse_5-b.jpg",
@@ -1466,7 +1466,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "en": "Unique piece. Small tea pot that can contain 0.7oz of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
             "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
         },
         "prix": 50.00,
@@ -1490,7 +1490,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "en": "Unique piece. Small tea pot that can contain 0.7oz of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
             "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
         },
         "prix": 50.00,
@@ -1512,7 +1512,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "en": "Unique piece. Small tea pot that can contain 0.7oz of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
             "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
         },
         "prix": 50.00,
@@ -1535,7 +1535,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "en": "Unique piece. Small tea pot that can contain 0.7oz of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
             "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
         },
         "prix": 50.00,
@@ -1557,7 +1557,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Small tea pot that can contain 20 gr of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
+            "en": "Unique piece. Small tea pot that can contain 0.7oz of tea. Generally, this type of pot is used when you prepare tea for your guests. This avoids the presence of the tea bag or the big storage jar.",
             "fr": "Pièce unique. Petit pot à thé pouvant contenir 20 gr de thé. En règle général, ce type de pot est utiliser lorsque vous préparer du thé pour vos hôtes. Cela évite la présence du sachet ou de la grosse jarre de stockage."
         },
         "prix": 50.00,
@@ -1579,7 +1579,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of GECH, a 6.5% porosity stoneware. Height: 26 cm. Diameter of the opening: 24 cm. Weight : 5 kg",
+            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of GECH, a 6.5% porosity stoneware. Height: 10.2in. Diameter of the opening: 9.4in. Weight : 176.4oz",
             "fr": "Pièce unique. Jarre pour stocker des galettes entières de puerh. Jarre fabriquée en GECH, un grès à 6,5 % de porosité. Hauteur : 26 cm. Diamètre de l'ouverture : 24 cm. Poids : 5 kg"
         },
         "prix": 200.00,
@@ -1600,7 +1600,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of St Amand sandstone, 0.9% porosity. Height : 11,5 cm. Diameter of the opening : 23,5 cm. Weight : 3 kg",
+            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of St Amand sandstone, 0.9% porosity. Height : 4.5in. Diameter of the opening : 9in. Weight : 105.8oz",
             "fr": "Pièce unique. Jarre pour stocker des galettes entières de puerh. Jarre fabriquée en grès de St Amand, 0,9 % de porosité. Hauteur : 11,5 cm. Diamètre de l'ouverture : 23,5 cm. Poids : 3 kg"
         },
         "prix": 100.00,
@@ -1622,7 +1622,7 @@
         "création": "2020-11-23",
         "catégorie": "Jarre à thé",
         "description": {
-            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of Moutiers stoneware, 0.2% porosity. Height : 22,5 cm. Diameter of the opening : 22,5 cm. Weight : 5 kg",
+            "en": "Unique piece. Jar to store whole puerh cakes. Jar made of Moutiers stoneware, 0.2% porosity. Height : 8.9in. Diameter of the opening : 8.9in. Weight : 176.4oz",
             "fr": "Pièce unique. Jarre pour stocker des galettes entières de puerh. Jarre fabriquée en grès de Moutiers, 0,2 % de porosité. Hauteur : 22,5 cm. Diamètre de l'ouverture : 22,5 cm. Poids : 5 kg"
         },
         "prix": 200.00,
