@@ -875,14 +875,14 @@
     {
         "id": "bt1",
         "titre": {
-            "en": "Set gongfu bowls 4cl.",
+            "en": "Set gongfu bowls 1.3oz.",
             "fr": "Set bols à gongfu 4cl."
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bol à thé",
         "description": {
-            "en": "Set consisting of a smelling bowl and a drinking bowl of 4 cl",
+            "en": "Set consisting of a smelling bowl and a drinking bowl of 1.3oz",
             "fr": "Set composé d'un bol à sentir et d'un bol à boire de 4 cl"
         },
         "prix": 25.00,
@@ -897,14 +897,14 @@
     {
         "id": "bt2",
         "titre": {
-            "en": "tea bowl 10 cl",
+            "en": "tea bowl 3.4oz",
             "fr": "Bol à thé 10cl"
         },
         "modification": "2020-11-21",
         "création": "2020-11-23",
         "catégorie": "Bol à thé",
         "description": {
-            "en": "Diameter 8,2cm, height 5,8cm, weight 80gr, capacity 10cl.",
+            "en": "Diameter 3.23in, height 2.3in, weight 80gr, capacity 3.4oz.",
             "fr": "Diamètre 8,2cm, hauteur 5,8cm, poids 80gr, contenance 10cl."
         },
         "prix": 14.00,
