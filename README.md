@@ -19,7 +19,7 @@ Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 ### Organisation GitHub
 
 Le site est déployé sur la branche [heroku](https://heroku.com)  
-Et les sources sont présentes sur la branche principale : [_dev_](https://github.com/brutdethe/shop/tree/dev)
+Et les sources sont présentes sur la branche principale : [_dev_](../../tree/dev)
 
 ### Pour lancer le site en local
 
@@ -27,12 +27,7 @@ Et les sources sont présentes sur la branche principale : [_dev_](https://githu
 
 ### Pour déployer 
 
-Le déploiement est automatisé de la branche [_dev_](https://github.com/brutdethe/shop/tree/dev) vers *heroku*
-
-Cette commande propose un déploiement sur la branche [_main_](https://github.com/brutdethe/shop/tree/main)
-`$ npm run deploy`
-
-https://shop.brutdethé.fr
+Le déploiement est automatisé à partir de la branche [_dev_](../../tree/dev) vers *heroku*
 
 ### Stripe
 
@@ -48,7 +43,15 @@ Pour *heroku* la clé est stockée dans les *settings*
 
 `$ node --experimental-modules scripts/createProducts.mjs`
 
-### Pour optimiser les photos
+## Les photos
+
+Les photos des produits sont à déposer dans le dossier [photos](/photos) à la racine du dépôt. Les photos sont redimensionner automatiquement pour le *carrousel* et les *vignettes* de la page produit et sont stockées dans le dossier [images](/static/images).
+
+Le [script](/scripts/optimize.js) de redimensionnement des images utilise le fichier de [produits](/static/produits.json) pour récupérer les noms de fichiers des photos.
+
+La *vignette* est générée à partir du premier fichier indiqué dans la rubrique *photos* de chaque produit.
+
+### Pour optimiser manuellement les photos
 
 `$ npm run optimize`
 
