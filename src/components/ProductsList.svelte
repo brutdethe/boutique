@@ -91,7 +91,7 @@
               <a href="/{lang}/produit-{product.id}">
                 <img
                   class="img-responsive"
-                  src="/produits/thumbs/{product.photos[0]}"
+                  src="/images/thumbs/{product.photos[0]}"
                   alt="{product.titre[lang]} #{product.id}" />
               </a>
             </div>
