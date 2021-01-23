@@ -5,7 +5,7 @@
   export let lang;
 
   const stripe_secret =
-    "pk_test_51HEFz3GJpQWhfcWwXgkgoLbJ1GLgViXGqYfWSgBQwzudrYdsQiMhdVkGWHQvRPx3sTMLNsRXvB2B6pdF1GEpQ9Ka00kz6AoFmS";
+    "pk_live_tECTVOfr9kuVcMcYyQRlN9jq";
 
   function checkout() {
     const stripe = Stripe(stripe_secret);
