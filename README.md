@@ -1,5 +1,16 @@
 # Boutique de thé
 
+## Comment ça marche ?
+
+### Stockage des produits
+
+Les produits sont stockés dans un fichier au format [JSON](https://fr.wikipedia.org/wiki/JavaScript_Object_Notation) : [Fichier produits](https://github.com/brutdethe/shop/blob/dev/static/produits.json)
+
+C'est à partir de ce fichier que les pages produits sont créées.
+
+### Gestion des stocks
+
+
 ## À propos de l'organisation
 
 ### Les fonctionnalités
@@ -29,7 +40,7 @@ Et les sources sont présentes sur la branche principale : [_dev_](https://githu
 
 Le déploiement est automatisé de la branche [_dev_](https://github.com/brutdethe/shop/tree/dev) vers *heroku*
 
-Cette commande propose un déploiement sur la branche [_main_](https://github.com/brutdethe/shop/tree/main)
+La commande suivante propose un déploiement sur la branche [_main_](https://github.com/brutdethe/shop/tree/main)
 `$ npm run deploy`
 
 https://shop.brutdethé.fr
