@@ -10,8 +10,8 @@
   $: lang = !!$page.path.match("^/en/") ? "en" : "fr";
 
   const dict = {
-    title: { en: "Jé's little store", fr: "La petite boutique de Jé" },
-    nav_products: { en: "product", fr: "produits" },
+    title: { en: "Jé le potier", fr: "Jé le potier" },
+    nav_products: { en: "products", fr: "produits" },
     nav_basket: { en: "basket", fr: "panier" }
   };
 
@@ -73,7 +73,7 @@
 </style>
 
 <nav class="columns">
-  <ul class="column col-2">
+  <ul class="column col-4">
     <li>
       <a
         aria-current={segment === undefined ? 'page' : undefined}
@@ -89,14 +89,6 @@
           {dict.nav_basket[lang]}
         </span>
       </a>
-    </li>
-  </ul>
-  <ul class="column col-2">
-    <li>
-      <a href="./produits.json" class="text-secondary">produits.json</a>
-    </li>
-    <li>
-      <a href="./categories.json" class="text-secondary">categories.json</a>
     </li>
   </ul>
   <h1 class="title column col-6">{dict.title[lang]}</h1>
