@@ -1401,13 +1401,17 @@
         "création": "2020-11-23",
         "catégorie": "Bateau à thé",
         "description": {
-            "en": "Handcrafted tea boat, made of raw clay, manufactured and decorated by hand. Outside diameter: 15 cm. Diameter of the teapot rest: 6. Height: 3 cm. Weight: 286 gr",
-            "fr": "Bateau à thé artisanale, en terre brute, fabriqué et décoré à la main. Diamètre extérieur : 15 cm. Diamètre du repose théière : 6. Hauteur : 3 cm. Poids : 286 gr"
+            "en": "Handcrafted tea boat, made of raw clay, manufactured and decorated by hand. Outside diameter: 5.9in. Diameter of the teapot rest: 2.4in. Height: 1.2in. Weight: 10.6oz",
+            "fr": "Bateau à thé artisanale, en terre brute, fabriqué et décoré à la main. Diamètre extérieur : 15cm. Diamètre du repose théière : 6cm. Hauteur : 3cm. Poids : 300g"
         },
-        "prix": 54.00,
+        "prix": 64.00,
         "poids": 0.4,
-        "stock": 0,
-        "photos": []
+        "stock": 1,
+        "photos": [
+            "bateau-a-the-04.jpg",
+            "bateau-a-the-05.jpg",
+            "bateau-a-the-06.jpg"
+        ]
     },
     {
         "id": "bat15",
