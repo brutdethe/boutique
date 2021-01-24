@@ -4,6 +4,7 @@ import {
 } from 'svelte/store'
 
 const productsPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/produits.json'
+const categoriesPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/categories.json'
 let storedLanguage = 'fr'
 let storedBasket = []
 
@@ -97,7 +98,7 @@ export function loadCategories(id = null) {
 
 async function fetchCategories(set) {
     try {
-        const response = await fetch('./categories.json')
+        const response = await fetch(categoriesPath)
 
         if (response.ok) {
             const categories = await response.json()
