@@ -5,24 +5,15 @@ import {
 
 const productsPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/produits.json'
 const categoriesPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/categories.json'
-let storedLanguage = 'fr'
 let storedBasket = []
 
 if (process.browser) {
-    storedLanguage = localStorage.getItem('languageSelected') || 'fr'
     storedBasket = JSON.parse(localStorage.getItem('basket')) || []
 }
 
-export const languageSelected = writable(storedLanguage)
 export const categorySelected = writable('Gaiwan')
 export const basket = writable(storedBasket)
 export const stripeKeySk = writable(process.env.STRIPE_PK)
-
-languageSelected.subscribe(value => {
-    if (process.browser) {
-        localStorage.setItem('languageSelected', value === 'en' ? 'en' : 'fr');
-    }
-});
 
 basket.subscribe(values => {
     if (process.browser) {

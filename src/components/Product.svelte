@@ -1,9 +1,5 @@
 <script>
-  import {
-    loadProducts,
-    languageSelected,
-    categorySelected
-  } from "../stores.js";
+  import { loadProducts, categorySelected } from "../stores.js";
 
   import Buy from "../components/Buy.svelte";
 
