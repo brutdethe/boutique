@@ -11,8 +11,10 @@ import {
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import json from '@rollup/plugin-json';
+import 'dotenv/config'
 
 const mode = process.env.NODE_ENV;
+const stripePK = process.env.stripe_pk;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
@@ -27,6 +29,7 @@ export default {
         output: config.client.output(),
         plugins: [
             replace({
+                'process.env.STRIPE_PK': JSON.stringify(stripePK),
                 'process.browser': true,
                 'process.env.NODE_ENV': JSON.stringify(mode)
             }),

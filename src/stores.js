@@ -14,6 +14,7 @@ if (process.browser) {
 export const languageSelected = writable(storedLanguage)
 export const categorySelected = writable('Gaiwan')
 export const basket = writable(storedBasket)
+export const stripeKeySk = writable(process.env.STRIPE_PK)
 
 languageSelected.subscribe(value => {
     if (process.browser) {
