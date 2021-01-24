@@ -15,6 +15,7 @@ Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 
 - framework JavaScript : https://sapper.svelte.dev - https://svelte.dev
 - framework css : https://picturepan2.github.io/spectre/
+- optimisation des photos : https://sharp.pixelplumbing.com
 
 ### Organisation GitHub
 
