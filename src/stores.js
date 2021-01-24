@@ -3,6 +3,7 @@ import {
     readable
 } from 'svelte/store'
 
+const productsPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/produits.json'
 let storedLanguage = 'fr'
 let storedBasket = []
 
@@ -64,7 +65,7 @@ export function loadProducts(id = null) {
 
 async function fetchProducts(set, id) {
     try {
-        const response = await fetch('./produits.json')
+        const response = await fetch(productsPath)
 
         if (response.ok) {
             const products = await response.json()
