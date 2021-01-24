@@ -1,6 +1,11 @@
 <script>
   import { goto } from "@sapper/app";
-  import { loadProducts, basket, categorySelected } from "../stores.js";
+  import {
+    loadProducts,
+    basket,
+    categorySelected,
+    githubDataRepo
+  } from "../stores.js";
   import Categories from "../components/Categories.svelte";
   import Buy from "../components/Buy.svelte";
 
@@ -16,6 +21,8 @@
       fr: "détail"
     }
   };
+
+  const photosUrl = `https://raw.githubusercontent.com/${$githubDataRepo}/main/`;
 
   let products = loadProducts();
 
@@ -91,7 +98,7 @@
               <a href="/{lang}/produit-{product.id}">
                 <img
                   class="img-responsive"
-                  src="/images/thumbs/{product.photos[0]}"
+                  src={new URL(`thumbs/${product.photos[0]}`, photosUrl)}
                   alt="{product.titre[lang]} #{product.id}" />
               </a>
             </div>

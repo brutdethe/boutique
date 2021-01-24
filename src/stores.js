@@ -3,8 +3,9 @@ import {
     readable
 } from 'svelte/store'
 
-const productsPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/produits.json'
-const categoriesPath = 'https://raw.githubusercontent.com/jelepotier/shop-produits/main/categories.json'
+const ghDataRepo = 'jelepotier/shop-produits'
+const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
+const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 let storedBasket = []
 
 if (process.browser) {
@@ -14,6 +15,7 @@ if (process.browser) {
 export const categorySelected = writable('Gaiwan')
 export const basket = writable(storedBasket)
 export const stripeKeySk = writable(process.env.STRIPE_PK)
+export const githubDataRepo = writable(ghDataRepo)
 
 basket.subscribe(values => {
     if (process.browser) {

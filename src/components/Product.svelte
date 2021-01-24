@@ -1,5 +1,5 @@
 <script>
-  import { loadProducts, categorySelected } from "../stores.js";
+  import { loadProducts, categorySelected, githubDataRepo } from "../stores.js";
 
   import Buy from "../components/Buy.svelte";
 
@@ -14,6 +14,8 @@
       fr: "produit"
     }
   };
+
+  const photosUrl = `https://raw.githubusercontent.com/${$githubDataRepo}/main/`;
 </script>
 
 <style>
@@ -64,7 +66,7 @@
               </label>
               <img
                 class="img-responsive rounded"
-                src="/images/carousels/{photo}"
+                src={new URL(`carousels/${photo}`, photosUrl)}
                 alt={$products.product.titre[lang]} />
             </figure>
           {/each}
