@@ -1,5 +1,6 @@
 import Stripe from 'stripe'
 import fs from 'fs'
+import 'dotenv/config'
 
 const produitsFilepath = './static/produits.json'
 const logsFilepath = './log-sales.json'
@@ -19,8 +20,8 @@ export async function post(req, res) {
         return
     }
 
-    const stripeSecret = process.env['stripe_secret']
-    const stripe = new Stripe(stripeSecret)
+    const stripeKeySk = process.env['stripe_sk']
+    const stripe = new Stripe(stripeKeySk)
     let session
 
     try {

@@ -1,6 +1,5 @@
 import Stripe from 'stripe'
-import dotenv from 'dotenv'
-dotenv.config()
+import 'dotenv/config'
 
 const checkoutData = {
     payment_method_types: ['card', 'sepa_debit'],
@@ -30,8 +29,8 @@ export async function post(req, res) {
         shipping
     } = req.body;
 
-    const stripeSecret = process.env['stripe_secret']
-    const stripe = new Stripe(stripeSecret)
+    const stripeKeySk = process.env['stripe_sk']
+    const stripe = new Stripe(stripeKeySk)
 
     async function session() {
         checkoutData.locale = language
