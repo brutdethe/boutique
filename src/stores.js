@@ -3,7 +3,7 @@ import {
     readable
 } from 'svelte/store'
 
-const ghDataRepo = 'jelepotier/shop-produits'
+const ghDataRepo = process.env.GITHUB_DATA_REPO
 const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 let storedBasket = []

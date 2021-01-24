@@ -15,6 +15,7 @@ import 'dotenv/config'
 
 const mode = process.env.NODE_ENV;
 const stripePK = process.env.stripe_pk;
+const githubDataRepo = process.env.github_data_repo;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
@@ -30,6 +31,7 @@ export default {
         plugins: [
             replace({
                 'process.env.STRIPE_PK': JSON.stringify(stripePK),
+                'process.env.GITHUB_DATA_REPO': JSON.stringify(githubDataRepo),
                 'process.browser': true,
                 'process.env.NODE_ENV': JSON.stringify(mode)
             }),
