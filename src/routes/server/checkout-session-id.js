@@ -1,6 +1,5 @@
 import Stripe from 'stripe'
-import dotenv from 'dotenv'
-dotenv.config()
+import 'dotenv/config'
 
 const checkoutData = {
     payment_method_types: ['card', 'sepa_debit'],
@@ -30,13 +29,14 @@ export async function post(req, res) {
         shipping
     } = req.body;
 
-    const stripeSecret = process.env['stripe_secret']
-    const stripe = new Stripe(stripeSecret)
+    const origin = req.headers.origin;
+    const stripeKeySk = process.env['stripe_sk']
+    const stripe = new Stripe(stripeKeySk)
 
     async function session() {
         checkoutData.locale = language
-        checkoutData.success_url = `http://shop.xn--brutdeth-i1a.fr/${language}/panier-ok?session_id={CHECKOUT_SESSION_ID}`
-        checkoutData.cancel_url = `http://shop.xn--brutdeth-i1a.fr/${language}/panier-annule`
+        checkoutData.success_url = new URL(`/${language}/panier-ok?session_id={CHECKOUT_SESSION_ID}`, origin).href
+        checkoutData.cancel_url = new URL(`/${language}/panier-annule`, origin).href
         checkoutData.line_items = basket.map(item => {
             return {
                 price_data: {

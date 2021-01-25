@@ -1,12 +1,23 @@
 <script>
+  import { goto, stores } from "@sapper/app";
   import { loadCategories, categorySelected } from "../stores.js";
 
   export let categories;
   export let lang;
 
+  const { page } = stores();
+  const { host, path, params, query } = $page;
+
+  if (query.categorie) {
+    categorySelected.set(query.categorie);
+  }
+
   let categoriesWording = loadCategories();
 
-  const changeCategory = evt => categorySelected.set(evt.currentTarget.value);
+  function changeCategory(evt) {
+    categorySelected.set(evt.currentTarget.value);
+    goto(`${path}?categorie=${$categorySelected}`);
+  }
 </script>
 
 <style>

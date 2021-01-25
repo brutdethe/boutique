@@ -7,9 +7,8 @@
         "build": "sapper build --legacy",
         "clean": "rm -rf ./__sapper__",
         "export": "sapper export --legacy",
-        "start": "npm install; npm run optimize; sapper build --legacy; node __sapper__/build",
-        "deploy": "npm run clean && npm run export && node ./scripts/deploy.js",
-        "optimize": "node ./scripts/optimize.sh"
+        "start": "npm install; sapper build --legacy; node __sapper__/build",
+        "deploy": "npm run clean && npm run export && node ./scripts/deploy.js"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
