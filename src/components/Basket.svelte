@@ -1,14 +1,11 @@
 <script>
   import { goto } from "@sapper/app";
-  import { basket } from "../stores.js";
+  import { basket, stripeKeySk } from "../stores.js";
 
   export let lang;
 
-  const stripe_secret =
-    "pk_live_tECTVOfr9kuVcMcYyQRlN9jq";
-
   function checkout() {
-    const stripe = Stripe(stripe_secret);
+    const stripe = Stripe($stripeKeySk);
     const data = {
       basket: $basket,
       language: lang,

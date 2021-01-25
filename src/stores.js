@@ -3,23 +3,19 @@ import {
     readable
 } from 'svelte/store'
 
-let storedLanguage = 'fr'
+const ghDataRepo = process.env.GITHUB_DATA_REPO
+const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
+const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 let storedBasket = []
 
 if (process.browser) {
-    storedLanguage = localStorage.getItem('languageSelected') || 'fr'
     storedBasket = JSON.parse(localStorage.getItem('basket')) || []
 }
 
-export const languageSelected = writable(storedLanguage)
 export const categorySelected = writable('Gaiwan')
 export const basket = writable(storedBasket)
-
-languageSelected.subscribe(value => {
-    if (process.browser) {
-        localStorage.setItem('languageSelected', value === 'en' ? 'en' : 'fr');
-    }
-});
+export const stripeKeySk = writable(process.env.STRIPE_PK)
+export const githubDataRepo = writable(ghDataRepo)
 
 basket.subscribe(values => {
     if (process.browser) {
@@ -63,7 +59,7 @@ export function loadProducts(id = null) {
 
 async function fetchProducts(set, id) {
     try {
-        const response = await fetch('./produits.json')
+        const response = await fetch(productsPath)
 
         if (response.ok) {
             const products = await response.json()
@@ -95,7 +91,7 @@ export function loadCategories(id = null) {
 
 async function fetchCategories(set) {
     try {
-        const response = await fetch('./categories.json')
+        const response = await fetch(categoriesPath)
 
         if (response.ok) {
             const categories = await response.json()
