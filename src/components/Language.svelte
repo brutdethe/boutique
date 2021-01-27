@@ -25,15 +25,15 @@
 
 <div class="language column col-2">
   <button
-    class="btn btn-sm {'en' === lang ? 'bg-secondary' : ''}"
-    on:click={changeLanguageSelected}
-    value="en">
-    En
-  </button>
-  <button
     class="btn btn-sm {'fr' === lang ? 'bg-secondary' : ''}"
     on:click={changeLanguageSelected}
     value="fr">
     Fr
+  </button>
+  <button
+    class="btn btn-sm {'en' === lang ? 'bg-secondary' : ''}"
+    on:click={changeLanguageSelected}
+    value="en">
+    US
   </button>
 </div>
