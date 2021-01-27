@@ -12,7 +12,6 @@
       goto(`${lang}/`);
       return;
     }
-    console.log("path", path === "/" && lang !== "fr");
     goto(path);
   }
 </script>
