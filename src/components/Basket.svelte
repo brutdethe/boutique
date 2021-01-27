@@ -4,6 +4,12 @@
 
   export let lang;
 
+  /*
+  fetch("https://api.exchangeratesapi.io/latest")
+    .then(resp => resp.json())
+    .then(data => console.log(data.rates.USD))
+*/
+
   function checkout() {
     const stripe = Stripe($stripeKeySk);
     const data = {
@@ -69,6 +75,7 @@
   ).toFixed(2);
   $: transport = parseFloat(shippingCost($basket, lang)).toFixed(2);
   $: total = parseFloat(+transport + +subTotal).toFixed(2);
+  $: currency = lang === "fr" ? "€" : "$";
 
   function deleteClick(id) {
     $basket = $basket.filter(product => product.id !== id);
@@ -154,7 +161,7 @@
                   class="icon icon-delete c-hand"
                   on:click|once={deleteClick(item.id)} />
               </td>
-              <td>{item.prix} €</td>
+              <td>{item.prix} {currency}</td>
               <td>
                 {#if item.stock > 1}
                   <input
@@ -165,7 +172,7 @@
                     max={item.stock} />
                 {:else}{item.qty}{/if}
               </td>
-              <td>{item.prix * item.qty} €</td>
+              <td>{item.prix * item.qty} {currency}</td>
             </tr>
           {/each}
         </tbody>
@@ -179,15 +186,15 @@
             <tbody>
               <tr>
                 <td>S/Total</td>
-                <td class="text-right">{subTotal} €</td>
+                <td class="text-right">{subTotal} {currency}</td>
               </tr>
               <tr>
                 <td>Transport</td>
-                <td class="text-right">{transport} €</td>
+                <td class="text-right">{transport} {currency}</td>
               </tr>
               <tr class="active">
                 <td class="text-bold">Total</td>
-                <td class="text-right text-bold">{total} €</td>
+                <td class="text-right text-bold">{total} {currency}</td>
               </tr>
             </tbody>
           </table>
