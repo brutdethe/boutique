@@ -22,12 +22,12 @@
   }
 </style>
 
-<div class="language column col-2">
+<div class="language column col-1">
   <button
     class="btn btn-sm {'fr' === lang ? 'bg-secondary' : ''}"
     on:click={changeLanguageSelected}
     value="fr">
-    Fr
+    FR
   </button>
   <button
     class="btn btn-sm {'en' === lang ? 'bg-secondary' : ''}"

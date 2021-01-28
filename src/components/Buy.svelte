@@ -12,7 +12,7 @@
   function basketClick(item) {
     if (getBasketProduct(item.id) === undefined) {
       item.qty = 1;
-      basket.set([...$basket, item]);
+      $basket = [...$basket, item];
       disabled = true;
     }
   }

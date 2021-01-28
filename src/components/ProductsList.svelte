@@ -8,6 +8,7 @@
   } from "../stores.js";
   import Categories from "../components/Categories.svelte";
   import Buy from "../components/Buy.svelte";
+  import Price from "../components/Price.svelte";
 
   export let lang;
 
@@ -103,10 +104,10 @@
               </a>
             </div>
             <div class="card-body">
-              <p class="description">
-                {product.description[lang]} - {product.poids} g -
-              </p>
-              <h3 class="price">{product.prix} €</h3>
+              <p class="description">{product.description[lang]}</p>
+              <h3 class="price">
+                <Price price={product.prix} />
+              </h3>
             </div>
             <div class="card-footer">
               <div class="btn-group btn-group-block">

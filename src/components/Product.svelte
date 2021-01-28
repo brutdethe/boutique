@@ -1,7 +1,7 @@
 <script>
   import { loadProducts, categorySelected, githubDataRepo } from "../stores.js";
-
   import Buy from "../components/Buy.svelte";
+  import Price from "../components/Price.svelte";
 
   export let id;
   export let lang;
@@ -88,7 +88,9 @@
         {$products.product.description[lang]} - {$products.product.poids} g.
       </p>
       <p>Stock : {$products.product.stock}</p>
-      <h3 class="card-title h1 price">{$products.product.prix} €</h3>
+      <h3 class="card-title h1 price">
+        <Price price={$products.product.prix} />
+      </h3>
     </div>
     <div class="card-footer">
       <Buy item={$products.product} {lang} />

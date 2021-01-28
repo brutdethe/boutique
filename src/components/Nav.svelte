@@ -1,6 +1,7 @@
 <script>
   import { stores } from "@sapper/app";
   import { basket } from "../stores.js";
+  import Currency from "../components/Currency.svelte";
   import Language from "../components/Language.svelte";
 
   const { page } = stores();
@@ -91,6 +92,7 @@
       </a>
     </li>
   </ul>
-  <h1 class="title column col-6">{dict.title[lang]}</h1>
+  <h1 class="title column col-5">{dict.title[lang]}</h1>
+  <Currency />
   <Language />
 </nav>

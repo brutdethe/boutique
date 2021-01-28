@@ -7,12 +7,15 @@ const ghDataRepo = process.env.GITHUB_DATA_REPO
 const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 let storedBasket = []
+let storedCurrency = '€'
 
 if (process.browser) {
     storedBasket = JSON.parse(localStorage.getItem('basket')) || []
+    storedCurrency = JSON.parse(localStorage.getItem('currency')) || '€'
 }
 
-export const categorySelected = writable('Gaiwan')
+export const currency = writable(storedCurrency)
+export const categorySelected = writable('Théière')
 export const basket = writable(storedBasket)
 export const stripeKeySk = writable(process.env.STRIPE_PK)
 export const githubDataRepo = writable(ghDataRepo)
@@ -20,6 +23,12 @@ export const githubDataRepo = writable(ghDataRepo)
 basket.subscribe(values => {
     if (process.browser) {
         localStorage.setItem('basket', JSON.stringify(values))
+    }
+});
+
+currency.subscribe(value => {
+    if (process.browser) {
+        localStorage.setItem('currency', JSON.stringify(value))
     }
 });
 
@@ -47,6 +56,7 @@ function getProduct(products, id) {
     if (!id) return
     return products.filter(product => product.id === id)[0]
 }
+
 
 export function loadProducts(id = null) {
     let products = readable([], set => {
@@ -80,7 +90,7 @@ async function fetchProducts(set, id) {
     return () => {}
 }
 
-export function loadCategories(id = null) {
+export function loadCategories() {
     let categories = readable([], set => {
         fetchCategories(set)
         return () => {}
