@@ -12,7 +12,8 @@
       basket: $basket,
       language: lang,
       shipping: transport,
-      currency: $currency
+      currency: $currency,
+      country: $country
     };
 
     fetch("/server/checkout-session-id", {
