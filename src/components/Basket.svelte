@@ -1,7 +1,8 @@
 <script>
   import { goto } from "@sapper/app";
-  import { basket, stripeKeySk, currency, rate } from "../stores.js";
+  import { basket, stripeKeySk, currency, rate, country } from "../stores.js";
   import Price from "../components/Price.svelte";
+  import Countries from "../components/Countries.svelte";
 
   export let lang;
 
@@ -31,9 +32,9 @@
       });
   }
 
-  function shippingCost(basket, language) {
+  function shippingCost(basket, country) {
     const collisimo = {
-      fr: [
+      france: [
         { limit: 0.25, price: { EUR: 5, USD: Math.ceil(5 * $rate) } },
         { limit: 0.5, price: { EUR: 6, USD: Math.ceil(6 * $rate) } },
         { limit: 0.75, price: { EUR: 7, USD: Math.ceil(7 * $rate) } },
@@ -44,7 +45,18 @@
         { limit: 15, price: { EUR: 26, USD: Math.ceil(26 * $rate) } },
         { limit: 30, price: { EUR: 32, USD: Math.ceil(32 * $rate) } }
       ],
-      en: [
+      europe: [
+        { limit: 0.25, price: { EUR: 7, USD: Math.ceil(7 * $rate) } },
+        { limit: 0.5, price: { EUR: 8, USD: Math.ceil(8 * $rate) } },
+        { limit: 0.75, price: { EUR: 9, USD: Math.ceil(9 * $rate) } },
+        { limit: 1, price: { EUR: 14, USD: Math.ceil(14 * $rate) } },
+        { limit: 2, price: { EUR: 21, USD: Math.ceil(21 * $rate) } },
+        { limit: 5, price: { EUR: 26, USD: Math.ceil(26 * $rate) } },
+        { limit: 10, price: { EUR: 32, USD: Math.ceil(32 * $rate) } },
+        { limit: 15, price: { EUR: 38, USD: Math.ceil(38 * $rate) } },
+        { limit: 30, price: { EUR: 43, USD: Math.ceil(43 * $rate) } }
+      ],
+      international: [
         { limit: 0.5, price: { EUR: 28, USD: Math.ceil(28 * $rate) } },
         { limit: 1, price: { EUR: 32, USD: Math.ceil(32 * $rate) } },
         { limit: 2, price: { EUR: 43, USD: Math.ceil(43 * $rate) } },
@@ -59,7 +71,7 @@
       0
     );
 
-    return collisimo[language].filter(rate => weightTotal <= rate.limit)[0]
+    return collisimo[country].filter(rate => weightTotal <= rate.limit)[0]
       .price;
     transport;
   }
@@ -76,7 +88,7 @@
     USD: calculateSubTotal($basket, "USD")
   };
 
-  $: transport = shippingCost($basket, lang);
+  $: transport = shippingCost($basket, $country);
   $: total = {
     EUR: +transport["EUR"] + +subTotal["EUR"],
     USD: +transport["USD"] + +subTotal["USD"]
@@ -191,6 +203,7 @@
           <div class="card-title h5">Ticket</div>
         </div>
         <div class="card-body">
+          <Countries />
           <table class="table">
             <tbody>
               <tr>

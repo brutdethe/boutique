@@ -8,13 +8,16 @@ const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produ
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 let storedBasket = []
 let storedCurrency = 'EUR'
+let storedCountry = 'france'
 
 if (process.browser) {
     storedBasket = JSON.parse(localStorage.getItem('basket')) || storedBasket
     storedCurrency = JSON.parse(localStorage.getItem('currency')) || storedCurrency
+    storedCountry = JSON.parse(localStorage.getItem('country')) || storedCountry
 }
 
 export const currency = writable(storedCurrency)
+export const country = writable(storedCountry)
 export const rate = writable(1.28)
 export const categorySelected = writable('Théière')
 export const basket = writable(storedBasket)
@@ -30,6 +33,12 @@ basket.subscribe(values => {
 currency.subscribe(value => {
     if (process.browser) {
         localStorage.setItem('currency', JSON.stringify(value))
+    }
+});
+
+country.subscribe(value => {
+    if (process.browser) {
+        localStorage.setItem('country', JSON.stringify(value))
     }
 });
 
