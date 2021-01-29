@@ -1,12 +1,17 @@
 <script>
-  import { loadProducts, categorySelected, githubDataRepo } from "../stores.js";
+  import {
+    rate,
+    loadProducts,
+    categorySelected,
+    githubDataRepo
+  } from "../stores.js";
   import Buy from "../components/Buy.svelte";
   import Price from "../components/Price.svelte";
 
   export let id;
   export let lang;
 
-  let products = loadProducts(id);
+  let products = loadProducts(id, $rate);
 
   const dict = {
     title: {

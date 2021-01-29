@@ -1,5 +1,5 @@
 <script>
-  import { basket } from "../stores.js";
+  import { basket, rate } from "../stores.js";
 
   export let item;
   export let lang;

@@ -1,6 +1,6 @@
 <script>
   import { goto } from "@sapper/app";
-  import { basket, stripeKeySk } from "../stores.js";
+  import { basket, stripeKeySk, currency, rate } from "../stores.js";
   import Price from "../components/Price.svelte";
 
   export let lang;
@@ -10,7 +10,8 @@
     const data = {
       basket: $basket,
       language: lang,
-      shipping: transport
+      shipping: transport,
+      currency: $currency
     };
 
     fetch("/server/checkout-session-id", {
@@ -33,24 +34,24 @@
   function shippingCost(basket, language) {
     const collisimo = {
       fr: [
-        { limit: 0.25, price: 4.95 },
-        { limit: 0.5, price: 6.45 },
-        { limit: 0.75, price: 7.35 },
-        { limit: 1, price: 7.99 },
-        { limit: 2, price: 9.15 },
-        { limit: 5, price: 14.1 },
-        { limit: 10, price: 20.5 },
-        { limit: 15, price: 26.0 },
-        { limit: 30, price: 32.2 }
+        { limit: 0.25, price: { EUR: 5, USD: Math.ceil(5 * $rate) } },
+        { limit: 0.5, price: { EUR: 6, USD: Math.ceil(6 * $rate) } },
+        { limit: 0.75, price: { EUR: 7, USD: Math.ceil(7 * $rate) } },
+        { limit: 1, price: { EUR: 8, USD: Math.ceil(8 * $rate) } },
+        { limit: 2, price: { EUR: 9, USD: Math.ceil(9 * $rate) } },
+        { limit: 5, price: { EUR: 14, USD: Math.ceil(14 * $rate) } },
+        { limit: 10, price: { EUR: 21, USD: Math.ceil(21 * $rate) } },
+        { limit: 15, price: { EUR: 26, USD: Math.ceil(26 * $rate) } },
+        { limit: 30, price: { EUR: 32, USD: Math.ceil(32 * $rate) } }
       ],
       en: [
-        { limit: 0.5, price: 28.1 },
-        { limit: 1, price: 31.35 },
-        { limit: 2, price: 42.95 },
-        { limit: 5, price: 62.9 },
-        { limit: 10, price: 118.9 },
-        { limit: 15, price: 169.0 },
-        { limit: 20, price: 206.0 }
+        { limit: 0.5, price: { EUR: 28, USD: Math.ceil(28 * $rate) } },
+        { limit: 1, price: { EUR: 32, USD: Math.ceil(32 * $rate) } },
+        { limit: 2, price: { EUR: 43, USD: Math.ceil(43 * $rate) } },
+        { limit: 5, price: { EUR: 63, USD: Math.ceil(63 * $rate) } },
+        { limit: 10, price: { EUR: 119, USD: Math.ceil(119 * $rate) } },
+        { limit: 15, price: { EUR: 169, USD: Math.ceil(169 * $rate) } },
+        { limit: 20, price: { EUR: 206, USD: Math.ceil(206 * $rate) } }
       ]
     };
     const weightTotal = basket.reduce(
@@ -63,13 +64,23 @@
     transport;
   }
 
-  $: subTotal = parseFloat(
-    $basket
-      .reduce((acc, product) => product.prix * product.qty + acc, 0)
-      .toFixed(2)
-  ).toFixed(2);
+  function calculateSubTotal(basket, currency) {
+    return basket.reduce(
+      (acc, product) => product.prix[currency] * product.qty + acc,
+      0
+    );
+  }
+
+  $: subTotal = {
+    EUR: calculateSubTotal($basket, "EUR"),
+    USD: calculateSubTotal($basket, "USD")
+  };
+
   $: transport = shippingCost($basket, lang);
-  $: total = parseFloat(+transport + +subTotal).toFixed(2);
+  $: total = {
+    EUR: +transport["EUR"] + +subTotal["EUR"],
+    USD: +transport["USD"] + +subTotal["USD"]
+  };
 
   function deleteClick(id) {
     $basket = $basket.filter(product => product.id !== id);
@@ -137,9 +148,9 @@
           <tr>
             <th>{dict.product[lang]}</th>
             <th />
-            <th>{dict.price[lang]}</th>
-            <th>{dict.qty[lang]}</th>
-            <th>{dict.total[lang]}</th>
+            <th class="text-right">{dict.price[lang]}</th>
+            <th class="text-center">{dict.qty[lang]}</th>
+            <th class="text-right">{dict.total[lang]}</th>
           </tr>
         </thead>
         <tbody>
@@ -155,10 +166,10 @@
                   class="icon icon-delete c-hand"
                   on:click|once={deleteClick(item.id)} />
               </td>
-              <td>
+              <td class="text-right">
                 <Price price={item.prix} />
               </td>
-              <td>
+              <td class="text-center">
                 {#if item.stock > 1}
                   <input
                     class="form-input"
@@ -168,7 +179,7 @@
                     max={item.stock} />
                 {:else}{item.qty}{/if}
               </td>
-              <td>
+              <td class="text-right">
                 <Price price={item.prix} qty={item.qty} />
               </td>
             </tr>
@@ -184,7 +195,9 @@
             <tbody>
               <tr>
                 <td>S/Total</td>
-                <td class="text-right">{subTotal}</td>
+                <td class="text-right">
+                  <Price price={subTotal} />
+                </td>
               </tr>
               <tr>
                 <td>Transport</td>
@@ -194,7 +207,9 @@
               </tr>
               <tr class="active">
                 <td class="text-bold">Total</td>
-                <td class="text-right text-bold">{total}</td>
+                <td class="text-right text-bold">
+                  <Price price={total} />
+                </td>
               </tr>
             </tbody>
           </table>

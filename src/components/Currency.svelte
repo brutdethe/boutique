@@ -2,7 +2,7 @@
   import { currency } from "../stores.js";
 
   function changeCurrencySelected(evt) {
-    currency.set($currency === "€" ? "$" : "€");
+    currency.set($currency === "EUR" ? "USD" : "EUR");
   }
 </script>
 
@@ -14,15 +14,15 @@
 
 <div class="currency column col-1">
   <button
-    class="btn btn-sm {'€' === $currency ? 'bg-secondary' : ''}"
+    class="btn btn-sm {'EUR' === $currency ? 'bg-secondary' : ''}"
     on:click={changeCurrencySelected}
-    value="€">
+    value="EUR">
     EUR
   </button>
   <button
-    class="btn btn-sm {'$' === $currency ? 'bg-secondary' : ''}"
+    class="btn btn-sm {'USD' === $currency ? 'bg-secondary' : ''}"
     on:click={changeCurrencySelected}
-    value="$">
+    value="USD">
     USD
   </button>
 </div>

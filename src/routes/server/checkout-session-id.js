@@ -2,7 +2,7 @@ import Stripe from 'stripe'
 import 'dotenv/config'
 
 const checkoutData = {
-    payment_method_types: ['card', 'sepa_debit'],
+    payment_method_types: ['card'],
     billing_address_collection: 'required',
     locale: '',
     shipping_address_collection: {
@@ -26,7 +26,8 @@ export async function post(req, res) {
     const {
         basket,
         language,
-        shipping
+        shipping,
+        currency
     } = req.body;
 
     const origin = req.headers.origin;
@@ -40,7 +41,7 @@ export async function post(req, res) {
         checkoutData.line_items = basket.map(item => {
             return {
                 price_data: {
-                    currency: 'eur',
+                    currency: currency,
                     product_data: {
                         name: item.titre[language],
                         description: item.id,
@@ -48,18 +49,18 @@ export async function post(req, res) {
                             item_id: item.id
                         }
                     },
-                    unit_amount: item.prix * 100,
+                    unit_amount: item.prix[currency] * 100,
                 },
                 quantity: item.qty,
             };
         });
         checkoutData.line_items[checkoutData.line_items.length] = {
             price_data: {
-                currency: 'eur',
+                currency: currency,
                 product_data: {
                     name: dict.shipping[language],
                 },
-                unit_amount: shipping * 100,
+                unit_amount: shipping[currency] * 100,
             },
             quantity: 1,
         }

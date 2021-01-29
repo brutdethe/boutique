@@ -7,14 +7,15 @@ const ghDataRepo = process.env.GITHUB_DATA_REPO
 const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 let storedBasket = []
-let storedCurrency = '€'
+let storedCurrency = 'EUR'
 
 if (process.browser) {
-    storedBasket = JSON.parse(localStorage.getItem('basket')) || []
-    storedCurrency = JSON.parse(localStorage.getItem('currency')) || '€'
+    storedBasket = JSON.parse(localStorage.getItem('basket')) || storedBasket
+    storedCurrency = JSON.parse(localStorage.getItem('currency')) || storedCurrency
 }
 
 export const currency = writable(storedCurrency)
+export const rate = writable(1.28)
 export const categorySelected = writable('Théière')
 export const basket = writable(storedBasket)
 export const stripeKeySk = writable(process.env.STRIPE_PK)
@@ -58,23 +59,30 @@ function getProduct(products, id) {
 }
 
 
-export function loadProducts(id = null) {
+export function loadProducts(id = null, rate) {
     let products = readable([], set => {
-        fetchProducts(set, id)
+        fetchProducts(set, id, rate)
         return () => {}
     })
 
     return products
 }
 
-async function fetchProducts(set, id) {
+async function fetchProducts(set, id, rate) {
     try {
         const response = await fetch(productsPath)
 
         if (response.ok) {
             const products = await response.json()
+            const productsWithUSD = products.map(product => {
+                product.prix = {
+                    EUR: Math.ceil(product.prix),
+                    USD: Math.ceil(product.prix * rate)
+                }
+                return product
+            })
             set({
-                products: products,
+                products: productsWithUSD,
                 categories: getCategoriesInStock(products),
                 product: getProduct(products, id)
             })

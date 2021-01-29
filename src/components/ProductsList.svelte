@@ -1,6 +1,7 @@
 <script>
   import { goto } from "@sapper/app";
   import {
+    rate,
     loadProducts,
     basket,
     categorySelected,
@@ -25,7 +26,7 @@
 
   const photosUrl = `https://raw.githubusercontent.com/${$githubDataRepo}/main/`;
 
-  let products = loadProducts();
+  let products = loadProducts(null, $rate);
 
   function find(products, query) {
     const properties = Object.getOwnPropertyNames(query);
