@@ -6,6 +6,36 @@ import {
 const ghDataRepo = process.env.GITHUB_DATA_REPO
 const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
+const pages = {
+    index: {
+        en: '/en/',
+        fr: '/'
+    },
+    basket: {
+        en: '/en/basket',
+        fr: '/fr/panier'
+    },
+    basketSuccess: {
+        en: '/en/basket-success',
+        fr: '/fr/panier-ok'
+    },
+    "product": {
+        en: '/en/product',
+        fr: '/fr/produit'
+    },
+    terms: {
+        en: '/en/terms',
+        fr: '/fr/conditions-générales'
+    },
+    publisher: {
+        en: '/en/publisher',
+        fr: '/fr/mentions-légales'
+    },
+    privacy: {
+        en: '/en/privacy',
+        fr: '/fr/confidentialité'
+    },
+}
 let storedBasket = []
 let storedCurrency = 'EUR'
 let storedCountry = 'france'
@@ -16,6 +46,7 @@ if (process.browser) {
     storedCountry = JSON.parse(localStorage.getItem('country')) || storedCountry
 }
 
+export const pagesPath = writable(pages)
 export const currency = writable(storedCurrency)
 export const country = writable(storedCountry)
 export const rate = writable(1.28)

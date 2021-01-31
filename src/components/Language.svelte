@@ -1,5 +1,6 @@
 <script>
   import { goto, stores } from "@sapper/app";
+  import { pagesPath } from "../stores.js";
 
   const { page } = stores();
 
@@ -7,12 +8,26 @@
 
   function changeLanguageSelected(evt) {
     lang = evt.currentTarget.value;
-    const path = $page.path.replace(/^\/(fr|en)\//, `/${lang}/`);
-    if (path === "/" && lang !== "fr") {
+
+    if ($page.path === "/" && lang !== "fr") {
       goto(`${lang}/`);
-      return;
+    } else if ($page.path === "/en/" && lang !== "en") {
+      goto(`/`);
+    } else if (
+      $page.path.includes($pagesPath["product"].en) ||
+      $page.path.includes($pagesPath["product"].fr)
+    ) {
+      const refProduct = $page.path.match(/[-].*/);
+      goto(`${$pagesPath["product"][lang]}${refProduct}`);
+    } else {
+      const pagePath = Object.keys($pagesPath).filter(
+        title =>
+          $pagesPath[title].en === $page.path ||
+          $pagesPath[title].fr === $page.path
+      )[0];
+      goto($pagesPath[pagePath][lang]);
     }
-    goto(path);
+    return;
   }
 </script>
 

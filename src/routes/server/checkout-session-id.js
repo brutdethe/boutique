@@ -1,5 +1,15 @@
+import {
+    pagesPath
+} from "../../stores.js";
 import Stripe from 'stripe'
+
 import 'dotenv/config'
+
+let pages;
+
+const unsubscribe = pagesPath.subscribe(value => {
+    pages = value;
+});
 
 const checkoutData = {
     payment_method_types: ['card'],
@@ -288,8 +298,8 @@ export async function post(req, res) {
     async function session() {
         checkoutData.locale = language
         checkoutData.shipping_address_collection.allowed_countries = allowedCountries(country)
-        checkoutData.success_url = new URL(`/${language}/panier-ok?session_id={CHECKOUT_SESSION_ID}`, origin).href
-        checkoutData.cancel_url = new URL(`/${language}/panier-annule`, origin).href
+        checkoutData.success_url = new URL(`${pages.basketSuccess[language]}?session_id={CHECKOUT_SESSION_ID}`, origin).href
+        checkoutData.cancel_url = new URL(`${pages.basket[language]}`, origin).href
         checkoutData.line_items = basket.map(item => {
             return {
                 price_data: {

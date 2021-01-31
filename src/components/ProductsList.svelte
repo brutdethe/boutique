@@ -4,6 +4,7 @@
     rate,
     loadProducts,
     basket,
+    pagesPath,
     categorySelected,
     githubDataRepo
   } from "../stores.js";
@@ -97,7 +98,7 @@
               <div class="card-subtitle text-gray">{$categorySelected}</div>
             </div>
             <div class="card-image">
-              <a href="/{lang}/produit-{product.id}">
+              <a href="{$pagesPath['product'][lang]}-{product.id}">
                 <img
                   class="img-responsive"
                   src={new URL(`thumbs/${product.photos[0]}`, photosUrl)}
@@ -114,7 +115,7 @@
               <div class="btn-group btn-group-block">
                 <button
                   class="detail btn btn-secondary"
-                  on:click|once={goto(`/${lang}/produit-${product.id}`)}
+                  on:click|once={goto(`${$pagesPath['product'][lang]}-${product.id}`)}
                   data-product={product.id}>
                   {dict.detail[lang]}
                 </button>

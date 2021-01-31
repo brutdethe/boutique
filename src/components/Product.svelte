@@ -89,9 +89,7 @@
       <div class="card-title h4">{$products.product.titre[lang]}</div>
     </div>
     <div class="card-body">
-      <p>
-        {$products.product.description[lang]} - {$products.product.poids} g.
-      </p>
+      <p>{$products.product.description[lang]}.</p>
       <p>Stock : {$products.product.stock}</p>
       <h3 class="card-title h1 price">
         <Price price={$products.product.prix} />

@@ -1,6 +1,13 @@
 <script>
   import { goto } from "@sapper/app";
-  import { basket, stripeKeySk, currency, rate, country } from "../stores.js";
+  import {
+    basket,
+    stripeKeySk,
+    currency,
+    rate,
+    country,
+    pagesPath
+  } from "../stores.js";
   import Price from "../components/Price.svelte";
   import Countries from "../components/Countries.svelte";
 
@@ -170,7 +177,7 @@
           {#each $basket as item, index}
             <tr class="active">
               <td>
-                <a href="/{lang}/produit-{item.id}">
+                <a href="{$pagesPath['product'][lang]}-{item.id}">
                   {item.titre[lang]} - {item.id}
                 </a>
               </td>
