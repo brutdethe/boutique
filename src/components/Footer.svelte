@@ -1,8 +1,5 @@
 <script>
   import { stores } from "@sapper/app";
-  import { basket, pagesPath } from "../stores.js";
-  import Currency from "../components/Currency.svelte";
-  import Language from "../components/Language.svelte";
 
   const { page } = stores();
 
@@ -11,24 +8,17 @@
   $: lang = !!$page.path.match("^/en/") ? "en" : "fr";
 
   const dict = {
-    title: { en: "Jé le potier", fr: "Jé le potier" },
-    nav_products: { en: "shop", fr: "boutique" },
-    nav_basket: { en: "basket", fr: "panier" }
+    legal: { en: "publisher", fr: "mentions légales" },
+    legalPage: { en: "publisher", fr: "mentions-legales" },
+    privacy: { en: "privacy", fr: "confidentialité" },
+    privacyPage: { en: "privacy", fr: "confidentialite" },
+    terms: { en: "terms&conditions", fr: "conditions générales" }
+    termsPage: { en: "terms-conditions", fr: "conditions-generales" }
   };
-
-  const basketCount = basket =>
-    basket.reduce((acc, product) => product.qty + acc, 0);
 </script>
 
 <style>
-  .title {
-    line-height: 1.5em;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #5755d9;
-  }
-
-  nav {
+  footer {
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
     padding: 0 1em;
@@ -73,26 +63,27 @@
   }
 </style>
 
-<nav class="columns">
+<footerclass="columns">
   <ul class="column col-4">
     <li>
       <a
         aria-current={segment === undefined ? 'page' : undefined}
-        href={$pagesPath.index[lang]}>
-        {dict.nav_products[lang]}
+        href={lang === 'fr' ? '.' : `${lang}/confidentialite`}>
+        {dict.privacy[lang]}
       </a>
     </li>
-    <li>
+        <li>
       <a
-        aria-current={segment === 'panier' ? 'page' : undefined}
-        href={$pagesPath.basket[lang]}>
-        <span class="badge" data-badge={basketCount($basket)} data-initial="YZ">
-          {dict.nav_basket[lang]}
-        </span>
+        aria-current={segment === undefined ? 'page' : undefined}
+        href={lang === 'fr' ? '.' : `${lang}/termes`}>
+        {dict.terms[lang]}
       </a>
     </li>
-  </ul>
-  <h1 class="title column col-5">{dict.title[lang]}</h1>
-  <Currency />
-  <Language />
-</nav>
+        <li>
+      <a
+        aria-current={segment === undefined ? 'page' : undefined}
+        href={lang === 'fr' ? '.' : `${lang}/mentions-legales`}>
+       {dict.publisher[lang]}
+      </a>
+    </li>    
+</footer>
