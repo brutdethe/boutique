@@ -23,17 +23,17 @@ const pages = {
         en: '/en/product',
         fr: '/fr/produit'
     },
-    terms: {
-        en: '/en/terms',
-        fr: '/fr/conditions-générales'
+    about: {
+        en: 'https://www.theiere-tasse.com/my-work/',
+        fr: 'https://www.theiere-tasse.com/'
     },
     publisher: {
         en: '/en/publisher',
-        fr: '/fr/mentions-légales'
+        fr: '/fr/mentions-legales'
     },
     privacy: {
         en: '/en/privacy',
-        fr: '/fr/confidentialité'
+        fr: '/fr/confidentialite'
     },
 }
 let storedBasket = []

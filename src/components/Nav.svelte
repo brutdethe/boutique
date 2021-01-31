@@ -13,6 +13,7 @@
   const dict = {
     title: { en: "Jé le potier", fr: "Jé le potier" },
     nav_products: { en: "shop", fr: "boutique" },
+    nav_about: { en: "about", fr: "à propos" },
     nav_basket: { en: "basket", fr: "panier" }
   };
 
@@ -80,6 +81,13 @@
         aria-current={segment === undefined ? 'page' : undefined}
         href={$pagesPath.index[lang]}>
         {dict.nav_products[lang]}
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={segment === undefined ? 'page' : undefined}
+        href={$pagesPath.about[lang]}>
+        {dict.nav_about[lang]}
       </a>
     </li>
     <li>

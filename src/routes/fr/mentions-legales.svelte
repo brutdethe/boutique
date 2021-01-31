@@ -8,7 +8,7 @@
 
 <p>
   Le site
-  <a href="http://www.theiere-tasse.com">http://www.theiere-tasse.com</a>
+  <a href="http://shop.theiere-tasse.com">http://shop.theiere-tasse.com</a>
   est édité par Jérôme Roussel auto-entrepreneur et hébergé par
   <a href="https://www.heroku.com/">Heroku</a>
   .
@@ -17,12 +17,6 @@
   entreprise répertoriée sous le numéro d’immatriculation 451 185 953 et le code
   APE 2341Z auprès du RM de Moulin et dont le siège social est sis au 15, rue de
   la perception, 03300 Cusset.
-</p>
-
-<p>
-  Le site
-  <a href="http://www.theiere-tasse.com">http://www.theiere-tasse.com</a>
-  ne collecte pas de données personnelles.
 </p>
 
 <p>
