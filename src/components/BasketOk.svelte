@@ -1,8 +1,4 @@
 <script>
-  import { goto } from "@sapper/app";
-  import { basket } from "../stores.js";
-  import { onMount } from "svelte";
-
   export let lang;
 
   const dict = {
@@ -16,29 +12,6 @@
       fr: "revenir dans la boutique"
     }
   };
-
-  onMount(async () => {
-    const sessionId = new URLSearchParams(window.location.search).get(
-      "session_id"
-    );
-    if (!sessionId) {
-      console.log("Session is not defined");
-      goto("/");
-    }
-    fetch("/server/update-stock", {
-      method: "POST",
-      body: JSON.stringify({ basket: $basket, session_id: sessionId }),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-      .then(r => {
-        basket.set([]);
-      })
-      .catch(err => {
-        console.log("POST error", err.message);
-      });
-  });
 </script>
 
 <svelte:head>
