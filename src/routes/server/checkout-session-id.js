@@ -305,8 +305,7 @@ export async function post(req, res) {
                 price_data: {
                     currency: currency,
                     product_data: {
-                        name: item.titre[language],
-                        description: item.id,
+                        name: `${item.titre[language]} id:${item.id}`,
                         metadata: {
                             item_id: item.id
                         }
