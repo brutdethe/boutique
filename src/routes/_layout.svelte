@@ -28,4 +28,4 @@
   <slot />
 </section>
 
-<Footer {segment} />
+<Footer />
