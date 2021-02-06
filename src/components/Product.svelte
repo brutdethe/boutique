@@ -28,6 +28,10 @@
     box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   }
 
+  .carousel .carousel-container::before {
+    padding-bottom: 66%;
+  }
+
   .price {
     padding-top: 0.8rem;
     text-align: right;
