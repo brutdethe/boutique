@@ -174,34 +174,36 @@
         </thead>
         <tbody>
           {#each $basket as item, index}
-            <tr class="active">
-              <td>
-                <a href="{$pagesPath['product'][lang]}-{item.id}">
-                  {item.titre[lang]} - {item.id}
-                </a>
-              </td>
-              <td>
-                <i
-                  class="icon icon-delete c-hand"
-                  on:click|once={deleteClick(item.id)} />
-              </td>
-              <td class="text-right">
-                <Price price={item.prix} />
-              </td>
-              <td class="text-center">
-                {#if item.stock > 1}
-                  <input
-                    class="form-input"
-                    type="number"
-                    bind:value={item.qty}
-                    min="1"
-                    max={item.stock} />
-                {:else}{item.qty}{/if}
-              </td>
-              <td class="text-right">
-                <Price price={item.prix} qty={item.qty} />
-              </td>
-            </tr>
+            {#if item.stock > 0}
+              <tr class="active">
+                <td>
+                  <a href="{$pagesPath['product'][lang]}-{item.id}">
+                    {item.titre[lang]} - {item.id}
+                  </a>
+                </td>
+                <td>
+                  <i
+                    class="icon icon-delete c-hand"
+                    on:click|once={deleteClick(item.id)} />
+                </td>
+                <td class="text-right">
+                  <Price price={item.prix} />
+                </td>
+                <td class="text-center">
+                  {#if item.stock > 1}
+                    <input
+                      class="form-input"
+                      type="number"
+                      bind:value={item.qty}
+                      min="1"
+                      max={item.stock} />
+                  {:else}{item.qty}{/if}
+                </td>
+                <td class="text-right">
+                  <Price price={item.prix} qty={item.qty} />
+                </td>
+              </tr>
+            {/if}
           {/each}
         </tbody>
       </table>

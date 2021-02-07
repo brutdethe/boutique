@@ -94,10 +94,8 @@ function getCategoriesInStock(products) {
 }
 
 function getProduct(products, id) {
-    if (!id) return
     return products.filter(product => product.id === id)[0]
 }
-
 
 export function loadProducts(id = null, rate) {
     let products = readable([], set => {
@@ -130,11 +128,16 @@ async function fetchProducts(set, id, rate) {
             }
             return product
         })
-        set({
-            products: productsWithUSD,
-            categories: getCategoriesInStock(products),
-            product: getProduct(products, id)
-        })
+        if (!id) {
+            set({
+                products: productsWithUSD,
+                categories: getCategoriesInStock(products),
+                product: getProduct(products, id)
+            })
+        } else {
+            set(getProduct(products, id))
+        }
+
     } else {
         const text = response.text()
         throw new Error(text)

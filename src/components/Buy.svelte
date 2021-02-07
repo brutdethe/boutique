@@ -7,7 +7,7 @@
   const getBasketProduct = id =>
     $basket.filter(product => product.id === id)[0];
 
-  $: disabled = getBasketProduct(item.id) ? true : false;
+  $: disabled = getBasketProduct(item.id) || item.stock < 1 ? true : false;
 
   function basketClick(item) {
     if (getBasketProduct(item.id) === undefined) {

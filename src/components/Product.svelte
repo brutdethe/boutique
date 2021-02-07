@@ -17,6 +17,14 @@
     title: {
       en: "product",
       fr: "produit"
+    },
+    message: {
+      en: "Unless otherwise stated, this product is no longer in stock.",
+      fr: "Apparement, ce produit n'est plus en stock."
+    },
+    backToShop: {
+      en: "back to the store",
+      fr: "revenir dans la boutique"
     }
   };
 
@@ -46,12 +54,11 @@
 <svelte:head>
   <title>{dict.title[lang]}-{id}</title>
 </svelte:head>
-
-{#if $products.product}
+{#if $products.id}
   <div class="card">
-    {#if $products.product.photos.length}
+    {#if $products.photos.length}
       <div class="card-image carousel">
-        {#each $products.product.photos as photo, count}
+        {#each $products.photos as photo, count}
           <input
             class="carousel-locator"
             id="slide-{count + 1}"
@@ -61,27 +68,27 @@
             checked={!count && true} />
         {/each}
         <div class="carousel-container">
-          {#each $products.product.photos as photo, count}
+          {#each $products.photos as photo, count}
             <figure class="carousel-item">
               <label
                 class="item-prev btn btn-action btn-lg"
-                for="slide-{count ? count : $products.product.photos.length}">
+                for="slide-{count ? count : $products.photos.length}">
                 <i class="icon icon-arrow-left" />
               </label>
               <label
                 class="item-next btn btn-action btn-lg"
-                for="slide-{count + 2 <= $products.product.photos.length ? count + 2 : 1}">
+                for="slide-{count + 2 <= $products.photos.length ? count + 2 : 1}">
                 <i class="icon icon-arrow-right" />
               </label>
               <img
                 class="img-responsive rounded"
                 src={new URL(`carousels/${photo}`, photosUrl)}
-                alt={$products.product.titre[lang]} />
+                alt={$products.titre[lang]} />
             </figure>
           {/each}
         </div>
         <div class="carousel-nav">
-          {#each $products.product.photos as photo, count}
+          {#each $products.photos as photo, count}
             <label class="nav-item text-hide c-hand" for="slide-{count + 1}">
               {count}
             </label>
@@ -90,17 +97,33 @@
       </div>
     {/if}
     <div class="card-header">
-      <div class="card-title h4">{$products.product.titre[lang]}</div>
+      <div class="card-title h4">{$products.titre[lang]}</div>
     </div>
     <div class="card-body">
-      <p>{$products.product.description[lang]}.</p>
-      <p>Stock : {$products.product.stock}</p>
+      <p>{$products.description[lang]}.</p>
+      <p>Stock : {$products.stock}</p>
       <h3 class="card-title h1 price">
-        <Price price={$products.product.prix} />
+        <Price price={$products.prix} />
       </h3>
     </div>
     <div class="card-footer">
-      <Buy item={$products.product} {lang} />
+      <Buy item={$products} {lang} />
+    </div>
+  </div>
+{:else}
+  <div class="container">
+    <div class="columns">
+      <div class="empty column col-12">
+        <div class="empty-icon">
+          <i class="icon icon-fail" />
+        </div>
+        <p class="empty-title h5">{dict.message[lang]}</p>
+        <div class="empty-action">
+          <a href={lang === 'fr' ? '.' : `${lang}/`} class="back-shop">
+            &lsaquo; {dict.backToShop[lang]}
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 {/if}
