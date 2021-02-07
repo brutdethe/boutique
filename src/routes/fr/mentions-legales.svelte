@@ -8,7 +8,7 @@
 
 <p>
   Le site
-  <a href="http://shop.theiere-tasse.com">http://shop.theiere-tasse.com</a>
+  <a href="https://www.theiere-tasse.com">www.theiere-tasse.com</a>
   est édité par Jérôme Roussel auto-entrepreneur et hébergé par
   <a href="https://www.heroku.com/">Heroku</a>
   .
@@ -34,7 +34,7 @@
 
 <p>
   Cette boutique est créée par
-  <a href="https://www.xn--brutdeth-i1a.fr">brutdethé.fr</a>
+  <a href="https://www.brutdethé.fr">brutdethé.fr</a>
   <br />
   le produit est disponible en licence ouverte
   <a href="https://github.com/brutdethe/shop/blob/dev/LICENSE">CC0.1</a>

@@ -8,7 +8,7 @@
 .
 <p>
   The site
-  <a href="http://shop.theiere-tasse.com">http://shop.theiere-tasse.com</a>
+  <a href="https://www.theiere-tasse.com">www.theiere-tasse.com</a>
   is edited by Jérôme Roussel auto-entrepreneur and hosted by
   <a href="https://www.heroku.com/">Heroku</a>
   .

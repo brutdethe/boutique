@@ -23,8 +23,8 @@ const pages = {
         fr: '/fr/produit'
     },
     about: {
-        en: 'https://www.theiere-tasse.com/index-us.html',
-        fr: 'https://www.theiere-tasse.com'
+        en: 'https://info.theiere-tasse.com/index-us.html',
+        fr: 'https://info.theiere-tasse.com'
     },
     publisher: {
         en: '/en/publisher',

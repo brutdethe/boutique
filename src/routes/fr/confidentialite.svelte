@@ -2,6 +2,6 @@
 
 <p>
   Le site
-  <a href="http://shop.theiere-tasse.com">http://shop.theiere-tasse.com</a>
+  <a href="https://www.theiere-tasse.com">www.theiere-tasse.com</a>
   ne collecte pas de données personnelles.
 </p>
