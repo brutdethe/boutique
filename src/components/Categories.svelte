@@ -6,7 +6,7 @@
   export let lang;
 
   const { page } = stores();
-  const { host, path, params, query } = $page;
+  const { query } = $page;
 
   if (query.categorie) {
     categorySelected.set(query.categorie);
