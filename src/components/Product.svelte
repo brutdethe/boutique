@@ -22,6 +22,10 @@
       en: "Unless otherwise stated, this product is no longer in stock.",
       fr: "Apparement, ce produit n'est plus en stock."
     },
+    weight: {
+      en: "Weight",
+      fr: "Poids"
+    },
     backToShop: {
       en: "back to the store",
       fr: "revenir dans la boutique"
@@ -29,6 +33,14 @@
   };
 
   const photosUrl = `https://raw.githubusercontent.com/${$githubDataRepo}/main/`;
+
+  function getWeight(weight, lang) {
+    if (lang === "en") {
+      return `${(weight * 35.274).toFixed(2)}oz`;
+    } else {
+      return `${weight * 1000}g`;
+    }
+  }
 </script>
 
 <style>
@@ -101,6 +113,7 @@
     </div>
     <div class="card-body">
       <p>{$products.description[lang]}.</p>
+      <p>{dict.weight[lang]} : {getWeight($products.poids, lang)}</p>
       <p>Stock : {$products.stock}</p>
       <h3 class="card-title h1 price">
         <Price price={$products.prix} />
