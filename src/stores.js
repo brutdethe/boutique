@@ -4,7 +4,6 @@ import {
 } from 'svelte/store'
 
 const ghDataRepo = process.env.GITHUB_DATA_REPO
-const productsPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/produits.json`
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
 const pages = {
     index: {
@@ -73,6 +72,7 @@ country.subscribe(value => {
     }
 });
 
+
 function getCategoriesInStock(products) {
     function getCategories(products) {
         const categories = new Set(products.map(product => product.catégorie))
@@ -109,30 +109,35 @@ export function loadProducts(id = null, rate) {
 }
 
 async function fetchProducts(set, id, rate) {
-    try {
-        const response = await fetch(productsPath)
 
-        if (response.ok) {
-            const products = await response.json()
-            const productsWithUSD = products.map(product => {
-                product.prix = {
-                    EUR: Math.ceil(product.prix),
-                    USD: Math.ceil(product.prix * rate)
-                }
-                return product
-            })
-            set({
-                products: productsWithUSD,
-                categories: getCategoriesInStock(products),
-                product: getProduct(products, id)
-            })
-        } else {
-            const text = response.text()
-            throw new Error(text)
+    if (typeof fetch !== 'function') {
+        return () => {}
+    }
+    const response = await
+    fetch("/server/update-stock", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
         }
+    })
 
-    } catch (error) {
-        console.warn('Fetch Error products in stores')
+    if (response.ok) {
+        const products = await response.json()
+        const productsWithUSD = products.map(product => {
+            product.prix = {
+                EUR: Math.ceil(product.prix),
+                USD: Math.ceil(product.prix * rate)
+            }
+            return product
+        })
+        set({
+            products: productsWithUSD,
+            categories: getCategoriesInStock(products),
+            product: getProduct(products, id)
+        })
+    } else {
+        const text = response.text()
+        throw new Error(text)
     }
 
     return () => {}
@@ -148,19 +153,19 @@ export function loadCategories() {
 }
 
 async function fetchCategories(set) {
-    try {
-        const response = await fetch(categoriesPath)
 
-        if (response.ok) {
-            const categories = await response.json()
-            set(categories)
-        } else {
-            const text = response.text()
-            throw new Error(text)
-        }
+    if (typeof fetch !== 'function') {
+        return () => {}
+    }
 
-    } catch (error) {
-        console.warn('Fetch Error categories in stores')
+    const response = await fetch(categoriesPath)
+
+    if (response.ok) {
+        const categories = await response.json()
+        set(categories)
+    } else {
+        const text = response.text()
+        throw new Error(text)
     }
 
     return () => {}
