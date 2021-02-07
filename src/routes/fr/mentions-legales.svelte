@@ -31,3 +31,15 @@
   Directeur de la publication : M. Jérôme Roussel, Gérant :
   <a href="mailto:jelepotier@laposte.net">jelepotier@laposte.net</a>
 </p>
+
+<p>
+  Cette boutique est créée par
+  <a href="https://www.xn--brutdeth-i1a.fr">brutdethé.fr</a>
+  <br />
+  le produit est disponible en licence ouverte
+  <a href="https://github.com/brutdethe/shop/blob/dev/LICENSE">CC0.1</a>
+  :
+  <a href="https://github.com/brutdethe/shop">
+    https://github.com/brutdethe/shop
+  </a>
+</p>

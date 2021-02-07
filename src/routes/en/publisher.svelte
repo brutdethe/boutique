@@ -31,3 +31,15 @@
   Director of publication: Mr. Jérôme Roussel, Managing Director:
   <a href="mailto:jelepotier@laposte.net">jelepotier@laposte.net</a>
 </p>
+
+<p>
+  This shop is created by :
+  <a href="https://www.xn--brutdeth-i1a.fr">brutdethé.fr</a>
+  <br />
+  available under open-licence
+  <a href="https://github.com/brutdethe/shop/blob/dev/LICENSE">CC0.1</a>
+  :
+  <a href="https://github.com/brutdethe/shop">
+    https://github.com/brutdethe/shop
+  </a>
+</p>
