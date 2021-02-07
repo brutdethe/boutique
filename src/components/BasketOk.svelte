@@ -1,4 +1,6 @@
 <script>
+  import { basket } from "../stores.js";
+
   export let lang;
 
   const dict = {
@@ -12,6 +14,8 @@
       fr: "revenir dans la boutique"
     }
   };
+
+  $basket = [];
 </script>
 
 <svelte:head>
