@@ -6,7 +6,7 @@
   export let lang;
 
   const { page } = stores();
-  const { host, path, params, query } = $page;
+  const { query } = $page;
 
   if (query.categorie) {
     categorySelected.set(query.categorie);
@@ -18,6 +18,9 @@
     categorySelected.set(evt.currentTarget.value);
     goto(`${path}?categorie=${$categorySelected}`);
   }
+
+  const isCategorySelected = (categories, categorySelected) =>
+    categories.indexOf(categorySelected) === 0;
 </script>
 
 <style>
@@ -36,26 +39,29 @@
   }
 </style>
 
-<div class="hero-sm bg-primary">
-  <div class="hero-body">
-    <h3>{$categorySelected}</h3>
-    {#if $categoriesWording[$categorySelected]}
-      <p>{$categoriesWording[$categorySelected].description[lang]}</p>
-    {/if}
-  </div>
-</div>
-
 {#if categories}
-  {#each categories as category}
-    <button
-      class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
-      on:click={changeCategory}
-      value={category}>
-      {#if $categoriesWording[category]}
-        {$categoriesWording[category].titre[lang]}
+  {isCategorySelected(categories, $categorySelected) ? '' : goto('/404')}
+  <div class="hero-sm bg-primary">
+    <div class="hero-body">
+      <h3>{$categorySelected}</h3>
+      {#if $categoriesWording[$categorySelected]}
+        <p>{$categoriesWording[$categorySelected].description[lang]}</p>
       {/if}
-    </button>
-  {/each}
+    </div>
+  </div>
+
+  {#if categories.length > 1}
+    {#each categories as category}
+      <button
+        class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
+        on:click={changeCategory}
+        value={category}>
+        {#if $categoriesWording[category]}
+          {$categoriesWording[category].titre[lang]}
+        {/if}
+      </button>
+    {/each}
+  {/if}
 {/if}
 
 <hr />

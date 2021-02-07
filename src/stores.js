@@ -1,4 +1,5 @@
 import {
+    get,
     writable,
     readable
 } from 'svelte/store'
@@ -49,7 +50,7 @@ export const pagesPath = writable(pages)
 export const currency = writable(storedCurrency)
 export const country = writable(storedCountry)
 export const rate = writable(1.28)
-export const categorySelected = writable('Théière')
+export const categorySelected = writable('') // default value set when categories.json is loaded
 export const basket = writable(storedBasket)
 export const stripeKeySk = writable(process.env.STRIPE_PK)
 export const githubDataRepo = writable(ghDataRepo)
@@ -165,6 +166,11 @@ async function fetchCategories(set) {
 
     if (response.ok) {
         const categories = await response.json()
+
+        if (!get(categorySelected)) {
+            categorySelected.set(Object.keys(categories)[0])
+        }
+
         set(categories)
     } else {
         const text = response.text()
