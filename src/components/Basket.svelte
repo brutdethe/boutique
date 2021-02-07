@@ -30,11 +30,10 @@
         "Content-Type": "application/json"
       }
     })
-      .then(r => {
-        r.json().then(result =>
-          stripe.redirectToCheckout({ sessionId: result.session.id })
-        );
-      })
+      .then(r => r.json())
+      .then(result =>
+        stripe.redirectToCheckout({ sessionId: result.session.id })
+      )
       .catch(err => {
         console.log("POST error", err.message);
       });
