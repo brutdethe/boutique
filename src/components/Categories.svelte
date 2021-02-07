@@ -46,16 +46,18 @@
 </div>
 
 {#if categories}
-  {#each categories as category}
-    <button
-      class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
-      on:click={changeCategory}
-      value={category}>
-      {#if $categoriesWording[category]}
-        {$categoriesWording[category].titre[lang]}
-      {/if}
-    </button>
-  {/each}
+  {#if categories.length > 1}
+    {#each categories as category}
+      <button
+        class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
+        on:click={changeCategory}
+        value={category}>
+        {#if $categoriesWording[category]}
+          {$categoriesWording[category].titre[lang]}
+        {/if}
+      </button>
+    {/each}
+  {/if}
 {/if}
 
 <hr />
