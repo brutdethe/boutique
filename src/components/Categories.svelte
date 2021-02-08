@@ -40,7 +40,7 @@
 </style>
 
 {#if categories}
-  {isCategorySelected(categories, $categorySelected) ? '' : ''}
+  {isCategorySelected(categories, $categorySelected) ? '' : goto('/404')}
   <div class="hero-sm bg-primary">
     <div class="hero-body">
       <h3>{$categorySelected}</h3>
