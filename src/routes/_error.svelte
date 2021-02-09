@@ -1,8 +1,20 @@
 <script>
+  import { goto, stores } from "@sapper/app";
+  import { onMount } from "svelte";
+
   export let status;
   export let error;
 
+  const { page } = stores();
+  const lang = !!$page.path.match("^/en/") ? "en" : "fr";
+
   const dev = process.env.NODE_ENV === "development";
+
+  onMount(async () => {
+    if (dev) {
+      goto(`${lang}/`);
+    }
+  });
 </script>
 
 <style>
@@ -38,7 +50,6 @@
 
 <section class="error">
   <h1>{status}</h1>
-
   {#if status == '404'}
     <img src="img/404.jpg" alt="404" />
   {:else}
