@@ -5,14 +5,13 @@
     loadProducts,
     basket,
     pagesPath,
-    categorySelected,
-    githubDataRepo
+    categorySelected
   } from "../stores.js";
   import Categories from "../components/Categories.svelte";
   import Buy from "../components/Buy.svelte";
   import Price from "../components/Price.svelte";
+  import Photo from "../components/Photo.svelte";
   import Loading from "../components/Loading.svelte";
-
   export let lang;
 
   const dict = {
@@ -25,8 +24,6 @@
       fr: "détail"
     }
   };
-
-  const photosUrl = `https://raw.githubusercontent.com/${$githubDataRepo}/main/`;
 
   let products = loadProducts(null, $rate);
 
@@ -100,10 +97,9 @@
             </div>
             <div class="card-image">
               <a href="{$pagesPath['product'][lang]}-{product.id}">
-                <img
-                  class="img-responsive"
-                  src={new URL(`thumbs/${product.photos[0]}`, photosUrl)}
-                  alt="{product.titre[lang]} #{product.id}" />
+                <Photo
+                  alt={`${product.titre[lang]} #${product.id}`}
+                  url={`thumbs/${product.photos[0]}`} />
               </a>
             </div>
             <div class="card-body">

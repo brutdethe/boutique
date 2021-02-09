@@ -7,13 +7,14 @@
   } from "../stores.js";
   import Buy from "../components/Buy.svelte";
   import Price from "../components/Price.svelte";
-  import Loading from "../components/Loading.svelte";
+  import Photo from "../components/Photo.svelte";
   import ProductNotFound from "../components/ProductNotFound.svelte";
+  import Loading from "../components/Loading.svelte";
 
   export let id;
   export let lang;
 
-  let products = loadProducts(id, $rate);
+  let product = loadProducts(id, $rate);
 
   const dict = {
     title: {
@@ -60,12 +61,12 @@
 <svelte:head>
   <title>{dict.title[lang]}-{id}</title>
 </svelte:head>
-{#if $products}
-  {#if $products.hasOwnProperty('id')}
+{#if $product}
+  {#if $product.hasOwnProperty('id')}
     <div class="card">
-      {#if $products.photos.length}
+      {#if $product.photos.length}
         <div class="card-image carousel">
-          {#each $products.photos as photo, count}
+          {#each $product.photos as photo, count}
             <input
               class="carousel-locator"
               id="slide-{count + 1}"
@@ -75,27 +76,28 @@
               checked={!count && true} />
           {/each}
           <div class="carousel-container">
-            {#each $products.photos as photo, count}
+            {#each $product.photos as photo, count}
               <figure class="carousel-item">
                 <label
                   class="item-prev btn btn-action btn-lg"
-                  for="slide-{count ? count : $products.photos.length}">
+                  for="slide-{count ? count : $product.photos.length}">
                   <i class="icon icon-arrow-left" />
                 </label>
                 <label
                   class="item-next btn btn-action btn-lg"
-                  for="slide-{count + 2 <= $products.photos.length ? count + 2 : 1}">
+                  for="slide-{count + 2 <= $product.photos.length ? count + 2 : 1}">
                   <i class="icon icon-arrow-right" />
                 </label>
-                <img
-                  class="img-responsive rounded"
-                  src={new URL(`carousels/${photo}`, photosUrl)}
-                  alt={$products.titre[lang]} />
+                <Photo
+                  alt={`${$product.titre[lang]} #${$product.id}`}
+                  {lang}
+                  url={`carousels/${photo}`} />
+
               </figure>
             {/each}
           </div>
           <div class="carousel-nav">
-            {#each $products.photos as photo, count}
+            {#each $product.photos as photo, count}
               <label class="nav-item text-hide c-hand" for="slide-{count + 1}">
                 {count}
               </label>
@@ -104,18 +106,18 @@
         </div>
       {/if}
       <div class="card-header">
-        <div class="card-title h4">{$products.titre[lang]}</div>
+        <div class="card-title h4">{$product.titre[lang]}</div>
       </div>
       <div class="card-body">
-        <p>{$products.description[lang]}.</p>
-        <p>{dict.weight[lang]} : {getWeight($products.poids, lang)}</p>
-        <p>Stock : {$products.stock}</p>
+        <p>{$product.description[lang]}.</p>
+        <p>{dict.weight[lang]} : {getWeight($product.poids, lang)}</p>
+        <p>Stock : {$product.stock}</p>
         <h3 class="card-title h1 price">
-          <Price price={$products.prix} />
+          <Price price={$product.prix} />
         </h3>
       </div>
       <div class="card-footer">
-        <Buy item={$products} {lang} />
+        <Buy item={$product} {lang} />
       </div>
     </div>
   {:else}
