@@ -11,7 +11,7 @@
   const dev = process.env.NODE_ENV === "development";
 
   onMount(async () => {
-    if (dev) {
+    if (!dev) {
       goto(`${lang}/`);
     }
   });
