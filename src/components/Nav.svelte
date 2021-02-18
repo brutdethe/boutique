@@ -6,8 +6,6 @@
 
   const { page } = stores();
 
-  export let segment;
-
   $: lang = !!$page.path.match("^/en/") ? "en" : "fr";
 
   const dict = {
@@ -58,19 +56,15 @@
     display: block;
   }
 
-  [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
+  @media (max-width: 768px) {
+    .column.col-4 {
+        flex-basis: 100%;
+        order: 4;
+    }
 
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
+    .title {
+        flex-basis: 50%;
+    }
   }
 </style>
 
@@ -78,21 +72,18 @@
   <ul class="column col-4">
     <li>
       <a
-        aria-current={segment === undefined ? 'page' : undefined}
         href={$pagesPath.index[lang]}>
         {dict.nav_products[lang]}
       </a>
     </li>
     <li>
       <a
-        aria-current={segment === undefined ? 'page' : undefined}
         href={$pagesPath.about[lang]}>
         {dict.nav_about[lang]}
       </a>
     </li>
     <li>
       <a
-        aria-current={segment === 'panier' ? 'page' : undefined}
         href={$pagesPath.basket[lang]}>
         <span class="badge" data-badge={basketCount($basket)} data-initial="YZ">
           {dict.nav_basket[lang]}

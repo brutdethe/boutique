@@ -2,7 +2,6 @@
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";
 
-  export let segment;
 </script>
 
 <style>
@@ -20,9 +19,15 @@
       max-width: 90em;
     }
   }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 2em 1em;
+    }
+  }
 </style>
 
-<Nav {segment} />
+<Nav />
 
 <section>
   <slot />
