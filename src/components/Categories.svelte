@@ -1,48 +1,47 @@
 <script>
-    import {goto, stores} from "@sapper/app";
-    import {loadCategories, categorySelected} from "../stores.js";
+  import { goto, stores } from "@sapper/app";
+  import { loadCategories, categorySelected } from "../stores.js";
 
-    export let categories;
-    export let lang;
+  export let categories;
+  export let lang;
 
-    const { page } = stores();
-    const { query } = $page;
+  const { page } = stores();
+  const { path, query } = $page;
 
-    if (query.categorie) {
-        categorySelected.set(query.categorie);
-    }
+  if (query.categorie) {
+    categorySelected.set(query.categorie);
+  }
 
-    let categoriesWording = loadCategories();
+  let categoriesWording = loadCategories();
 
-    function changeCategory(evt) {
-        categorySelected.set(evt.currentTarget.value);
-        goto(`${path}?categorie=${$categorySelected}`);
-    }
+  function changeCategory(evt) {
+    categorySelected.set(evt.currentTarget.value);
+    goto(`${path}?categorie=${$categorySelected}`);
+  }
 
-    const isCategorySelected = (categories, categorySelected) =>
-        categories.indexOf(categorySelected) === 0;
-
+  const isCategoryExists = (categories, categorySelected) =>
+    categories.indexOf(categorySelected) !== -1;
 </script>
 
 <style>
-    .hero-body {
-        padding: 0.8rem;
-        margin-bottom: 0.8rem;
-        box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
-    }
+  .hero-body {
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+  }
 
-    hr {
-        color: #ddd;
-    }
+  hr {
+    color: #ddd;
+  }
 
-    .btn {
-        margin: 0.1em;
-        box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
-    }
+  .btn {
+    margin: 0.1em;
+    box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+  }
 </style>
 
 {#if categories}
-  {isCategorySelected(categories, $categorySelected) ? '' : goto('/404')}
+  {isCategoryExists(categories, $categorySelected) ? '' : goto('/404')}
   <div class="hero-sm bg-primary">
     <div class="hero-body">
       <h3>{$categorySelected}</h3>
@@ -66,4 +65,4 @@
   {/if}
 {/if}
 
-<hr/>
+<hr />
