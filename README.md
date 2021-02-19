@@ -59,3 +59,8 @@ La *vignette* est générée à partir du premier fichier indiqué dans la rubri
 ## Licence
 
 [CC1.0](LICENSE)
+
+
+### La gestion des stocks
+
+### Déploiement sur Heroku

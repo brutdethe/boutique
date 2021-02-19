@@ -37,11 +37,16 @@ function getItemsGroupBy(items) {
 
 function updatesStock(productsJSON, productsSession) {
     let productsUpdated = productsJSON
+
+    productsUpdated = productsUpdated.map(product => {
+        product.stock = product['quantité_produite']
+        return product
+    })
+
     productsSession.forEach(item => {
         productsUpdated = productsUpdated.map(product => {
             if (item.id === product.id) {
                 product.stock -= item.quantity
-
             }
             return product
         })

@@ -5,13 +5,13 @@
     loadProducts,
     basket,
     pagesPath,
-    categorySelected,
-    githubDataRepo
+    categorySelected
   } from "../stores.js";
   import Categories from "../components/Categories.svelte";
   import Buy from "../components/Buy.svelte";
   import Price from "../components/Price.svelte";
-
+  import Photo from "../components/Photo.svelte";
+  import Loading from "../components/Loading.svelte";
   export let lang;
 
   const dict = {
@@ -24,8 +24,6 @@
       fr: "détail"
     }
   };
-
-  const photosUrl = `https://raw.githubusercontent.com/${$githubDataRepo}/main/`;
 
   let products = loadProducts(null, $rate);
 
@@ -56,17 +54,6 @@
 </script>
 
 <style>
-  .svg {
-    width: 100%;
-    text-align: center;
-  }
-  svg {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-    display: inline-block;
-  }
-
   .description {
     height: 10rem;
   }
@@ -110,10 +97,9 @@
             </div>
             <div class="card-image">
               <a href="{$pagesPath['product'][lang]}-{product.id}">
-                <img
-                  class="img-responsive"
-                  src={new URL(`thumbs/${product.photos[0]}`, photosUrl)}
-                  alt="{product.titre[lang]} #{product.id}" />
+                <Photo
+                  alt={`${product.titre[lang]} #${product.id}`}
+                  url={`thumbs/${product.photos[0]}`} />
               </a>
             </div>
             <div class="card-body">
@@ -137,42 +123,7 @@
         </div>
       {/each}
     {:else}
-      <div class="svg">
-        <svg
-          version="1.1"
-          id="L3"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 100 100"
-          enable-background="new 0 0 0 0"
-          xml:space="preserve">
-          <circle
-            fill="none"
-            stroke="#555"
-            stroke-width="4"
-            cx="50"
-            cy="50"
-            r="44"
-            style="opacity:0.5;" />
-          <circle
-            fill="#fff"
-            stroke="#5755d9"
-            stroke-width="3"
-            cx="8"
-            cy="54"
-            r="6">
-            <animateTransform
-              attributeName="transform"
-              dur="2s"
-              type="rotate"
-              from="0 50 48"
-              to="360 50 52"
-              repeatCount="indefinite" />
-          </circle>
-        </svg>
-      </div>
+      <Loading />
     {/if}
   </div>
 </section>
