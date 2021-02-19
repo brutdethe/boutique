@@ -19,8 +19,8 @@ Backlog du produit : https://github.com/orgs/brutdethe/projects/1
 
 ### Organisation GitHub
 
-Le site est déployé sur la branche [heroku](https://heroku.com)  
-Et les sources sont présentes sur la branche principale : [_dev_](../../tree/dev)
+Le site est développé sur la branche : [_dev_](../../tree/dev)
+La branche principale est : [_main_](../../tree/main)
 
 ### Pour lancer le site en local
 
@@ -28,7 +28,7 @@ Et les sources sont présentes sur la branche principale : [_dev_](../../tree/de
 
 ### Pour déployer 
 
-Le déploiement est automatisé à partir de la branche [_dev_](../../tree/dev) vers *heroku*
+Le déploiement est automatisé à partir de la branche [_dev_](../../tree/prod) vers *heroku*
 
 ### Stripe
 
