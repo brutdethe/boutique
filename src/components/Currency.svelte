@@ -8,17 +8,19 @@
 
 <style>
     .currency {
+        flex-wrap: nowrap;
         line-height: 4em;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
         .currency {
-            flex-basis: 25%;
+            text-align: right;
+            padding-right: 10px !important;
         }
     }
 </style>
 
-<div class="currency column col-1">
+<div class="currency column col-5">
     <button
             class="btn btn-sm {'EUR' === $currency ? 'bg-secondary' : ''}"
             on:click={changeCurrencySelected}
