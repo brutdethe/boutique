@@ -33,18 +33,19 @@
 
 <style>
     .language {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
         line-height: 4em;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
         .language {
-            flex-basis: 25%;
+            padding-left: 10px !important;
         }
     }
-
 </style>
 
-<div class="language column col-1">
+<div class="language column col-7">
     <button
             class="btn btn-sm {'fr' === lang ? 'bg-secondary' : ''}"
             on:click={changeLanguageSelected}

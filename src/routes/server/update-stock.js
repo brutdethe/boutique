@@ -3,7 +3,10 @@ import Stripe from 'stripe'
 import 'dotenv/config'
 
 async function getPaidsSessionsIds(stripe) {
-    const checkoutSessions = await stripe.checkout.sessions.list()
+    const checkoutSessions = await stripe.checkout.sessions.list({
+        limit: 100
+    })
+
     return checkoutSessions.data.filter(session => session.payment_status === 'paid').map(session => session.id)
 }
 

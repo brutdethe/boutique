@@ -54,7 +54,7 @@
 </script>
 
 <style>
-  .description {
+  /*.description {
     height: 10rem;
   }
 
@@ -62,11 +62,18 @@
     .description {
       height: 6rem;
     }
-  }
+  }*/
 
   .card {
+    height: calc(100% - 1rem);
     margin-bottom: 1rem;
     box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .price {

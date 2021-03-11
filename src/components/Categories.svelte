@@ -34,8 +34,12 @@
     color: #ddd;
   }
 
+  .btn-list {
+    margin: -10px
+  }
+
   .btn {
-    margin: 0.1em;
+    margin: 10px;
     box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
   }
 </style>
@@ -52,16 +56,18 @@
   </div>
 
   {#if categories.length > 1}
-    {#each categories as category}
-      <button
-        class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
-        on:click={changeCategory}
-        value={category}>
-        {#if $categoriesWording[category]}
-          {$categoriesWording[category].titre[lang]}
-        {/if}
-      </button>
-    {/each}
+    <div class="btn-list">
+        {#each categories as category}
+          <button
+            class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
+            on:click={changeCategory}
+            value={category}>
+            {#if $categoriesWording[category]}
+              {$categoriesWording[category].titre[lang]}
+            {/if}
+          </button>
+        {/each}
+    </div>
   {/if}
 {/if}
 
