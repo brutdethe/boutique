@@ -10,7 +10,19 @@
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
     <link rel="icon" type="image/png" href="favicon.ico">
 
-    <script async defer data-domain="shop.xn--brutdeth-i1a.fr" src="https://plausible.io/js/plausible.js"></script>
+    <script async defer data-domain="thiere-tasse.com" src="https://stats.theiere-tasse.com/js/index.js"></script>
+
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
+
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
 
     <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
