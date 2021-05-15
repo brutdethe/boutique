@@ -79,7 +79,7 @@
 				<a href={$pagesPath.index[lang]}>{dict.nav_products[lang]}</a>
 			</li>
 			<li>
-				<a href={$pagesPath.about[lang]}>{dict.nav_about[lang]}</a>
+				<a href={$setup.a_propos}>{dict.nav_about[lang]}</a>
 			</li>
 			<li>
 				<a href={$pagesPath.basket[lang]}>
