@@ -6,6 +6,7 @@ import {
 
 const ghDataRepo = process.env.GITHUB_DATA_REPO
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
+const setupPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/setup.json`
 const pages = {
     index: {
         en: '/en/',
@@ -172,6 +173,35 @@ async function fetchCategories(set) {
         }
 
         set(categories)
+    } else {
+        const text = response.text()
+        throw new Error(text)
+    }
+
+    return () => {}
+}
+
+export function loadSetup() {
+    let setup = readable([], set => {
+        fetchSetup(set)
+        return () => {}
+    })
+
+    return setup
+}
+
+async function fetchSetup(set) {
+
+    if (typeof fetch !== 'function') {
+        return () => {}
+    }
+
+    const response = await fetch(setupPath)
+
+    if (response.ok) {
+        const setup = await response.json()
+
+        set(setup)
     } else {
         const text = response.text()
         throw new Error(text)
