@@ -71,8 +71,9 @@
 </style>
 
 <header class="columns">
-	<h1 class="title column col-4 col-md-12">{$setup.nom || ''}</h1>
-
+	<h1 class="title column col-4 col-md-12">
+		<a href="/">{$setup.nom || ''}</a>
+	</h1>
 	<nav class="column col-5 col-md-9 col-sm-12">
 		<ul>
 			<li>
