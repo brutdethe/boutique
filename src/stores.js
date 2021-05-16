@@ -70,7 +70,6 @@ country.subscribe(value => {
     }
 });
 
-
 function getCategoriesInStock(products) {
     function getCategories(products) {
         const categories = new Set(products.map(product => product.catégorie))
@@ -167,7 +166,6 @@ async function fetchCategories(set) {
         if (!get(categorySelected)) {
             categorySelected.set(Object.keys(categories)[0])
         }
-
         set(categories)
     } else {
         const text = response.text()

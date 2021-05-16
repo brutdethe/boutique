@@ -45,7 +45,6 @@
 </style>
 
 {#if categories}
-	{console.log(categories)}
 	<div class="hero-sm bg-primary">
 		<div class="hero-body">
 			<h3>{$categorySelected}</h3>
