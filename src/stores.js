@@ -20,13 +20,9 @@ const pages = {
         en: '/en/basket-success',
         fr: '/fr/panier-ok'
     },
-    "product": {
+    product: {
         en: '/en/product',
         fr: '/fr/produit'
-    },
-    about: {
-        en: 'https://info.theiere-tasse.com/index-us.html',
-        fr: 'https://info.theiere-tasse.com'
     },
     publisher: {
         en: '/en/publisher',
