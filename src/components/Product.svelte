@@ -166,9 +166,9 @@
 				<div class="card-body">
 					<p>{$product.description[lang]}.</p>
 					<dl>
-						{#if 'capacite' in $product}
+						{#if 'capacité' in $product}
 							<dt>{dict.capacity[lang]} :&nbsp;</dt>
-							<dd>{getCapacity($product.capacite, lang)}</dd>
+							<dd>{getCapacity($product.capacité, lang)}</dd>
 						{/if}
 						{#if 'poids' in $product}
 							<dt>{dict.weight[lang]} :&nbsp;</dt>
