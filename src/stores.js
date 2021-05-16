@@ -86,7 +86,7 @@ function getCategoriesInStock(products) {
                 } else {
                     return (acc === true) && true
                 }
-            }) === true
+            }, []) === true
         )
 }
 
@@ -125,6 +125,7 @@ async function fetchProducts(set, id, rate) {
             }
             return product
         })
+
         if (!id) {
             set({
                 products: productsWithUSD,
