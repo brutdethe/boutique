@@ -35,7 +35,6 @@
 		font-size: 2rem;
 		font-weight: 700;
 		line-height: 1.5;
-		color: #897853;
 	}
 
 	.logo {
@@ -63,22 +62,6 @@
 		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
-		color: #897853;
-	}
-
-	a:visited {
-		color: #897853;
-		border-color: #897853;
-	}
-
-	a:focus,
-	a:hover {
-		text-decoration: none;
-		color: #6b5f45;
-	}
-	.badge:not([data-badge])::after,
-	.badge[data-badge]::after {
-		background: #897853;
 	}
 
 	@media (max-width: 840px) {

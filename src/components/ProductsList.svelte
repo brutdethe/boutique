@@ -75,13 +75,6 @@
 		text-align: right;
 		font-weight: 700;
 	}
-
-	.btn,
-	.btn:focus,
-	.btn:hover {
-		color: #897853;
-		border-color: #897853;
-	}
 </style>
 
 <svelte:head>

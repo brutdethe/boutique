@@ -8,18 +8,6 @@
 	p {
 		max-width: 960px;
 	}
-
-	a,
-	a:visited {
-		color: #897853;
-		border-color: #897853;
-	}
-
-	a:focus,
-	a:hover {
-		text-decoration: none;
-		color: #6b5f45;
-	}
 </style>
 
 <h1>Legal notice</h1>

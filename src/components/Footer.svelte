@@ -42,14 +42,6 @@
 		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
-		color: #897853;
-		border-color: #897853;
-	}
-
-	a:focus,
-	a:hover {
-		text-decoration: none;
-		color: #6b5f45;
 	}
 </style>
 

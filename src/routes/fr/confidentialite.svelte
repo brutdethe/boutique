@@ -4,20 +4,6 @@
 	let setup = loadSetup();
 </script>
 
-<style>
-	a,
-	a:visited {
-		color: #897853;
-		border-color: #897853;
-	}
-
-	a:focus,
-	a:hover {
-		text-decoration: none;
-		color: #6b5f45;
-	}
-</style>
-
 <h1>Confidentialité</h1>
 <p>
 	Le site

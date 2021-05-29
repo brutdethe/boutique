@@ -24,21 +24,6 @@
 	};
 </script>
 
-<style>
-	.btn.btn-primary {
-		color: #fff;
-		border-color: #897853;
-		background: #897853;
-	}
-
-	.btn.btn:focus,
-	.btn.btn:hover {
-		color: #fff;
-		border-color: #6b5f45;
-		background: #6b5f45;
-	}
-</style>
-
 <button class="btn btn-primary float-right" on:click={basketClick(item)} {disabled}>
 	{dict.buy[lang]}
 </button>
