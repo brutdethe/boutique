@@ -113,6 +113,13 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}-{id}</title>
+	<script
+		async
+		defer
+		data-domain="thiere-tasse.com"
+		src="https://stats.theiere-tasse.com/js/index.js">
+
+	</script>
 </svelte:head>
 {#if $product}
 	{#if $product.hasOwnProperty('id')}

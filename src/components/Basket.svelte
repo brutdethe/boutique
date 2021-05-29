@@ -134,10 +134,17 @@
 </style>
 
 <svelte:head>
+	<title>{dict.title[lang]}</title>
+	<script
+		async
+		defer
+		data-domain="thiere-tasse.com"
+		src="https://stats.theiere-tasse.com/js/index.js">
+
+	</script>
 	<script src="https://js.stripe.com/v3/">
 
 	</script>
-	<title>{dict.title[lang]}</title>
 </svelte:head>
 
 <h2>{dict.title[lang]}</h2>
