@@ -2,6 +2,14 @@
 	import { basket } from '../stores.js';
 
 	export let lang;
+	let dataDomain;
+
+	if (typeof window !== 'undefined') {
+		const domain = new URL(window.location);
+		if (domain.hostname !== 'localhost') {
+			dataDomain = domain.hostname.replace('www.', '');
+		}
+	}
 
 	const dict = {
 		title: { en: 'Purchases made', fr: 'Achats effectués' },
@@ -20,6 +28,11 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
+	{#if dataDomain}
+		<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
+
+		</script>
+	{/if}
 </svelte:head>
 <h2>{dict.title[lang]}</h2>
 
