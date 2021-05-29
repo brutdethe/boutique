@@ -8,6 +8,15 @@
 	import Loading from '../components/Loading.svelte';
 	export let lang;
 
+	let dataDomain = undefined;
+
+	if (typeof window !== 'undefined') {
+		const domain = new URL(window.location);
+		if (domain.hostname !== 'localhost') {
+			dataDomain = domain.hostname;
+		}
+	}
+
 	const dict = {
 		title: {
 			en: "product's list",
@@ -79,13 +88,13 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
-	<script
-		async
-		defer
-		data-domain="thiere-tasse.com"
-		src="https://stats.theiere-tasse.com/js/index.js">
 
-	</script>
+	{#if dataDomain}
+		<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
+
+		</script>
+	{/if}
+
 </svelte:head>
 <header>
 	<Categories categories={$products.categories} {lang} />
