@@ -35,7 +35,7 @@
 		font-size: 2rem;
 		font-weight: 700;
 		line-height: 1.5;
-		color: #5755d9;
+		color: #897853;
 	}
 
 	.logo {
@@ -83,11 +83,14 @@
 </style>
 
 <header class="columns">
-	<h1 class="title column col-1 col-md-12">
-		<!-- if -->
-		<img src="/sceau-the.svg" alt="logo boutique" class="logo" />
+	<h1 class="title column col-3 col-md-12">
+		{#if $setup.logo}
+			<img src={$setup.logo} alt="logo boutique" class="logo" />
+		{:else}
+			<a href="/">{$setup.nom || ''}</a>
+		{/if}
 	</h1>
-	<nav class="column col-9 col-md-9 col-sm-12">
+	<nav class="column col-7 col-md-9 col-sm-12">
 		<ul>
 			<li>
 				<a href={$pagesPath.index[lang]}>{dict.nav_products[lang]}</a>
