@@ -4,6 +4,14 @@
 	import Countries from '../components/Countries.svelte';
 
 	export let lang;
+	let dataDomain;
+
+	if (typeof window !== 'undefined') {
+		const domain = new URL(window.location);
+		if (domain.hostname !== 'localhost') {
+			dataDomain = domain.hostname.replace('www.', '');
+		}
+	}
 
 	function checkout() {
 		const stripe = Stripe($stripeKeySk);
@@ -135,13 +143,11 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
-	<script
-		async
-		defer
-		data-domain="thiere-tasse.com"
-		src="https://stats.theiere-tasse.com/js/index.js">
+	{#if dataDomain}
+		<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
 
-	</script>
+		</script>
+	{/if}
 	<script src="https://js.stripe.com/v3/">
 
 	</script>
