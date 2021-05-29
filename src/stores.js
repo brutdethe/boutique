@@ -6,6 +6,7 @@ import {
 
 const ghDataRepo = process.env.GITHUB_DATA_REPO
 const categoriesPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/categories.json`
+const setupPath = `https://raw.githubusercontent.com/${ghDataRepo}/main/setup.json`
 const pages = {
     index: {
         en: '/en/',
@@ -19,13 +20,9 @@ const pages = {
         en: '/en/basket-success',
         fr: '/fr/panier-ok'
     },
-    "product": {
+    product: {
         en: '/en/product',
         fr: '/fr/produit'
-    },
-    about: {
-        en: 'https://info.theiere-tasse.com/index-us.html',
-        fr: 'https://info.theiere-tasse.com'
     },
     publisher: {
         en: '/en/publisher',
@@ -73,7 +70,6 @@ country.subscribe(value => {
     }
 });
 
-
 function getCategoriesInStock(products) {
     function getCategories(products) {
         const categories = new Set(products.map(product => product.catégorie))
@@ -90,7 +86,7 @@ function getCategoriesInStock(products) {
                 } else {
                     return (acc === true) && true
                 }
-            }) === true
+            }, []) === true
         )
 }
 
@@ -129,6 +125,7 @@ async function fetchProducts(set, id, rate) {
             }
             return product
         })
+
         if (!id) {
             set({
                 products: productsWithUSD,
@@ -170,8 +167,36 @@ async function fetchCategories(set) {
         if (!get(categorySelected)) {
             categorySelected.set(Object.keys(categories)[0])
         }
-
         set(categories)
+    } else {
+        const text = response.text()
+        throw new Error(text)
+    }
+
+    return () => {}
+}
+
+export function loadSetup() {
+    let setup = readable([], set => {
+        fetchSetup(set)
+        return () => {}
+    })
+
+    return setup
+}
+
+async function fetchSetup(set) {
+
+    if (typeof fetch !== 'function') {
+        return () => {}
+    }
+
+    const response = await fetch(setupPath)
+
+    if (response.ok) {
+        const setup = await response.json()
+
+        set(setup)
     } else {
         const text = response.text()
         throw new Error(text)

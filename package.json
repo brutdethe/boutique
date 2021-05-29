@@ -1,7 +1,7 @@
 {
     "name": "Shop",
     "description": "eShop Brut de Thé",
-    "version": "0.17.1",
+    "version": "0.18.1",
     "scripts": {
         "dev": "sapper dev",
         "build": "sapper build --legacy",
