@@ -10,6 +10,14 @@
 	export let lang;
 
 	let product = loadProducts(id, $rate);
+	let dataDomain;
+
+	if (typeof window !== 'undefined') {
+		const domain = new URL(window.location);
+		if (domain.hostname !== 'localhost') {
+			dataDomain = domain.hostname.replace('www.', '');
+		}
+	}
 
 	const dict = {
 		title: {
@@ -113,13 +121,11 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}-{id}</title>
-	<script
-		async
-		defer
-		data-domain="thiere-tasse.com"
-		src="https://stats.theiere-tasse.com/js/index.js">
+	{#if dataDomain}
+		<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
 
-	</script>
+		</script>
+	{/if}
 </svelte:head>
 {#if $product}
 	{#if $product.hasOwnProperty('id')}

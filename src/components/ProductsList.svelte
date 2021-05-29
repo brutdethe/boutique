@@ -13,7 +13,7 @@
 	if (typeof window !== 'undefined') {
 		const domain = new URL(window.location);
 		if (domain.hostname !== 'localhost') {
-			dataDomain = domain.hostname;
+			dataDomain = domain.hostname.replace('www.', '');
 		}
 	}
 
