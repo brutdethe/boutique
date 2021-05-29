@@ -28,6 +28,7 @@
 		padding: 0.8rem;
 		margin-bottom: 0.8rem;
 		box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+		background: #897853;
 	}
 
 	hr {
@@ -38,9 +39,21 @@
 		margin: -10px;
 	}
 
-	.btn {
+	.btn,
+	.btn:focus,
+	.btn:hover {
 		margin: 10px;
 		box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+		color: #897853;
+		border-color: #897853;
+	}
+
+	.btn-selected,
+	.btn.btn-selected:focus,
+	.btn.btn-selected:hover {
+		background: #897853;
+		border-color: #897853;
+		color: #fff;
 	}
 </style>
 
@@ -58,7 +71,7 @@
 		<div class="btn-list">
 			{#each categories as category}
 				<button
-					class="btn btn-sm {category === $categorySelected ? 'btn-primary' : ''}"
+					class="btn btn-sm {category === $categorySelected ? 'btn-selected' : ''}"
 					on:click={changeCategory}
 					value={category}>
 					{#if $categoriesWording[category]}{$categoriesWording[category].titre[lang]}{/if}

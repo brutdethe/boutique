@@ -63,6 +63,22 @@
 		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
+		color: #897853;
+	}
+
+	a:visited {
+		color: #897853;
+		border-color: #897853;
+	}
+
+	a:focus,
+	a:hover {
+		text-decoration: none;
+		color: #6b5f45;
+	}
+	.badge:not([data-badge])::after,
+	.badge[data-badge]::after {
+		background: #897853;
 	}
 
 	@media (max-width: 840px) {
@@ -84,11 +100,11 @@
 
 <header class="columns">
 	<h1 class="title column col-3 col-md-12">
-		{#if $setup.logo}
-			<img src={$setup.logo} alt="logo boutique" class="logo" />
-		{:else}
-			<a href="/">{$setup.nom || ''}</a>
-		{/if}
+		<a href="/">
+			{#if $setup.logo}
+				<img src={$setup.logo} alt="logo boutique" class="logo" />
+			{:else}{$setup.nom || ''}{/if}
+		</a>
 	</h1>
 	<nav class="column col-7 col-md-9 col-sm-12">
 		<ul>

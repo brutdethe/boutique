@@ -13,6 +13,13 @@
 		text-align: left;
 	}
 
+	.btn,
+	.btn:focus,
+	.btn:hover {
+		color: #897853;
+		border-color: #897853;
+	}
+
 	@media (max-width: 600px) {
 		.currency {
 			text-align: left;
