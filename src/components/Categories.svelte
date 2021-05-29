@@ -38,9 +38,10 @@
 		margin: -10px;
 	}
 
-	.btn {
+	.btn,
+	.btn:focus,
+	.btn:hover {
 		margin: 10px;
-		box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
 	}
 </style>
 

@@ -1,0 +1,44 @@
+a,
+a:visited {
+    color: #897853;
+    border-color: #897853;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #6b5f45;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    border-color: #897853;
+    background: #6b5f45;
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+    border-color: #897853;
+    color: #897853;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    border-color: #897853;
+    background: #897853;
+}
+
+.badge:not([data-badge])::after,
+.badge[data-badge]::after {
+    background: #897853;
+}
+
+.hero-body {
+    background: #897853;
+}
+
+.logo,
+.title {
+    color: #897853;
+}
