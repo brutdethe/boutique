@@ -35,6 +35,30 @@
 		capacity: {
 			en: 'Capacity',
 			fr: 'Capacité'
+		},
+		location: {
+			en: 'Location',
+			fr: 'Lieu'
+		},
+		cultivar: {
+			en: 'Cultivar',
+			fr: 'Cultivar'
+		},
+		type: {
+			en: 'Type',
+			fr: 'Type'
+		},
+		producer: {
+			en: 'Producer',
+			fr: 'Producteur'
+		},
+		elevation: {
+			en: 'Elevation',
+			fr: 'Altitude'
+		},
+		card: {
+			en: 'Card',
+			fr: 'Fiche'
 		}
 	};
 
@@ -80,6 +104,14 @@
 			return `${(capacity * 0.03381).toFixed(2)}oz`;
 		} else {
 			return `${capacity}ml`;
+		}
+	}
+
+	function getElevation(elevation, lang) {
+		if (lang === 'en') {
+			return `${Math.round(elevation * 3.2808)}ft`;
+		} else {
+			return `${elevation}m`;
 		}
 	}
 </script>
@@ -179,6 +211,22 @@
 				<div class="card-body">
 					<p>{$product.description[lang]}.</p>
 					<dl>
+						{#if 'cultivar' in $product}
+							<dt>{dict.cultivar[lang]} :&nbsp;</dt>
+							<dd>{$product.cultivar}</dd>
+						{/if}
+						{#if 'producteur' in $product}
+							<dt>{dict.producer[lang]} :&nbsp;</dt>
+							<dd>{$product.producteur}</dd>
+						{/if}
+						{#if 'village' in $product || 'province' in $product}
+							<dt>{dict.location[lang]} :&nbsp;</dt>
+							<dd>{$product.village || ''} - {$product.province || ''}</dd>
+						{/if}
+						{#if 'altitude' in $product}
+							<dt>{dict.elevation[lang]} :&nbsp;</dt>
+							<dd>{getElevation($product.altitude, lang)}</dd>
+						{/if}
 						{#if 'capacité' in $product}
 							<dt>{dict.capacity[lang]} :&nbsp;</dt>
 							<dd>{getCapacity($product.capacité, lang)}</dd>
@@ -194,7 +242,6 @@
 						<dt>Stock :&nbsp;</dt>
 						<dd>{getStock($product.stock, lang)}</dd>
 					</dl>
-
 				</div>
 				<div class="card-footer">
 					<h3 class="card-title h1 price">
