@@ -59,6 +59,10 @@
 		card: {
 			en: 'Card',
 			fr: 'Fiche'
+		},
+		vintage: {
+			en: 'Vintage',
+			fr: 'Millésime'
 		}
 	};
 
@@ -226,6 +230,10 @@
 						{#if 'altitude' in $product}
 							<dt>{dict.elevation[lang]} :&nbsp;</dt>
 							<dd>{getElevation($product.altitude, lang)}</dd>
+						{/if}
+						{#if 'millésime' in $product}
+							<dt>{dict.vintage[lang]} :&nbsp;</dt>
+							<dd>{$product.millésime}</dd>
 						{/if}
 						{#if 'capacité' in $product}
 							<dt>{dict.capacity[lang]} :&nbsp;</dt>
