@@ -148,10 +148,15 @@
 		padding-top: 0.8rem;
 		text-align: right;
 		font-weight: 700;
+		font-size: 1.5rem;
 	}
 
 	.btn {
 		width: 5rem;
+	}
+
+	.card-footer {
+		padding: 0;
 	}
 </style>
 
