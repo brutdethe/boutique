@@ -154,10 +154,6 @@
 	.btn {
 		width: 5rem;
 	}
-
-	.card-footer {
-		padding: 0;
-	}
 </style>
 
 <svelte:head>
