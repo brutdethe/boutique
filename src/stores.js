@@ -163,7 +163,6 @@ async function fetchCategories(set) {
 
     if (response.ok) {
         const categories = await response.json()
-        console.log("categories", categories)
 
         if (!get(categorySelected)) {
             categorySelected.set(Object.keys(categories)[0])
