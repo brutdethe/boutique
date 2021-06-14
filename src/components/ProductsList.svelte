@@ -110,7 +110,7 @@
 					<article class="card">
 						<div class="card-header">
 							<div class="card-title h5">{product.titre[lang]}</div>
-							<div class="card-subtitle text-gray">{$categorySelected}</div>
+							<div class="card-subtitle text-gray">{$categorySelected} {product.type || ''}</div>
 						</div>
 						<div class="card-image">
 							<a href="{$pagesPath['product'][lang]}-{product.id}">

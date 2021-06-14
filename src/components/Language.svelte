@@ -55,6 +55,6 @@
 		class="btn btn-sm {'en' === lang ? 'bg-secondary' : ''}"
 		on:click={changeLanguageSelected}
 		value="en">
-		US
+		EN
 	</button>
 </div>
