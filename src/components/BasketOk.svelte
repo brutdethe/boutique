@@ -29,10 +29,7 @@
 <svelte:head>
 	<title>{dict.title[lang]}</title>
 
-	<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
-
-	</script>
-</svelte:head>
+</svelte:head></svelte:head>
 <h2>{dict.title[lang]}</h2>
 
 <div class="container">

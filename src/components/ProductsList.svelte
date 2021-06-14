@@ -87,11 +87,7 @@
 </style>
 
 <svelte:head>
-	<title>{dict.title[lang]} {dataDomain}</title>
-
-	<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
-
-	</script>
+	<title>{dict.title[lang]}</title>
 </svelte:head>
 <header>
 	<Categories categories={$products.categories} {lang} />
