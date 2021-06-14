@@ -8,11 +8,11 @@
 	const { page } = stores();
 	const { path, query } = $page;
 
+	let categoriesWording = loadCategories();
+
 	if (query.categorie) {
 		categorySelected.set(query.categorie);
 	}
-
-	let categoriesWording = loadCategories();
 
 	function changeCategory(evt) {
 		categorySelected.set(evt.currentTarget.value);
@@ -48,8 +48,8 @@
 {#if categories}
 	<div class="hero-sm bg-primary">
 		<div class="hero-body">
-			<h3>{$categorySelected}</h3>
 			{#if $categoriesWording[$categorySelected]}
+				<h3>{$categoriesWording[$categorySelected].titre[lang]}</h3>
 				<p>{$categoriesWording[$categorySelected].description[lang]}</p>
 			{/if}
 		</div>
