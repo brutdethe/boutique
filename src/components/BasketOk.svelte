@@ -28,8 +28,7 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
-
-</svelte:head></svelte:head>
+</svelte:head>
 <h2>{dict.title[lang]}</h2>
 
 <div class="container">

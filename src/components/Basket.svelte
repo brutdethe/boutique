@@ -143,8 +143,7 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
-
-</svelte:head>	<script src="https://js.stripe.com/v3/">
+	<script src="https://js.stripe.com/v3/">
 
 	</script>
 </svelte:head>
