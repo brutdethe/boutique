@@ -158,9 +158,6 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}-{id}</title>
-	<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
-
-	</script>
 </svelte:head>
 {#if $product}
 	{#if $product.hasOwnProperty('id')}

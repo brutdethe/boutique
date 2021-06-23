@@ -28,11 +28,6 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
-	{#if dataDomain}
-		<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
-
-		</script>
-	{/if}
 </svelte:head>
 <h2>{dict.title[lang]}</h2>
 
