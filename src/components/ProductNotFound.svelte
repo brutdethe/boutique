@@ -28,7 +28,7 @@
 <svelte:head>
 	<title>{dict.title[lang]} {dataDomain}</title>
 
-</svelte:head></svelte:head>
+</svelte:head>
 
 <div class="container">
 	<div class="columns">

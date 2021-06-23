@@ -158,7 +158,7 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}-{id}</title>
-</svelte:head></svelte:head>
+</svelte:head>
 {#if $product}
 	{#if $product.hasOwnProperty('id')}
 		<div class="columns">
