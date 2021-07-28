@@ -22,7 +22,7 @@
 
 <p>
 	company listed under the registration number {$setup.RCS} and the code {$setup.APE} with the {$setup.enregistrement}
-	and whose head office is located at {$setup.adresse}.
+	and whose head office is located at {$setup.siege}.
 </p>
 
 <p>

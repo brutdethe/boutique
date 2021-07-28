@@ -21,11 +21,11 @@
 </p>
 <p>
 	Entreprise répertoriée sous le numéro d’immatriculation {$setup.RCS} et le code APE {$setup.APE}
-	auprès du {$setup.enregistrement} et dont le siège social est sis au {$setup.adresse}.
+	auprès du {$setup.enregistrement} et dont le siège social est sis au {$setup.siege}.
 </p>
 
 <p>
-	Les paiement sont effectuées via
+	Les paiements sont effectués via
 	<a href="https://stripe.com/fr">Stripe</a>
 	:
 	<a href="https://stripe.com/fr/legal">Mentions légales</a>
