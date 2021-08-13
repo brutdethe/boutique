@@ -19,7 +19,18 @@
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
     </script>
-    <script defer data-domain="theiere-tasse.com" src="https://plausible.io/js/plausible.js"></script>
+    <script>
+        window.addEventListener("load", function(event) {
+            const dataDomain = location.hostname.replace('www', '')
+            if (dataDomain === 'localhost') {
+                const script = document.createElement('script');
+                script.src = "https://plausible.io/js/plausible.js";
+                script.setAttribute('data-domain', dataDomain);
+                script.defer = true
+                document.getElementsByTagName('head')[0].appendChild(script);
+            }
+        });
+    </script>
 
     <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
