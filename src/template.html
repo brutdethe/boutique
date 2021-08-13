@@ -21,7 +21,7 @@
     </script>
     <script>
         window.addEventListener("load", function(event) {
-            const dataDomain = location.hostname.replace('www', '')
+            const dataDomain = location.hostname.replace('www.', '')
             if (dataDomain !== 'localhost') {
                 const script = document.createElement('script');
                 script.src = "https://plausible.io/js/plausible.js";
