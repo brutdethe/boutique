@@ -71,7 +71,7 @@
 				{ limit: 20, price: { EUR: 206, USD: Math.ceil(206 * $rate) } }
 			]
 		};
-		const weightTotal = basket.reduce((acc, product) => product.poids * product.qty + acc, 0);
+		const weightTotal = basket.reduce((acc, product) => product.poids * product.qty + acc, 0) || 0;
 
 		return collisimo[country].filter(rate => weightTotal <= rate.limit)[0].price;
 		transport;
@@ -143,11 +143,6 @@
 
 <svelte:head>
 	<title>{dict.title[lang]}</title>
-	{#if dataDomain}
-		<script async defer data-domain={dataDomain} src="https://plausible.io/js/plausible.js">
-
-		</script>
-	{/if}
 	<script src="https://js.stripe.com/v3/">
 
 	</script>
