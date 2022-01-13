@@ -209,7 +209,7 @@
 					<div class="card-title h4">{$product.titre[lang]}</div>
 				</div>
 				<div class="card-body">
-					<p>{$product.description[lang]}.</p>
+					<p>{$product.description[lang]}</p>
 					<dl>
 						{#if 'cultivar' in $product}
 							<dt>{dict.cultivar[lang]} :&nbsp;</dt>
