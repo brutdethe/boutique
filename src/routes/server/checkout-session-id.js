@@ -12,6 +12,7 @@ const unsubscribe = pagesPath.subscribe(value => {
 });
 
 const checkoutData = {
+    allow_promotion_codes: true,
     payment_method_types: ['card'],
     billing_address_collection: 'required',
     locale: '',
