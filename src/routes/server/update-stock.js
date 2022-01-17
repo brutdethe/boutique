@@ -27,7 +27,7 @@ async function getPaidsSessionsIds(stripe) {
         let checkoutSessions = await getCheckoutSessions(lastIDs)
         has_more = checkoutSessions.has_more
         checkoutIDs = checkoutIDs.concat(getPaidCheckoutsIds(checkoutSessions.data))
-        lastIDs = checkoutSessions.data.at(-1).id
+        lastIDs = checkoutSessions.data[checkoutSessions.data.length - 1].id
     }
 
     return checkoutIDs
