@@ -18,8 +18,8 @@
 
 	const dict = {
 		buy: {
-			en: 'buy',
-			fr: 'acheter'
+			en: 'add to basket',
+			fr: 'ajouter au panier'
 		}
 	};
 </script>
