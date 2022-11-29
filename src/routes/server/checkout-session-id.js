@@ -301,6 +301,7 @@ export async function post(req, res) {
         checkoutData.shipping_address_collection.allowed_countries = allowedCountries(country)
         checkoutData.success_url = new URL(`${pages.basketSuccess[language]}`, origin).href
         checkoutData.cancel_url = new URL(`${pages.basket[language]}`, origin).href
+        console.log("affiche le panier", basket)
         checkoutData.line_items = basket.map(item => {
             return {
                 price_data: {
