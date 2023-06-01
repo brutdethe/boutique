@@ -37,6 +37,10 @@
 			});
 	}
 
+	function handleKeydown() {
+		return;
+	}
+
 	function shippingCost(basket, country) {
 		const collisimo = {
 			france: [
@@ -176,7 +180,10 @@
 									</a>
 								</td>
 								<td>
-									<i class="icon icon-delete c-hand" on:click|once={deleteClick(item.id)} />
+									<i
+										class="icon icon-delete c-hand"
+										on:keydown={handleKeydown}
+										on:click|once={deleteClick(item.id)} />
 								</td>
 								<td class="text-right">
 									<Price price={item.prix} />
